@@ -1,0 +1,1 @@
+		<a href='/'><img src='logo.png' width='506' height='32' border='0' alt='Link to uberChicGeekChick.Com: home of *unallocated_pointer( the open source art podcast );' title='*unallocated_pointer( the open source art podcast );' /></a>
