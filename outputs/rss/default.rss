@@ -1,0 +1,18 @@
+
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<channel>
+	<title>Expressive Programming</title>
+	<description>
+		Public Radio for Hackers
+	</description>
+	<link>http://nomicon.info/hpr/</link>
+	<language>en-US</language>
+	<item>
+		<title>Ep0165: Expressive Programming</title>
+		<link>http://hackerpublicradio.org/eps/hpr0165.mp3</link>
+		<description><![CDATA[uberchick's first installment of her expressive programming series]]></description>
+		<pubDate>2008-08-18</pubDate>
+		<enclosure url="http://hackerpublicradio.org/eps/hpr0165.mp3" length="16419367" type="audio/mpeg"/>
+		<guid>http://hackerpublicradio.org/eps/hpr0165.mp3</guid>
+	</channel>
+</rss>

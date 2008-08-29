@@ -1,0 +1,33 @@
+
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<channel>
+<title>Expressive Programming</title>
+<description>
+Public Radio for Hackers
+</description>
+<link>http://nomicon.info/hpr/</link>
+<language>en-us</language>
+<itunes:category text="Technology">
+    <itunes:category text="Information Technology"/>
+</itunes:category>
+<itunes:subtitle>Public Radio for Hackers</itunes:subtitle>
+<itunes:summary>Technology, Open Source, Hacking</itunes:summary>
+<itunes:author>HPR</itunes:author>
+<itunes:owner>    
+    <itunes:name>HPR</itunes:name>
+    <itunes:email>admin@hackerpublicradio.org</itunes:email>
+</itunes:owner>
+<itunes:image href="http://hackerpublicradio.org/images/hpr_feed.png"/>
+<itunes:explicit>yes</itunes:explicit>
+<item><title>Ep0165: Expressive Programming</title>
+<itunes:author>UberChick &lt;admin.nospam@nospam.hackerpublicradio.org&gt;</itunes:author>
+<link>http://hackerpublicradio.org/eps/hpr0165.mp3</link>
+<itunes:summary>uberchick's first installment of her expressive programming series</itunes:summary>
+<description>uberchick's first installment of her expressive programming series</description>
+<pubDate>2008-08-18</pubDate>
+<enclosure url="http://hackerpublicradio.org/eps/hpr0165.mp3" length="16419367" type="audio/mpeg"/>
+<guid>http://hackerpublicradio.org/eps/hpr0165.mp3</guid>
+<itunes:explicit>yes</itunes:explicit>
+</item>
+</channel>
+</rss>

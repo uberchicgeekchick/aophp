@@ -10,7 +10,7 @@ a:hover{
 	font-size:1.75ex;
 }
 
-p{text-indent:5%;}
+p, .indentedText{text-indent:5%;}
 
 img.logo{margin-left:10%; margin-top:2%}
 img.slogan{display:block; margin-left:35%;}
