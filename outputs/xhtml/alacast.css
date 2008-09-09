@@ -21,7 +21,7 @@ img.favicon_link{width:16px; height:16px; border-width:0px;}
 
 img.openSuSE_11_countdown{position:absolute; display:block; top:0px; right:2%;width:300px; height:150px;border:0px;}
 
-div.left_sides_blocs{position:absolute; display:inline-bloc; float:left; width:14%;}
+div.left_sides_blocs{position:absolute; display:inline-block; float:left; width:14%;}
 
 div.bloc{display:inline-table; clear:both; padding-bottom:5%; width:100%; color:#820000;}
 	div.bloc_title{
@@ -56,9 +56,8 @@ div.bloc{display:inline-table; clear:both; padding-bottom:5%; width:100%; color:
 div.contents_container{
 	position:absolute;
 	float:middle;
-	display:table;
-	left:22%;
 	display:block;
+	left:22%;
 	width:60%;
 }
 	div.contents_top_left, div.contents_top_middle, div.contents_top_right,
@@ -85,4 +84,4 @@ div.contents_container{
 		div.contents_bottom_left{background:url('../../graphics/content_bg_bottom_left.png') no-repeat;}
 		div.contents_bottom_right{background:url('../../graphics/content_bg_bottom_right.png') no-repeat;}
 
-div.copyright{position:absolute; top:100%; color:#cccccc; font-weight:bold; clear:both; display:table; right:5px; bottom:5px;}
+div.copyright{position: absolute; display:float; color:#cccccc; font-weight:bold; clear:both; right:5px; bottom:5px;}
