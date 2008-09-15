@@ -1,4 +1,6 @@
 <?php
+		if( !(isset( $_GET['episode'] )) ) $_GET['episode'] = "0002";
+		
 		print <<<CONTENT_HEADER
 		<div class='contents_container'>
 			<div class='contents_top'>
@@ -8,9 +10,14 @@
 			<div class='contents_body_output'>
 CONTENT_HEADER;
 		
-		if( (isset($_GET['debug'])) && (require_once("./blocs/debug.php")) ) return 0;
-		
-		require_once("./blocs/episodes/0001.php");
+		if( (isset($_GET['debug'])) && (require_once("./blocs/debug.php")) )
+			break;
+		else if( (isset( $_GET['episode'] )) && (file_exists( "./blocs/{$_GET['episode']}.php" )) )
+			require_once("./blocs/episodes/{$_GET['episode']}.php");
+		else if( (isset( $_GET['about'] )) && (file_exists( "./blocs/{$_GET['about']}.php" )) )
+			require_once("./blocs/about/{$_GET['about']}.php");
+		else
+			require_once("./blocs/about/podcast.php");
 		
 		print <<<CONTENT_FOOTER
 			</div>

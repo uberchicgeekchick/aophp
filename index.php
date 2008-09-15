@@ -42,6 +42,8 @@
 	ini_set( "error_reporting", E_ALL | E_STRICT );
 	ini_set( "date.timezone", "America/Denver" );
 
+	//if( !(isset( $_GET )) ) $_GET = "0002";
+	
 	// And now, *gulp*, just do each step; step by step, baby steps, comment &verbose variables are fun.
 	// program for fun.  If I forget than read 'Hackers &Painters' &'Hackers Manifesto'.
 	
