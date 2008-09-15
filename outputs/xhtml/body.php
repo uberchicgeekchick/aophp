@@ -8,6 +8,7 @@
 		print("		<div class='left_sides_blocs'>\n" );
 		require_once("./blocs/links/projects.php");
 		require_once("./blocs/links/social_networks.php");
+		require_once("./blocs/links/MyBlogLog.php");
 		print("		</div>\n");
 		
 		

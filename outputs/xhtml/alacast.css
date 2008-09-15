@@ -84,4 +84,4 @@ div.contents_container{
 		div.contents_bottom_left{background:url('../../graphics/content_bg_bottom_left.png') no-repeat;}
 		div.contents_bottom_right{background:url('../../graphics/content_bg_bottom_right.png') no-repeat;}
 
-div.copyright{position: absolute; display:float; color:#cccccc; font-weight:bold; clear:both; right:5px; bottom:5px;}
+div.copyright{position: inline; display:table; color:#cccccc; font-weight:bold; right:5px; bottom:5px;}
