@@ -8,7 +8,7 @@
 			</div>
 			<br/>
 BLOC;
-	require_once("./blocs/links/MyBlogLog.php");
+	require_once("./blocs/widgets/MyBlogLog.php");
 	print <<<BLOC
 		</div>
 	</body>

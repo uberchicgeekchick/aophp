@@ -26,7 +26,7 @@
 						<li><a href="http://TheCommandLine.Com/">The Command Line Podcast</a></li>
 						<li><a href="http://SE-Radio.Net/">Software Enginering Radio</a></li>
 					</ul><br/><ul>
-						<lh>NSFW</lh>
+						<lh><em>*NSFW*</em></lh>
 						<li><a href="http://LinuxCranks.Info/">Linux Cranks</a></li>
 					</ul>
 				</div>
