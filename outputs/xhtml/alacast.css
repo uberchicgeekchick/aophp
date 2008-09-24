@@ -1,7 +1,9 @@
 *{font-size:11pt; font-family:Helvetica; color:#FFDDEE;}
 body{margin:0.5%; background:#820000 url('../../graphics/background.png') no-repeat; color:#ffddee;}
 
-a,a:visited{
+ul{margin:0px; padding:0px;}
+
+li,lh,a,a:visited{
 	color:#eeccdd;
 	font-size:1.75ex;
 }

@@ -6,8 +6,11 @@
 					My other projects
 				</div>
 				<div class='bloc_content'>
-					<a href='http://Dystonia-DREAMS.Org/'>Dystonia-DREAMS.Org</a><br/>
-					<a href='http://uberChicks.Net/'>uberChicks.Net</a> <!--&ndash; <a href='javascript:show_info("uberChicks_Net");' id='uberChicks_Net_About_Link'>[&darr;]</a>-->
+					<ul>
+						<lh>~Websites~</lh>
+						<li><a href='http://Dystonia-DREAMS.Org/'>Dystonia-DREAMS.Org</a></li>
+						<li><a href='http://uberChicks.Net/'>uberChicks.Net</a> <!--&ndash; <a href='javascript:show_info("uberChicks_Net");' id='uberChicks_Net_About_Link'>[&darr;]</a>--></li>
+					</ul>
 				</div>
 				<div class='bloc_extra'>&nbsp;</div>
 			</div>

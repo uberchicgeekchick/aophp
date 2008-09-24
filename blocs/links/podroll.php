@@ -14,6 +14,25 @@
 	 * language governing rights and limitations under the RPL.
 	 */
 	print <<<BLOC
-		http://hackerpublicradio.org/hpr_rss.php		
+			<!-- bloc starts -->
+			<div class='bloc'>
+				<div class='bloc_title'>
+					My fave podcast
+				</div>
+				<div class='bloc_content'>
+					<ul>
+						<lh>~Programming~</lh>
+						<li><a href="http://HackerPublicRadio.Org/">HackerPublicRadio</a></li>
+						<li><a href="http://TheCommandLine.Com/">The Command Line Podcast</a></li>
+						<li><a href="http://SE-Radio.Net/">Software Enginering Radio</a></li>
+					</ul><br/><ul>
+						<lh>NSFW</lh>
+						<li><a href="http://LinuxCranks.Info/">Linux Cranks</a></li>
+					</ul>
+				</div>
+				<div class='bloc_extra'>&nbsp;</div>
+			</div>
+			<!-- bloc ends -->
+		
 BLOC;
 ?>
