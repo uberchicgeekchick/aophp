@@ -14,6 +14,6 @@
 	 * language governing rights and limitations under the RPL.
 	 */
 	print <<<BLOC
-				<script src="http://pub.mybloglog.com/comm3.php?mblID=2008051416035081&amp;r=widget&amp;is=normal&amp;o=r&amp;ro=4&amp;cs=red&amp;ww=220&amp;wc=multiple&amp;l=a"></script>
+				<script src="http://pub.mybloglog.com/comm3.php?mblID=2008051416035081&amp;r=widget&amp;is=normal&amp;o=l&amp;ro=4&amp;cs=red&amp;ww=220&amp;wc=multiple&amp;l=a"></script>
 BLOC;
 ?>
