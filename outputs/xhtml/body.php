@@ -9,7 +9,6 @@
 		require_once("./blocs/links/projects.php");
 		require_once("./blocs/links/me_online.php");
 		require_once("./blocs/links/podroll.php");
-		require_once("./blocs/links/MyBlogLog.php");
 		print("		</div>\n");
 		
 		

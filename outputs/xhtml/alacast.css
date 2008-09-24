@@ -25,6 +25,8 @@ img.openSuSE_11_countdown{position:absolute; display:block; top:0px; right:2%;wi
 
 div.left_sides_blocs{position:absolute; display:inline-block; float:left; width:14%;}
 
+div.right_sides_blocs{position:absolute; display:inline-block; clear:all; width:14%; left:80%; top:35%;}
+
 div.bloc{display:inline-table; clear:both; padding-bottom:5%; width:100%; color:#820000;}
 	div.bloc_title{
 		display:table-row;
@@ -58,8 +60,8 @@ div.bloc{display:inline-table; clear:both; padding-bottom:5%; width:100%; color:
 div.contents_container{
 	position:absolute;
 	float:middle;
-	display:block;
-	left:22%;
+	display:inline-block;
+	left:18%;
 	width:60%;
 }
 	div.contents_top_left, div.contents_top_middle, div.contents_top_right,
@@ -86,4 +88,4 @@ div.contents_container{
 		div.contents_bottom_left{background:url('../../graphics/content_bg_bottom_left.png') no-repeat;}
 		div.contents_bottom_right{background:url('../../graphics/content_bg_bottom_right.png') no-repeat;}
 
-div.copyright{position: inline; display:table; color:#cccccc; font-weight:bold; right:5px; bottom:5px;}
+div.copyright{clear:both; text-align:right; color:#cccccc; font-weight:bold;}
