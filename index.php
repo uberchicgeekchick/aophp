@@ -47,9 +47,11 @@
 	// And now, *gulp*, just do each step; step by step, baby steps, comment &verbose variables are fun.
 	// program for fun.  If I forget than read 'Hackers &Painters' &'Hackers Manifesto'.
 	
-	//require_once( "./__autoloader.php" );
+	require_once("./AutoMagickal/__autoload.php");
+	require_once("./AutoMagickal/ExceptionHandler.Default.class.php");
 	
-	//$uCGC_db=new uberChicGeekChick::db("localhost:3306", "quickly_podcasting", "uCGC.com", "my_w3b51+3");
+	AOPHP::StorageEngine::MySQL("localhost:3306","speakingOUT", "speakOUT","EvenMiceSpeakUp");
+	$speakingOUT=new AOPHP::UI::Generator();
 	
 	/*All of the following code needs to be moved to './outputs/xhtml.class.php
 	 * __autoload.func.php also needs to be updated to support output formats
