@@ -5,13 +5,11 @@
 			$AppName="speakingOUT";
 		
 		if(!(
-			(preg_replace( (sprintf( "/^(%s)/", $AppName )), "", $Class))
-			&&
-			(preg_match( "/^(AOPHP[:]{2)/", $Class ))
+			(preg_replace( (sprintf( "/^(%s|AOPHP)[:]{2}/", $AppName )), "", $Class))
 		))
 			return false;
 		
-		$Object=sprintf("./classes/%s.class.php", (preg_replace( "/[:]{0,2}/", "/", $Class)) );
+		$Object=sprintf("./%s.class.php", (preg_replace( "/[:]{2}/", "/", $Class)) );
 		if(!( (file_exists($Object)) && (is_readable($Object)) ))
 			return false;
 		

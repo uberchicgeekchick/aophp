@@ -1,7 +1,7 @@
 <?php
-	namespace AOPHP::StorageEngine;
+	namespace AOPHP::StorageEngines;
 	
-	class MySQL extends AOPHP::StorageEngine{
+	class MySQL extends AOPHP::StorageEngines{
 		private $Socket;
 		
 		public function __constuct($URI,$Database,$Username,$Password){

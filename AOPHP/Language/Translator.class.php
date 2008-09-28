@@ -1,7 +1,7 @@
 <?php
 	namespace AOPHP::Language;
 	
-	class Translator extends AOPHP::StorageEngine::MySQL{
+	class Translator extends AOPHP::Language{
 		
-	}//AOPHP::SHE::MySQL::Translator
+	}//AOPHP::Language::Translator
 ?>

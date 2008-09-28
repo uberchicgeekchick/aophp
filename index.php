@@ -50,8 +50,7 @@
 	require_once("./AutoMagickal/__autoload.php");
 	require_once("./AutoMagickal/ExceptionHandler.Default.class.php");
 	
-	AOPHP::StorageEngine::MySQL("localhost:3306","speakingOUT", "speakOUT","EvenMiceSpeakUp");
-	$speakingOUT=new AOPHP::UI::Generator();
+	$speakingOUT=new AOPHP::UI::Generator( (require_once("")) );
 	
 	/*All of the following code needs to be moved to './outputs/xhtml.class.php
 	 * __autoload.func.php also needs to be updated to support output formats
