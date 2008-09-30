@@ -16,7 +16,7 @@
 						<li><a href='http://identi.ca/uberChick'><img src='./graphics/icons/web2.0/identi.ca.png' alt='identi.ca&#039;s logo: letting you follow my programming &amp; over-sharing micro-blogging.' title='Follow my programming &amp; over-sharing micro-blogging on identi.ca.: my fave micro-blogging service.&nbsp; Best of all: its open source.' class='favicon_link'/></a>
 						<a href='http://twitter.com/uberChick'><img src='./graphics/icons/web2.0/twitter.png' alt='Twitter&#039;s logo: letting you follow my programming &amp; over-sharing tweets.' title='Follow my programming &amp; over-sharing tweets.' class='favicon_link'/></a></li>
 					</ul><ul>
-						<lh>~Micro-Blogging~</lh>
+						<lh>~Graphics &amp; Photos~</lh>
 						<li><a href='http://profile.imageshack.us/user/sparklingdreams/'><img src='./graphics/icons/art/imageshack.png' alt='ImageShack&#039;s logo: linking to my graphic design portfolio &amp;photos there.' title='My graphic design portfolio &amp;photos over at ImageShack.' class='favicon_link'/></a>
 						<a href='http://www.flickr.com/photos/uberchicgeekchick'><img src='./graphics/icons/art/flickr.png' alt='Flickr&#039;s logo: linking to my photos.' title='My photos on Flickr.' class='favicon_link'/></a>
 						<a href='http://pipes.yahoo.com/uberchicgeekchick'><img src='./graphics/icons/art/yahoopipes.png' alt='Pipes.Yahoo.Com&#039;s logo: linking to my customized RSS &amp; Atom feeds.' title='My RSS &amp; Atom feed hacks on Pipes.Yahoo.Com.' class='favicon_link'/></a></li>
