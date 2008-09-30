@@ -47,19 +47,10 @@
 	// And now, *gulp*, just do each step; step by step, baby steps, comment &verbose variables are fun.
 	// program for fun.  If I forget than read 'Hackers &Painters' &'Hackers Manifesto'.
 	
-	/*
 	require_once("./AutoMagickal/__autoload.php");
 	require_once("./AutoMagickal/ExceptionHandler.Default.class.php");
 	
-	$speakingOUT=new AOPHP::UI::Generator( (require_once("")) );
-	*/
-	
-	/*All of the following code needs to be moved to './outputs/xhtml.class.php
-	 * __autoload.func.php also needs to be updated to support output formats
-	 */
-	
-	header("Content-disposition: inline; filename=uberChicGeekChick's coded art.html");
-	header("Content-Type: text/html; charset=utf-8");
+	$speakingOUT=new AOPHP::UI::Generator( (require_once("./AOPHP/Apps/speakingOUT/Configuration.php")) );
 	
 	require_once("./outputs/xhtml/header.php");
 	

@@ -1,5 +1,9 @@
 <?php
-print <<<HEADER
+
+	header("Content-disposition: inline; filename=uberChicGeekChick's coded art.html");
+	header("Content-Type: text/html; charset=utf-8");
+
+	print <<<HEADER
 <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.1//EN' 'http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd'>
 <?xml version='1.0' encoding='UTF-8'?>
 <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
@@ -24,5 +28,5 @@ print <<<HEADER
 		<link rel='stylesheet' href='./outputs/xhtml/alacast.css' type='text/css'/>
 	</head>
 	<body>
-HEADER
+HEADER;
 ?>
