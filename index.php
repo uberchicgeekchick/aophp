@@ -41,22 +41,25 @@
 	ini_set( "display_errors", TRUE );
 	ini_set( "error_reporting", E_ALL | E_STRICT );
 	ini_set( "date.timezone", "America/Denver" );
+	define( "_PHP_VERSION_", preg_replace("/^([0-9.]\+)/", "$1", (phpversion()) ) );
 
 	//if( !(isset( $_GET )) ) $_GET = "0002";
 	
 	// And now, *gulp*, just do each step; step by step, baby steps, comment &verbose variables are fun.
 	// program for fun.  If I forget than read 'Hackers &Painters' &'Hackers Manifesto'.
 
-	if( ( (int)phpversion() ) >= 5.3 ) {
+	if( ( (float)phpversion() ) >= 5.3 ) {
 		require_once("./AutoMagickal/::/__autoload.php");
 		require_once("./AutoMagickal/::/ExceptionHandler.Default.class.php");
 	
-		$speakingOUT=new AOPHP::UI::Generator( (require_once("./AOPHP/Apps/speakingOUT/Configuration.php")) );
+	//	$speakingOUT=new AOPHP::UI::Generator( (require_once("./AOPHP/Apps/speakingOUT/Configuration.php")) );
 	}else{
+		/*
 		require_once("./AutoMagickal/__/__autoload.php");
 		require_once("./AutoMagickal/__/ExceptionHandler.Default.class.php");
 	
 		$speakingOUT=new AOPHP__UI__Generator( (require_once("./AOPHP/Apps/speakingOUT/Configuration.php")) );
+		 */
 	}
 	
 	require_once("./outputs/xhtml/header.php");

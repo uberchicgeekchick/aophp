@@ -1,6 +1,4 @@
 <?php
-	namespace speakingOUT;
-	
 	abstract class speakingOUT__ExceptionHandler{
 		static function Catcher(&$Exception){
 			
