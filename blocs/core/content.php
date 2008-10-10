@@ -1,5 +1,5 @@
 <?php
-		if( !(isset( $_GET['episode'] )) ) $_GET['episode'] = "0002";
+		if( !(isset( $_GET['special'] )) ) $_GET['special'] = "0002";
 		
 		print <<<CONTENT_HEADER
 		<div class='contents_container'>
@@ -14,6 +14,8 @@ CONTENT_HEADER;
 			break;
 		else if( (isset( $_GET['episode'] )) && (file_exists( "./blocs/episodes/{$_GET['episode']}.php" )) )
 			require_once("./blocs/episodes/{$_GET['episode']}.php");
+		else if( (isset( $_GET['special'] )) && (file_exists( "./blocs/specials/{$_GET['special']}.php" )) )
+			require_once("./blocs/specials/{$_GET['special']}.php");
 		else if( (isset( $_GET['about'] )) && (file_exists( "./blocs/about/{$_GET['about']}.php" )) )
 			require_once("./blocs/about/{$_GET['about']}.php");
 		else
