@@ -41,7 +41,6 @@
 	ini_set( "display_errors", TRUE );
 	ini_set( "error_reporting", E_ALL | E_STRICT );
 	ini_set( "date.timezone", "America/Denver" );
-	define( "_PHP_VERSION_", preg_replace("/^([0-9.]\+)/", "$1", (phpversion()) ) );
 
 	//if( !(isset( $_GET )) ) $_GET = "0002";
 	
