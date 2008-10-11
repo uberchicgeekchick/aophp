@@ -11,7 +11,9 @@ print <<<SPECIAL
 		</p><p>
 			<ul>
 				<lh>Join us in showing you support for a cure!</lh>
-				<li>Visit us online at: <a href='http://www.talkshoe.com/tc/1256/'>http://www.talkshoe.com/tc/12560</a><li/>
+				<li>Watch &amp; chat on <a href='http://uStream.tv/iandrea'>uStream.tv/iandrea</a></li>
+				<li>Or join us on IRC @ <a href='http://irc.freenode.net/Podcastathon'>irc://irc.freenode.net/Podcastathon</a></li>
+				<li>Call in, listen in, be a part of finding a cure! @ <a href='http://www.talkshoe.com/tc/1256/'>http://www.talkshoe.com/tc/12560</a></li>
 				<li>There are two way to call in to share your story &amp; show your support:</li>
 				<ul>
 					<li>Using your favorite SIP client, like the free <a href='http://Gizmo5.Com/'>Gizmo5</a>, call <a href='sip:GeekIsChic-12560@66.212.134.192'>sip:GeekIsChic-12560@66.212.134.192</a>></li>
