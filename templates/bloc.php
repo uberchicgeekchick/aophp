@@ -13,7 +13,17 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	print <<<BLOC
-				
+print <<<BLOC
+			<!-- bloc starts -->
+			<div class='bloc'>
+				<div class='bloc_title'>
+					&nbsp;
+				</div><div class='bloc_content'>
+					&nbsp;
+				</div>
+				<div class='bloc_extra'>&nbsp;</div>
+			</div>
+			<!-- bloc ends -->
+			
 BLOC;
 ?>

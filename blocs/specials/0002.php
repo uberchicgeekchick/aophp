@@ -20,6 +20,8 @@ print <<<SPECIAL
 				<li>When asked to enter the <em>Call ID</em> enter <strong>12560</strong> and help us come even a lil closer to a cure!</li>
 			</ul>
 			<a href='http://www.flickr.com/groups/geekischic/'>flickr banners - where you ribbon::change your avatar</a><br/>
+			To busy? No worries, just please help &amp; donate. All donations are to the Susan G. Komen Foundation<br/>
+			<form action='https://www.paypal.com/cgi-bin/webscr' method='post'><input src='https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif' type='image'><input name='cmd' value='_donations' type='hidden'><input name='business' value='contact@geekischic.org' type='hidden'><input name='item_name' value='Geek Is Chic Donates to Susan G Komen' type='hidden'><input name='no_shipping' value='0' type='hidden'><input name='return' value='http://uberchicgeekchick.com/' type='hidden'><input name='cancel_return' value='http://uberchicgeekchick.com' type='hidden'><input name='no_note' value='1' type='hidden'><input name='currency_code' value='USD' type='hidden'><input name='tax' value='0' type='hidden'><input name='lc' value='US' type='hidden'><input name='bn' value='PP-DonationsBF' type='hidden'></form>
 		</p>
 SPECIAL;
 ?>
