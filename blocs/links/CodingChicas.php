@@ -21,16 +21,19 @@ print <<<BLOC
 					Girls &lt;3 Code
 				</div><div class='bloc_content'>
 					<ul>
-						<li>~ PHPWomen ~</li>
+						<lh>~ PHPWomen ~</lh>
 						<li>www @ <a href="http://PHPWomen.Org/">http://PHPWomen.Org/</a></li>
 						<li>irc @ <a href="irc://irc.freenode.net/PHPWomen">irc://irc.freenode.net/PHPWomen</a></li>
-						<li>~ DevChix ~</li>
+					</ul><br/><ul>
+						<lh>~ DevChix ~</lh>
 						<li>www @ <a href="http://DevChix.Com/">http://DevChix.Com/</a></li>
-						<li>~ LinuxChic ~</li>
-						<li>www @ <a href="http://LinuxChic.Com/">http://LinuxChic.Com/</a></li>
-						<li>~ Linux Chix ~</li>
+					</ul><br/><ul>
+						<lh>~ Linux Chix ~</lh>
 						<li>www @ <a href="http://LinuxChix.Org/">http://LinuxChix.Org/</a></li>
 						<li>irc @ <a href="irc://irc.LinuxChix.Org/LinuxChix">irc://irc.LinuxChix.Org/LinuxChix</a></li>
+					</ul><br/><ul>
+						<lh>~ LinuxChic ~</lh>
+						<li>www @ <a href="http://LinuxChic.Com/">http://LinuxChic.Com/</a></li>
 					</ul>
 				</div>
 				<div class='bloc_extra'>&nbsp;</div>
