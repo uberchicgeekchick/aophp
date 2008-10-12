@@ -23,7 +23,7 @@
 					<ul>
 						<lh>~Programming~</lh>
 						<li><a href="http://HackerPublicRadio.Org/">HackerPublicRadio</a></li>
-						<li><a href="http://TheCommandLine.Com/">The Command Line Podcast</a></li>
+						<li><a href="http://TheCommandLine.Net/">The Command Line Podcast</a></li>
 						<li><a href="http://SE-Radio.Net/">Software Enginering Radio</a></li>
 					</ul><br/><ul>
 						<lh><em>*NSFW*</em></lh>
