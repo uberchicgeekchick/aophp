@@ -3,5 +3,5 @@
 	
 	class Generator extends AOPHP::UI::Formatter{
 		
-	}//ends: class AOPHP::UI::Generator
+	}//AOPHP::UI::Generator
 ?>
