@@ -24,8 +24,8 @@
 		<script language='javascript' src='./javascript.json.js'></script>
 		-->
 		<!-- NOTE: Firebug can't debug @import rules. -->
-		<!-- <style type='text/css'> @import url('./outputs/xhtml/alacast.css'); </style> -->
-		<link rel='stylesheet' href='./outputs/xhtml/alacast.css' type='text/css'/>
+		<!-- <style type='text/css'> @import url('./AOPHP/::/Output/{$Format}/alacast.css'); </style> -->
+		<link rel='stylesheet' href='./AOPHP/::/Output/{$Format}/alacast.css' type='text/css'/>
 	</head>
 	<body>
 HEADER;

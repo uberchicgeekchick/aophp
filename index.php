@@ -45,16 +45,15 @@
 	// And now, *gulp*, just do each step; step by step, baby steps, comment &verbose variables are fun.
 	// program for fun.  If I forget than read 'Hackers &Painters' &'Hackers Manifesto'.
 
-/*	if( ( (float)phpversion() ) >= 5.3 ) {
-		require_once("./AOPHP/::/__autoload.php");
+	require_once("./AOPHP/__autoload.php");
+	if( ( (float)phpversion() ) >= 5.3 ) {
 		require_once("./AOPHP/::/ExceptionHandler.Default.class.php");
-	
+		
 		$speakingOUT=new AOPHP::Output::Generator( (require_once("./AOPHP/::/Apps/speakingOUT/Configuration.inc.php")) );
 	}else{
-*/		require_once("./AOPHP/__/__autoload.php");
 		require_once("./AOPHP/__/ExceptionHandler.Default.class.php");
-	
+		
 		$speakingOUT=new AOPHP__Output__Generator( (require_once("./AOPHP/__/Apps/speakingOUT/Configuration.inc.php")) );
-//	}
+	}
 
 ?>

@@ -1,5 +1,5 @@
 <?php
-	namespace AOPHP:
+	namespace AOPHP;
 	
 	class Core{
 		
