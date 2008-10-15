@@ -1,7 +1,7 @@
 <?php
-	namespace AOPHP;
+	namespace AOPHP:
 	
 	class Core{
 		
-	}//ends: class AOPHP::Core
+	}//AOPHP::Core
 ?>

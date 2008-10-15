@@ -41,8 +41,6 @@
 	ini_set( "display_errors", TRUE );
 	ini_set( "error_reporting", E_ALL | E_STRICT );
 	ini_set( "date.timezone", "America/Denver" );
-
-	//if( !(isset( $_GET )) ) $_GET = "0002";
 	
 	// And now, *gulp*, just do each step; step by step, baby steps, comment &verbose variables are fun.
 	// program for fun.  If I forget than read 'Hackers &Painters' &'Hackers Manifesto'.
@@ -51,18 +49,12 @@
 		require_once("./AOPHP/::/__autoload.php");
 		require_once("./AOPHP/::/ExceptionHandler.Default.class.php");
 	
-		$speakingOUT=new AOPHP::UI::Generator( (require_once("./AOPHP/namespaces/Apps/speakingOUT/Configuration.php")) );
+		$speakingOUT=new AOPHP::Output::Generator( (require_once("./AOPHP/::/Apps/speakingOUT/Configuration.php")) );
 	}else{
 */		require_once("./AOPHP/__/__autoload.php");
 		require_once("./AOPHP/__/ExceptionHandler.Default.class.php");
 	
-		$speakingOUT=new AOPHP__UI__Generator( (require_once("./AOPHP/-namespaces/Apps/speakingOUT/Configuration.php")) );
-//	}
-	
-	require_once("./outputs/xhtml/header.php");
-	
-	require_once("./outputs/xhtml/body.php");
-	
-	require_once("./outputs/xhtml/footer.php");
+		$speakingOUT=new AOPHP__Output__Generator( (require_once("./AOPHP/__/Apps/speakingOUT/Configuration.php")) );
+//	}1
 
 ?>
