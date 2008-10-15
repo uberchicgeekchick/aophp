@@ -49,12 +49,12 @@
 		require_once("./AOPHP/::/__autoload.php");
 		require_once("./AOPHP/::/ExceptionHandler.Default.class.php");
 	
-		$speakingOUT=new AOPHP::Output::Generator( (require_once("./AOPHP/::/Apps/speakingOUT/Configuration.php")) );
+		$speakingOUT=new AOPHP::Output::Generator( (require_once("./AOPHP/::/Apps/speakingOUT/Configuration.inc.php")) );
 	}else{
 */		require_once("./AOPHP/__/__autoload.php");
 		require_once("./AOPHP/__/ExceptionHandler.Default.class.php");
 	
-		$speakingOUT=new AOPHP__Output__Generator( (require_once("./AOPHP/__/Apps/speakingOUT/Configuration.php")) );
-//	}1
+		$speakingOUT=new AOPHP__Output__Generator( (require_once("./AOPHP/__/Apps/speakingOUT/Configuration.inc.php")) );
+//	}
 
 ?>
