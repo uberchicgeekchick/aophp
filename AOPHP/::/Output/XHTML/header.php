@@ -9,7 +9,7 @@
 <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
 	<head>
 		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-		<title>uberChicGeekChick - art, creativity, code, &amp;women(BTW: WE ROCK!) </title>
+		<title>uberChicGeekChick - programming, art, creativity, code, self expression, &amp; women(BTW: WE ROCK!) </title>
 		<!--
 		<meta name='description' value='{About my page}' />
 		<meta name='keywords' content='{My page&#39;s template., keywords, about, this, page.}' />
