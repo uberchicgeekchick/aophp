@@ -13,9 +13,7 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	namespace AOPHP;
+	require_once("./AOPHP/::/ExceptionHandler.Default.class.php");
 	
-	class Core{
-		
-	}//AOPHP::Core
+	$speakingOUT=new AOPHP::Output::Generator( (require_once("./AOPHP/::/Apps/speakingOUT/Configuration.inc.php")) );
 ?>
