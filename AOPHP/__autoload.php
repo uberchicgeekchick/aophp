@@ -16,9 +16,13 @@
 	function __autoload($Class) {
 		static $AppName;
 		static $AOPHPsPath;
+		static $ClassSeparator;
+		
+		if(!(isset( $ClassSeparator )))
+			$ClassSeparator = ( ( ((float)phpversion()) >= 5.3 ) ? ":" : "_" );
 		
 		if(!(
-			($Class=preg_replace( (sprintf( "/^(%s|AOPHP)[:]{2}/", $AppName )), "", $Class))
+			($Class=preg_replace( (sprintf( "/^(%s|AOPHP)[%s]{2}/", $AppName, $ClassSeparator )), "", $Class))
 		))
 			return false;
 		
@@ -26,9 +30,9 @@
 			$AppName="speakingOUT";
 		
 		if(! (isset($AOPHPsPath)) )
-			$AOPHPsPath="./AOPHP/" . ( ( ((float)phpversion()) >= 5.3 ) ? "::" : "__" ) ;
+			$AOPHPsPath=sprintf( "./AOPHP/%s%s", $ClassSeparator, $ClassSeparator );
 		
-		$Object=sprintf("%s/%s.class.php", $AOPHPsPath, (preg_replace( "/[:]{2}/", "/", $Class)) );
+		$Object=sprintf("%s/%s.class.php", $AOPHPsPath, (preg_replace( (sprintf( "/[%s]{2}/", $ClassSeparator )), "/", $Class)) );
 		if(!( (file_exists($Object)) && (is_readable($Object)) ))
 			return false;
 		
