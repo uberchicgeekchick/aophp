@@ -1,5 +1,5 @@
 <?php
-		if( !(isset( $_GET['special'] )) ) $_GET['special'] = "0002";
+		if( !(isset( $_GET['episode'] )) ) $_GET['episode'] = "0003";
 		
 		print <<<CONTENT_HEADER
 		<div class='contents_container'>

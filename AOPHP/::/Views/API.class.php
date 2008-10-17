@@ -13,30 +13,10 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	function __autoload($Class) {
-		static $AppName;
-		static $AOPHPsPath;
-		static $ClassSeparator;
+	
+	namespace AOPHP::Views;
+	
+	class API extends AOPHP::Views {
 		
-		if(!(isset( $ClassSeparator )))
-			$ClassSeparator = ( ( ((float)phpversion()) >= 5.3 ) ? ":" : "_" );
-		
-		if(!(
-			($Class=preg_replace( (sprintf( "/^(%s|AOPHP)[%s]{2}/", $AppName, $ClassSeparator )), "", $Class))
-		))
-			return false;
-		
-		if(!(isset($AppName)))
-			$AppName="speakingOUT";
-		
-		if(! (isset($AOPHPsPath)) )
-			$AOPHPsPath=sprintf( "./AOPHP/%s%s", $ClassSeparator, $ClassSeparator );
-		
-		$Object=sprintf("%s/%s.class.php", $AOPHPsPath, (preg_replace( (sprintf( "/[%s]{2}/", $ClassSeparator )), "/", $Class)) );
-		
-		if(!( (file_exists($Object)) && (is_readable($Object)) ))
-			return false;
-		
-		return require_once($Object);
-	}//end '__autoload' function
+	}//AOPHP::Views::API
 ?>

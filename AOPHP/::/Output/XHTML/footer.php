@@ -1,5 +1,5 @@
 <?php
-	print <<<BLOC
+print <<<BLOC
 		<div class='right_sides_blocs'>
 			<div class='copyright'>
 				<nobr>my site &amp; podcast are</nobr><br/>
@@ -9,8 +9,11 @@
 			</div>
 			<br/>
 BLOC;
+	
 	require_once("./blocs/widgets/MyBlogLog.php");
-	print <<<BLOC
+	require_once("./blocs/episodes/rss.php");
+	
+print <<<BLOC
 		</div>
 	</body>
 </html>

@@ -46,6 +46,7 @@
 	// program for fun.  If I forget than read 'Hackers &Painters' &'Hackers Manifesto'.
 
 	require_once("./AOPHP/__autoload.php");
+	
 	if( ( ( (float)phpversion() ) >= 5.3 ) )
 		require_once("./AOPHP/::/Init.php");
 	else
