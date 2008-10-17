@@ -32,7 +32,7 @@
 	/*
 	 * ALWAYS PROGRAM FOR ENJOYMENT &PLEASURE!!!
 	 * Feel comfortable takeing baby steps.  Every moment is another step; step by step; there are only baby steps.
-	 * Being verbose in comments, variables, functions, methods, &anything else IS GOOD!
+	 * Being verbose in comments, variables, functions, methods, & anything else IS GOOD!
 	 * If I forget ANY OF THIS than READ:
 	 * 	"Paul Graham's: Hackers &Painters"
 	 * 	&& ||
@@ -42,9 +42,6 @@
 	ini_set( "error_reporting", E_ALL | E_STRICT );
 	ini_set( "date.timezone", "America/Denver" );
 	
-	// And now, *gulp*, just do each step; step by step, baby steps, comment &verbose variables are fun.
-	// program for fun.  If I forget than read 'Hackers &Painters' &'Hackers Manifesto'.
-
 	require_once("./AOPHP/__autoload.php");
 	
 	if( ( ( (float)phpversion() ) >= 5.3 ) )

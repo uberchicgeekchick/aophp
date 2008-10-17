@@ -21,5 +21,18 @@
 			$this->Domain="http://www.archive.org/";
 		}
 		
+		public function login(){
+			$form=sprintf("
+			<form action='http://www.archive.org/login.php' method='post'>
+				<input NAME='username' TYPE='text' id='username' value='' SIZE='26'>
+				<input NAME='password' TYPE='PASSWORD' id='password' SIZE='26'>
+				<input name='remember' type='checkbox' id='remember' value='CHECKED' checked></td>
+				<input name='referer' type='hidden' id='referer' value=''>
+				<input NAME='submit' TYPE='submit' id='submit' VALUE='Log in'>
+			</form>
+			");
+		}//login
+		
+		
 	}//AOPHP__Views__API__Archive.org
 ?>
