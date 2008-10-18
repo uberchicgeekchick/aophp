@@ -33,6 +33,15 @@
 			");
 		}//login
 		
+		public function create(){
+			$form=sprintf("
+				<form method='get' action='http://www.archive.org/create.php'>
+					<input maxlength='100' name='title' value=''/>
+					<input type='hidden' name='http' value='http'/>
+					<input class='button' type='submit' value='Next'/>
+				</form>
+			");
+		}//create
 		
 	}//AOPHP__Views__API__Archive.org
 ?>

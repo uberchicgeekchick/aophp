@@ -18,7 +18,7 @@
 		static $AOPHPsPath;
 		static $ClassSeparator;
 		
-		if(!(isset( $ClassSeparator )))
+		if( ! (isset( $ClassSeparator )) )
 			$ClassSeparator = ( ( ((float)phpversion()) >= 5.3 ) ? ":" : "_" );
 		
 		if(!(
