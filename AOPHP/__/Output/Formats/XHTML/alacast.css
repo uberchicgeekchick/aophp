@@ -1,5 +1,20 @@
+/*
+ * Unless explicitly acquired and licensed from Licensor under another
+ * license, the contents of this file are subject to the Reciprocal Public
+ * License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
+ * and You may not copy or use this file in either source code or executable
+ * form, except in compliance with the terms and conditions of the RPL.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS
+ * IS" basis, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND
+ * LICENSOR HEREBY DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT
+ * LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+ * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
+ * language governing rights and limitations under the RPL.
+ */
+
 *{ font-size:11pt; font-family:Helvetica; color:#ffddee; }
-body{ margin:0.5%; background:#820000 url('../../../../graphics/background.png') no-repeat; color:#ffddee; }
+body{ margin:0.5%; background:#820000 url('../../../../../graphics/background.png') no-repeat; color:#ffddee; }
 
 ul{ margin:0px; padding:0px; }
 
@@ -18,11 +33,6 @@ img.favicon_link{ width:16px; height:16px; border-width:0px; }
 
 img.openSuSE_11_countdown{ position:absolute; display:block; top:0px; right:2%;width:300px; height:150px;border:0px; }
 
-div.rss{}
-div.rss_subscription{}
-div.rss_episodes{}
-div.rss_extra{}
-
 /*content: wrapper for left hand blocs*/
 div.left_sides_blocs{ position:absolute; display:inline-block; float:left; width:20%; }
 
@@ -31,11 +41,11 @@ div.right_sides_blocs{ position:absolute; display:inline-block; clear:all; width
 
 /*content: styles the side blocs, I'd like to turn these into ul/ol, lh, li, or ruby markup.*/
 div.bloc{ display:inline-table; clear:both; padding-bottom:5%; width:100%; color:#820000; }
-	div.bloc_title{ display:table-row; text-indent:5%; color:#820000; white-space:nowrap; vertical-align:middle; font:italic small-caps bold 1.75ex Courier; background:url('../../../../graphics/bloc_bg_title.png') no-repeat; width:100%; height:28px; }
+	div.bloc_title{ display:table-row; text-indent:5%; color:#820000; white-space:nowrap; vertical-align:middle; font:italic small-caps bold 1.75ex Courier; background:url('../../../../../graphics/bloc_bg_title.png') no-repeat; width:100%; height:28px; }
 	
 	div.bloc_content{ display:table-cell; background-color:#b11818; padding-top:5%; padding-left:10%; left:25%!important; color:#ffddee; font:80% Helvetica; width:100%; }
 	
-	div.bloc_extra{ display:table-row; height:25px; background:#b11818 url('../../../../graphics/bloc_bg_extra.png') no-repeat; background-position: left bottom; border-bottom-left-radius:25% 25%; }
+	div.bloc_extra{ display:table-row; height:25px; background:#b11818 url('../../../../../graphics/bloc_bg_extra.png') no-repeat; background-position: left bottom; border-bottom-left-radius:25% 25%; }
 /*ends bloc containers*/
 
 /*starts pages primary content*/
@@ -52,14 +62,14 @@ div.contents_container{ position:absolute; float:middle; display:inline-block; l
 	div.contents_bottom_left, div.contents_bottom_middle, div.contents_bottom_right{ height:55px; }
 	
 	div.contents_top{ display:table-row; }
-		div.contents_top_left{ background:url('../../../../graphics/content_bg_top_left.png') no-repeat; }
-		div.contents_top_right{ background:url('../../../../graphics/content_bg_top_right.png') no-repeat; }
+		div.contents_top_left{ background:url('../../../../../graphics/content_bg_top_left.png') no-repeat; }
+		div.contents_top_right{ background:url('../../../../../graphics/content_bg_top_right.png') no-repeat; }
 	
 	div.contents_body_output{ display:table-cell; background-color:#a00000; }
 
 	div.contents_bottom{ display:table-row; }
-		div.contents_bottom_left{ background:url('../../../../graphics/content_bg_bottom_left.png') no-repeat; }
-		div.contents_bottom_right{ background:url('../../../../graphics/content_bg_bottom_right.png') no-repeat; }
+		div.contents_bottom_left{ background:url('../../../../../graphics/content_bg_bottom_left.png') no-repeat; }
+		div.contents_bottom_right{ background:url('../../../../../graphics/content_bg_bottom_right.png') no-repeat; }
 /*ends pages primary content*/
 
 div.copyright{ clear:both; text-align:right; color:#cccccc; font-weight:bold; }

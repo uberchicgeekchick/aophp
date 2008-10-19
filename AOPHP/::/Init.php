@@ -15,5 +15,5 @@
 	 */
 	require_once("./AOPHP/::/ExceptionHandler.Default.class.php");
 	
-	$speakingOUT=new AOPHP::Output::Generator( (require_once("./AOPHP/::/Apps/speakingOUT/Configuration.inc.php")) );
+	$speakingOUT=new AOPHP::Output::Formats::XHTML( (require_once("./AOPHP/::/Apps/speakingOUT/Configuration.inc.php")) );
 ?>

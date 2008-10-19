@@ -17,5 +17,9 @@
 	
 	class Core{
 		
+		public function __construct(){
+			
+		}
+		
 	}//AOPHP::Core
 ?>

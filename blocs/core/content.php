@@ -1,27 +1,33 @@
 <?php
-		if( !(isset( $_GET['episode'] )) ) $_GET['episode'] = "0003";
+	/*
+	 * Unless explicitly acquired and licensed from Licensor under another
+	 * license, the contents of this file are subject to the Reciprocal Public
+	 * License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
+	 * and You may not copy or use this file in either source code or executable
+	 * form, except in compliance with the terms and conditions of the RPL.
+	 *
+	 * All software distributed under the RPL is provided strictly on an "AS
+	 * IS" basis, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND
+	 * LICENSOR HEREBY DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT
+	 * LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
+	 * language governing rights and limitations under the RPL.
+	 */
 		
-		print <<<CONTENT_HEADER
+	print <<<CONTENT_HEADER
 		<div class='contents_container'>
 			<div class='contents_top'>
 				<div class='contents_top_left'>&nbsp;</div><div class='contents_top_middle'>&nbsp;</div><div class='contents_top_right'>&nbsp;</div>
 			</div>
 			<div class='contents_body_padding_1'>&nbsp;</div>
 			<div class='contents_body_output'>
+				<!-- Begins displaying: {$this->content_uri} -->
 CONTENT_HEADER;
 		
-		if( (isset($_GET['debug'])) && (require_once("./blocs/debug.php")) )
-			break;
-		else if( (isset( $_GET['episode'] )) && (file_exists( "./blocs/episodes/{$_GET['episode']}.php" )) )
-			require_once("./blocs/episodes/{$_GET['episode']}.php");
-		else if( (isset( $_GET['special'] )) && (file_exists( "./blocs/specials/{$_GET['special']}.php" )) )
-			require_once("./blocs/specials/{$_GET['special']}.php");
-		else if( (isset( $_GET['about'] )) && (file_exists( "./blocs/about/{$_GET['about']}.php" )) )
-			require_once("./blocs/about/{$_GET['about']}.php");
-		else
-			require_once("./blocs/about/podcast.php");
+			require_once($this->content_uri);
 		
-		print <<<CONTENT_FOOTER
+	print <<<CONTENT_FOOTER
+				<!-- Ends displaying: {$this->content_uri} -->
 			</div>
 			<div class='contents_body_padding_2'>&nbsp;</div>
 			<div class='contents_bottom'>

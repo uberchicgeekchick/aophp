@@ -13,21 +13,10 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	class AOPHP__Output__Generator extends AOPHP__Output__Formatter{
-		public $content_uri;
-		public $format;
+	class AOPHP__Output__Formats extends AOPHP__Output__Generator{
 		
 		public function __construct(){
 			parent::__construct();
-			$this->generate();
 		}
 		
-		public function generate(){
-			require_once("./AOPHP/__/Output/Formats/{$this->format}/header.php");
-			
-			require_once("./AOPHP/__/Output/Formats/{$this->format}/body.php");
-			
-			require_once("./AOPHP/__/Output/Formats/{$this->format}/footer.php");
-		}
-	}//AOPHP__Output__Generator
-?>
+	}
