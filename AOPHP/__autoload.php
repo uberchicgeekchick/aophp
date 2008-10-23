@@ -13,30 +13,43 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
+	
+	
+	
+	$GLOBALS['ClassSeparator'] = ( ( ((float)phpversion()) >= 5.3 ) ? ":" : "_" );
+	$GLOBALS['AppName']="speakingOUT";
+	
+	
+	
 	function __autoload($Class) {
-		static $AppName;
-		static $AOPHPsPath;
-		static $ClassSeparator;
-		
-		if( ! (isset( $ClassSeparator )) )
-			$ClassSeparator = ( ( ((float)phpversion()) >= 5.3 ) ? ":" : "_" );
-		
+		global $AppName, $AOPHPsPath, $ClassSeparator;
+	
 		if(!(
-			($Class=preg_replace( (sprintf( "/^(%s|AOPHP)[%s]{2}/", $AppName, $ClassSeparator )), "", $Class))
+			($AOPHP_Path=preg_replace( (sprintf( "/^(%s|AOPHP)[%s]{2}/", $AppName, $ClassSeparator )), "", $Class))
 		))
 			return false;
 		
-		if(!(isset($AppName)))
-			$AppName="speakingOUT";
-		
-		if(! (isset($AOPHPsPath)) )
-			$AOPHPsPath=sprintf( "./AOPHP/%s%s", $ClassSeparator, $ClassSeparator );
-		
-		$Object=sprintf("%s/%s.class.php", $AOPHPsPath, (preg_replace( (sprintf( "/[%s]{2}/", $ClassSeparator )), "/", $Class)) );
+		$Object=sprintf("./AOPHP/%s%s/%s.class.php", $ClassSeparator, $ClassSeparator, (preg_replace( (sprintf( "/[%s]{2}/", $ClassSeparator )), "/", $AOPHP_Path)) );
 		
 		if(!( (file_exists($Object)) && (is_readable($Object)) ))
 			return false;
 		
 		return require_once($Object);
 	}//end '__autoload' function
+	
+	function __find_method_define($Class, $Method){
+		global $AppName, $ClassSeparator;
+	
+		if(!(
+			($AOPHP_Path=preg_replace( (sprintf( "/^(%s|AOPHP)[%s]{2}/", $AppName, $ClassSeparator )), "", $Class))
+		))
+			return false;
+		
+		$MethodsDefination=sprintf("./AOPHP/Methods/%s/%s.method.php", (preg_replace( (sprintf( "/[%s]{2}/", $ClassSeparator )), "/", $AOPHP_Path)), $Method );
+		
+		if(!( (file_exists($MethodsDefination)) && (is_readable($MethodsDefination)) ))
+			return sprintf("./AOPHP/null.php");
+		return $MethodsDefination;
+		
+	}//__load_method
 ?>

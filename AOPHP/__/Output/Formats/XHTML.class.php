@@ -19,39 +19,22 @@
 		public $categories;
 		
 		public function __construct($Configuration){
-			$this->format="XHTML";
-			
-			$this->categories=array(
-				'episodes', 'special', 'blog', 'about',
-				'total'=>4
-			);
-			
-			if( ! ($this->check_get()) )
-				$_GET['blog']="0001";
-			
-			$this->set_content();
-			parent::__construct();
-		}
+			require_once( (__find_method_define( (get_class( $this )), "__construct" )) );
+		}//__construct
 		
 		private function check_get(){
-			
-			for($n=0; $n<$this->categories['total']; $n++ )
-				if( (isset( $_GET[ $this->categories[$n] ] )) )
-					return TRUE;
-			return FALSE;
-			
-		}//
+			require_once( (__find_method_define( (get_class( $this )), "check_get" )) );
+		}//check_get
 		
 		private function set_content(){
-			if( (isset($_GET['debug'])) && (file_exists( ($this->content_uri="./blocs/debug.php") )) )
-				return;
-			
-			for($n=0; $n<$this->categories['total']; $n++ )
-				if( (isset( $_GET[ $this->categories[$n] ] )) && (file_exists( ($this->content_uri="./blocs/{$this->categories[$n]}/{$_GET[ $this->categories[$n] ]}.php") )) )
-					return;
-			
-			$this->content_uri="./blocs/about/podcast.php";
-		}//
+			require_once( (__find_method_define( (get_class( $this )), "set_content" )) );
+		}//set_content
+		
+		public function __destruct(){
+			/* A very evil php bug is stopping this from working:
+			require_once( (__find_method_define( (get_class( $this )), "__destruct" )) );
+			*/
+		}//__destruct
 		
 	}//AOPHP__Output__Formats__XHTML
 ?>

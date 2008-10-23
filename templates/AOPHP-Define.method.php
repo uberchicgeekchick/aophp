@@ -1,5 +1,15 @@
 <?php
 	/*
+	 * (c) 2007-Present Kathryn G. Bohmont <uberChicGeekChick.Com -at- uberChicGeekChick.Com>
+	 * 	http://uberChicGeekChick.Com/
+	 * Writen by an uberChick, other uberChicks please meet me & others @:
+	 * 	http://uberChicks.Net/
+	 *I'm also disabled; living with Generalized Dystonia.
+	 * Specifically: DYT1+/Early-Onset Generalized Dystonia.
+	 * 	http://Dystonia-DREAMS.Org/
+	 */
+	
+	/*
 	 * Unless explicitly acquired and licensed from Licensor under another
 	 * license, the contents of this file are subject to the Reciprocal Public
 	 * License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
@@ -13,30 +23,7 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	namespace AOPHP::Output::Formats;
 	
-	class XHTML extends AOPHP::Output::Formats{
-		public $content_uri;
-		public $format;
-		public $categories;
-		
-		public function __construct($Configuration){
-			require_once( (::__find_method_define( (get_class( $this )), "__construct" )) );
-		}//__construct
-		
-		private function check_get(){
-			require_once( (::__find_method_define( (get_class( $this )), "check_get" )) );
-		}//check_get
-		
-		private function set_content(){
-			require_once( (::__find_method_define( (get_class( $this )), "set_content" )) );
-		}//set_content
-		
-		public function __destruct(){
-			/* A very evil php bug is stopping this from working:
-			require_once( (::__find_method_define( (get_class( $this )), "__destruct" )) );
-			*/
-		}//__destruct
-		
-	}//AOPHP::Output::Formats::XHTML
+	//Defines AOPHP::Output::Formats::XHTML->__destruct(); or AOPHP__Output__Formats__XHTML->__destruct();
+			
 ?>
