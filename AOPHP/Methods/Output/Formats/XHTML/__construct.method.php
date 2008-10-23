@@ -32,7 +32,7 @@
 				'total'=>4
 			);
 			
-			if( ! ($this->check_get()) )
+			if( !($this->check_get()) )
 				$_GET['episodes']="0003";
 			
 			$this->set_content();

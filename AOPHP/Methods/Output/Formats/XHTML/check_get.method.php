@@ -27,9 +27,6 @@
 	//Defines AOPHP::Output::Formats::XHTML->check_get(); or AOPHP__Output__Formats__XHTML->check_get();
 			for($n=0; $n<$this->categories['total']; $n++ )
 				if( (isset( $_GET[ $this->categories[$n] ] )) )
-					return TRUE;
-			
-			$_GET['episode']="0003";
-			
-			return FALSE;
+					return 1;
+			return 0;
 ?>
