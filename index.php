@@ -44,7 +44,7 @@
 	
 	require_once("./AOPHP/__autoload.php");
 	
-	if( ( ( (float)phpversion() ) >= 5.3 ) )
+	if( _AOPHP_CLASS_SEPARATOR_ == ":" )
 		require_once("./AOPHP/::/Init.php");
 	else
 		require_once("./AOPHP/__/Init.php");
