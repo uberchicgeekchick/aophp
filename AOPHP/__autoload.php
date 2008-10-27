@@ -45,7 +45,8 @@
 		$MethodsDefination=sprintf("./AOPHP/Methods/%s/%s.method.php", (preg_replace( (sprintf( "/[%s]{2}/", _AOPHP_CLASS_SEPARATOR_ )), "/", $AOPHP_Path)), $Method );
 		
 		if(!( (file_exists($MethodsDefination)) && (is_readable($MethodsDefination)) ))
-			return sprintf("./AOPHP/null.php");
+		return $MethodsDefination;
+		//	return sprintf("./AOPHP/null.php");
 		return $MethodsDefination;
 		
 	}//__load_method

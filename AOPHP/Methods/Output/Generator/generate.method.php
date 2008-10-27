@@ -13,21 +13,11 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	namespace AOPHP::Output;
-	
-	class Generator extends AOPHP::Output::Formatter{
-		public $content_uri;
-		public $format;
-		
-		public function __construct(){
-			return require_once( "./AOPHP/Methods/Output/Generator/__construct.method.php" );
-			//return require_once( (::find_method_define( (get_class( self )), " __construct" )) );
-		}// __construct
-		
-		public function generate(){
-			return require_once( "./AOPHP/Methods/Output/Generator/generate.method.php" );
-			//return require_once( (::__find_method_define( (get_class( self )), "generate" )) );
-		}//generate
-		
-	}//AOPHP::Output::Generator
+
+			//Defines AOPHP::Output::Generator->generate(); or AOPHP__Output__Generator->generate();
+			require_once("./blocs/formats/{$this->format}/header.php");
+			
+			require_once("./blocs/formats/{$this->format}/body.php");
+			
+			require_once("./blocs/formats/{$this->format}/footer.php");
 ?>
