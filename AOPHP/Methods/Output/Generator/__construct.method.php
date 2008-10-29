@@ -15,6 +15,6 @@
 	 */
 
 			//Defines AOPHP::Output::Generator->__construct(); or AOPHP__Output__Generator->__construct();
-			parent::__construct();
 			$this->generate();
+			parent::__construct();
 ?>

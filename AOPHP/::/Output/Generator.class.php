@@ -20,13 +20,13 @@
 		public $format;
 		
 		public function __construct(){
-			return require_once( "./AOPHP/Methods/Output/Generator/__construct.method.php" );
-			//return require_once( (::find_method_define( (get_class( self )), " __construct" )) );
+			return require_once( (::__load_method( "AOPHP::Output::Generator", "__construct")) );
+			//return require_once( "./AOPHP/Methods/Output/Generator/__construct.method.php" );
 		}// __construct
 		
 		public function generate(){
-			return require_once( "./AOPHP/Methods/Output/Generator/generate.method.php" );
-			//return require_once( (::__find_method_define( (get_class( self )), "generate" )) );
+			return require_once( (::__load_method( "AOPHP::Output::Generator", "generate")) );
+			//return require_once( "./AOPHP/Methods/Output/Generator/generate.method.php" );
 		}//generate
 		
 	}//AOPHP::Output::Generator

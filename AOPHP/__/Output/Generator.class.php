@@ -18,13 +18,11 @@
 		public $format;
 		
 		public function __construct(){
-			return require_once( "./AOPHP/Methods/Output/Generator/__construct.method.php" );
-			//return require_once( (::find_method_define( (get_class( self )), " __construct" )) );
-		}// __construct
+			return require_once( (__load_method( "AOPHP__Output__Generator", "__construct" )) );
+		}//__construct
 		
 		public function generate(){
-			return require_once( "./AOPHP/Methods/Output/Generator/generate.method.php" );
-			//return require_once( (::__find_method_define( (get_class( self )), "generate" )) );
+			return require_once( (__load_method( "AOPHP__Output__Generator", "generate" )) );
 		}//generate
 		
 	}//AOPHP__Output__Generator

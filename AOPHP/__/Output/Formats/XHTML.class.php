@@ -19,18 +19,15 @@
 		public $categories;
 		
 		public function __construct($Configuration){
-			return require_once( "./AOPHP/Methods/Output/Formats/XHTML/__construct.method.php" );
-			//return require_once( (::__find_method_define( (get_class( $this )), "__construct" )) );
+			return require_once( (::__find_method_define( "AOPHP__Output__Formats__XHTML", "__construct" )) );
 		}//__construct
 		
 		private function check_get(){
-			return require_once( "./AOPHP/Methods/Output/Formats/XHTML/check_get.method.php" );
-			//return require_once( (::__find_method_define( (get_class( $this )), "check_get" )) );
+			return require_once( (::__find_method_define( "AOPHP__Output__Formats__XHTML", "check_get" )) );
 		}//check_get
 		
 		private function set_content(){
-			return require_once( "./AOPHP/Methods/Output/Formats/XHTML/set_content.method.php" );
-			//return require_once( (::__find_method_define( (get_class( $this )), "set_content" )) );
+			return require_once( (::__find_method_define( "AOPHP__Output__Formats__XHTML", "set_content" )) );
 		}//set_content
 		
 		public function __destruct(){

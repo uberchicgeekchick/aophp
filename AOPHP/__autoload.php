@@ -36,7 +36,7 @@
 		return require_once($Object);
 	}//end '__autoload' function
 	
-	function __find_method_define($Class, $Method){
+	function __load_method($Class, $Method){
 		if(!(
 			($AOPHP_Path=preg_replace( (sprintf( "/^(%s|AOPHP)[%s]{2}/", _AOPHP_APP_NAME_, _AOPHP_CLASS_SEPARATOR_ )), "", $Class))
 		))
