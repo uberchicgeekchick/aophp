@@ -19,6 +19,7 @@ body{ margin:0.5%; background:#820000 url('../../../../../graphics/background.pn
 ul{ margin:0px; padding:0px; }
 
 li,lh,a,a:visited{ color:#eeccdd; font-size:1.75ex; }
+lh{font-weight:bold;}
 
 a:hover{ color:#ffddee; font-size:1.75ex; }
 
@@ -35,6 +36,10 @@ img.openSuSE_11_countdown{ position:absolute; display:block; top:0px; right:2%;w
 
 /*content: wrapper for left hand blocs*/
 div.left_sides_blocs{ position:absolute; display:inline-block; float:left; width:20%; }
+
+ul.my_websites_listing{list-style-image:url('../../../../../graphics/favicon.png');}
+ul.github_repo_listing{list-style-image:url('../../../../../graphics/icons/art/github.png');}
+li.github_repo{font-weight:bold;}
 
 /*content: wrapper for right hand blocs*/
 div.right_sides_blocs{ position:absolute; display:inline-block; clear:all; width:14%; left:80%; top:35%; }
