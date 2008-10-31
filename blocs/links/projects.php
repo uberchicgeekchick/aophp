@@ -15,8 +15,8 @@
 						<lh>~My github repos~</lh>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/alacast/tree'>alacast</a></li>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/gtk-php-ide/tree'>gtk-php-ide</a></li>
-						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/realfriends/tree'>realfriends</a></li>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/speaking-out/tree'>speaking-out</a></li>
+						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/realfriends/tree'>realfriends</a></li>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/uberchicks-oss-social-network/tree'>uberchicks-oss-social-network</a></li>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/women.opensuse.org/tree'>women.opensuse.org</a></li>
 					</ul>

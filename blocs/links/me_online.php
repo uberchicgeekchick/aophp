@@ -17,8 +17,9 @@
 						<a href='http://pipes.yahoo.com/uberchicgeekchick'><img src='./graphics/icons/art/yahoopipes.png' alt='Pipes.Yahoo.Com&#039;s logo: linking to my customized RSS &amp; Atom feeds.' title='My RSS &amp; Atom feed hacks on Pipes.Yahoo.Com.' class='favicon_link'/></a></li>
 					</ul><ul>
 						<lh>~Micro-Blogging~</lh>
-						<li><a href='http://identi.ca/uberChick'><img src='./graphics/icons/web2.0/identi.ca.png' alt='identi.ca&#039;s logo: letting you follow my programming &amp; over-sharing micro-blogging.' title='Follow my programming &amp; over-sharing micro-blogging on identi.ca.: my fave micro-blogging service.&nbsp; Best of all: its open source.' class='favicon_link'/></a>
-						<a href='http://twitter.com/uberChick'><img src='./graphics/icons/web2.0/twitter.png' alt='Twitter&#039;s logo: letting you follow my programming &amp; over-sharing tweets.' title='Follow my programming &amp; over-sharing tweets.' class='favicon_link'/></a></li>
+						<li><a href='http://twitter.com/uberChick'><img src='./graphics/icons/web2.0/twitter.png' alt='Twitter&#039;s logo: where you can read my programming &amp; over-sharing tweets.' title='Read my programming &amp; over-sharing tweets.' class='favicon_link'/></a>
+						<a href='http://identi.ca/uberchick'><img src='./graphics/icons/web2.0/identi.ca.png' alt='identi.ca&#039;s logo: where you can read my programming &amp; over-sharing micro-blogging.' title='Follow my programming &amp; over-sharing micro-blogging on identi.ca.' class='favicon_link'/></a>
+						<a href='http://friendfeed.com/uberchick'><img src='./graphics/icons/web2.0/friendfeed.png' alt='FriendFeed&#039;s logo: letting you read my many feeds, babblings, blogs, updates, &amp; feeds.' title='Follow my programming &amp; over-sharing tweets.' class='favicon_link'/></a></li>
 					</ul><ul>
 						<lh>~Open Media~</lh>
 						<li><a href='http://www.thesixtyone.com/uberChick/'><img src='./graphics/icons/media/thesixtyone.png' alt='TheSixtyOne.Com&#039;s logo: linking to my creative commons music fangirl profile at my fave creative commons music community.' title='My creative commons music fangirl profile on TheSixtyOne.Com my fave creative commons music community.' class='favicon_link'/></a>
