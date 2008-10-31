@@ -34,7 +34,7 @@
 		
 		public function __destruct(){
 			/* A very evil php bug is stopping this from working:
-			return require_once( "./AOPHP/Methods/Output/Formats/XHTMs/__destruct.method.php" );
+			return require_once( "./AOPHP/Methods/Output/Formats/XHTML/__destruct.method.php" );
 			return require_once( (::__load_method( (get_class( $this )), "__destruct" )) );
 			*/
 		}//__destruct
