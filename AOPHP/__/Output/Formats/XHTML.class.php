@@ -19,21 +19,21 @@
 		public $categories;
 		
 		public function __construct($Configuration){
-			return require_once( (__find_method_define( "AOPHP__Output__Formats__XHTML", "__construct" )) );
+			return require_once( (__load_method( "AOPHP__Output__Formats__XHTML", "__construct" )) );
 		}//__construct
 		
 		private function check_get(){
-			return require_once( (__find_method_define( "AOPHP__Output__Formats__XHTML", "check_get" )) );
+			return require_once( (__load_method( "AOPHP__Output__Formats__XHTML", "check_get" )) );
 		}//check_get
 		
 		private function set_content(){
-			return require_once( (__find_method_define( "AOPHP__Output__Formats__XHTML", "set_content" )) );
+			return require_once( (__load_method( "AOPHP__Output__Formats__XHTML", "set_content" )) );
 		}//set_content
 		
 		public function __destruct(){
 			/* A very evil php bug is stopping this from working:
 			return require_once( "./AOPHP/Methods/Output/Formats/XHTML/__destruct.method.php" );
-			return require_once( (__find_method_define( (get_class( $this )), "__destruct" )) );
+			return require_once( (__load_method( (get_class( $this )), "__destruct" )) );
 			*/
 		}//__destruct
 		
