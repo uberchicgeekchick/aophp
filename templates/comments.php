@@ -1,14 +1,16 @@
 <?php
 	/*
-	 * (c) 2007-Present Kathryn G. Bohmont <uberChicGeekChick.Com -at- uberChicGeekChick.Com>
+	 * (c) 2007-Present Kaity G. B. <uberChicGeekChick.Com -at- uberChicGeekChick.Com>
 	 * 	http://uberChicGeekChick.Com/
+	 *
 	 * Writen by an uberChick, other uberChicks please meet me & others @:
 	 * 	http://uberChicks.Net/
-	 *I'm also disabled; living with Generalized Dystonia.
-	 * Specifically: DYT1+/Early-Onset Generalized Dystonia.
+	 *
+	 * I'm also disabled. I live with a progressive neuro-muscular disease.
+	 * What I have is a type of Generalized Dystonia called DYT1+ Early-Onset Generalized Dystonia.
 	 * 	http://Dystonia-DREAMS.Org/
 	 */
-	
+
 	/*
 	 * Unless explicitly acquired and licensed from Licensor under another
 	 * license, the contents of this file are subject to the Reciprocal Public
@@ -22,5 +24,10 @@
 	 * LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
+	 *
+	 * ---------------------------------------------------------------------------------
+	 * |	A copy of the RPL 1.5 may be found with this project or online at	|
+	 * |		http://opensource.org/licenses/rpl1.5.txt					|
+	 * ---------------------------------------------------------------------------------
 	 */
 ?>

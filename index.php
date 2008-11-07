@@ -1,11 +1,13 @@
 <?php
 	/*
-	 * (c) 2007-Present Kathryn G. Bohmont <uberChicGeekChick.Com -at- uberChicGeekChick.Com>
+	 * (c) 2007-Present Kaity G. B. <uberChicGeekChick.Com -at- uberChicGeekChick.Com>
 	 * 	http://uberChicGeekChick.Com/
+	 *
 	 * Writen by an uberChick, other uberChicks please meet me & others @:
 	 * 	http://uberChicks.Net/
-	 *I'm also disabled; living with Generalized Dystonia.
-	 * Specifically: DYT1+/Early-Onset Generalized Dystonia.
+	 *
+	 * I'm also disabled. I live with a progressive neuro-muscular disease.
+	 * What I have is a type of Generalized Dystonia called DYT1+ Early-Onset Generalized Dystonia.
 	 * 	http://Dystonia-DREAMS.Org/
 	 */
 
