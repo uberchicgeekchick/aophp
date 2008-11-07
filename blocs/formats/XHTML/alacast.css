@@ -19,7 +19,7 @@ body{ margin:0.5%; background:#820000 url('../../../../../graphics/background.pn
 ul{ margin:0px; padding:0px; }
 
 li,lh,a,a:visited{ color:#eeccdd; font-size:1.75ex; }
-lh{font-weight:bold;}
+lh{ font-weight:bold; }
 
 a:hover{ color:#ffddee; font-size:1.75ex; }
 
