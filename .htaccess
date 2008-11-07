@@ -1,0 +1,34 @@
+# mod_rewrite rules.
+
+Options +FollowSymLinks -Indexes
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+
+	# Modify the RewriteBase if you are using Creative::Code::Canvas in a subdirectory or
+	# VirtualDocumentRoot and the rewrite rules are not working properly.
+	# For example if your site is at http://example.com/drupal uncomment and
+	# modify the following line:
+	# RewriteBase /Alacast
+	#
+	# If your site is running in a VirtualDocumentRoot at http://example.com/,
+	# uncomment the following line:
+	# RewriteBase /
+
+	#For 'friendly' _GET request URIs.
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+</IfModule>
+
+# Overwrites `php.ini` settings for PHP 5, Apache 1 and 2.
+<IfModule mod_php5.c>
+	php_value magic_quotes_gpc                0
+	php_value register_globals                0
+	php_value session.auto_start              0
+	php_value mbstring.http_input             pass
+	php_value mbstring.http_output            pass
+	php_value mbstring.encoding_translation   0
+</IfModule>
+
+# $Id: .htaccess,v 1.90 2007/10/05 14:43:23 dries Exp $
