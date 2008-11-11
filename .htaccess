@@ -19,7 +19,6 @@ Options +FollowSymLinks -Indexes
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule ^(.*)$ index.php?FRIENDLY_QUERY_STRING=$1 [L,QSA]
-	RewriteRule ^(.*)$ ?FRIENDLY_QUERY_STRING=$1 [L,QSA]
 </IfModule>
 
 # Overwrites `php.ini` settings for PHP 5, Apache 1 and 2.

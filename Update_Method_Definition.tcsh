@@ -1,11 +1,14 @@
 #!/bin/tcsh -f
 foreach class_php ( `find AOPHP/::/ -name "*.class.php"` )
 	set class = `echo ${class_php} | sed 's/\(.*\)\:\:\/\(.*\)\.class\.php$/\1\2/' | sed 's/\//\:\:/g'`
-	set class_dir = `echo "${class_php}" | sed 's/\:\:/Methods/' | sed 's/\.class\.php$//'`
+	set no_namespace = `echo "${class_php}" | sed 's/\:\:/__/'`
+	set no_namespace_dir = `dirname ${no_namespace}`
 
-	if ( ! -d "${class_dir}" ) then
-		printf "Creating %s's Directory\n" ${class_dir}
-		mkdir -p "${class_dir}"
+	set method_class_dir = `echo "${class_php}" | sed 's/\:\:/Methods/' | sed 's/\.class\.php$//'`
+
+	if ( ! -d "${method_class_dir}" ) then
+		printf "Creating %s's Directory\n" ${class}
+		mkdir -p "${method_class_dir}"
 	endif
 
 	foreach method ( `grep -r 'function' "${class_php}" | sed 's/.*function\ \([^\ (]\+\).*/\1/'` )
