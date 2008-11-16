@@ -32,9 +32,9 @@
 				'total'=>4
 			);
 			
-			if( !($this->check_get()) )
+			//if( !($this->check_get()) )
 				$_GET['Category']="episodes";
 			
-			$this->set_content();
+			//$this->set_content();
 			parent::__construct();
 ?>
