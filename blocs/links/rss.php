@@ -16,21 +16,25 @@
 			print <<<BLOC
 			<!-- bloc starts -->
 			<div class='rss_bloc'>
+				<div class='rss_header'>&nbsp;</div>
+				<div class='rss_inner'>
+					<ul class='episodes'>
 BLOC;
 			$rss_fp=fopen("./blocs/formats/RSS/ogg.rss.php", "r");
-			$rss=fread($rss_fp, 3000 );
+			$rss=fread($rss_fp, (filesize("./blocs/formats/RSS/ogg.rss.php")) );
 			fclose($rss_fp);
 			
-			$rss=preg_replace("/(<\/?)item(>)/i", "$1p$2", $rss );
+			$rss=preg_replace("/(<\/?)item(>)/i", "$1li$2", $rss );
 			$rss=preg_replace("/<title>Expressive\ Programming::([^<]*)<\/title>[^<]*<link>([^<]*)<\/link>/mi", "<a href='$2'>$1</a><br/>", $rss);
 			$rss=preg_replace("/<enclosure.*url=[\"']([^\"']*)[\"'][^>]*\/>/mi", "<a href='$1'><img src='./graphics/banners/play_ogg.png' border='0' alt='Download this episode.'/></a>", $rss);
-			$rss=preg_replace("/<(guid|description|pubDate)>.*<\/(guid|description|pubDate)>/mi", "", $rss);
+			$rss=preg_replace("/<(guid|description|pubDate)>.*<\/(guid|description|pubDate)>[\t\r\n]*/mi", "", $rss);
 			
 			print <<<BLOC
 					{$rss}
-				&nbsp;
-				Subscription Options:<br/>
-				| <a href='./?Format=RSS&Enclosure=ogg'>OGG</a> | <a href='./?Format=RSS&Enclosure=mp3'>MP3</a> | <a href='./?Format=RSS&Enclosure=hpr'>HPR</a> |
+				</div><div class='rss_footer'>
+					Subscription Options:<br/>
+					| <a href='./?Format=RSS&Enclosure=ogg'>OGG</a> | <a href='./?Format=RSS&Enclosure=mp3'>MP3</a> | <a href='./?Format=RSS&Enclosure=hpr'>HPR</a> |
+				</div>
 			</div>
 			<!-- bloc ends -->
 			

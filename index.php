@@ -40,9 +40,9 @@
 	 * 	&& ||
 	 * 	"The Mentor's Last Words: The Hackers Manifesto"
 	 */
-	ini_set( "display_errors", TRUE );
-	ini_set( "error_reporting", E_ALL | E_STRICT );
-	ini_set( "date.timezone", "America/Denver" );
+	ini_set("display_errors", TRUE);
+	ini_set("error_reporting", E_ALL | E_STRICT);
+	ini_set("date.timezone", "America/Denver");
 	
 	require_once("./AOPHP/__autoload.php");
 	

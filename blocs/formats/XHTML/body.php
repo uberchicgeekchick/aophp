@@ -1,8 +1,6 @@
 <?php
 		require_once("./blocs/formats/{$this->format}/logo.php");
 		
-		require_once("./blocs/formats/{$this->format}/menu.php");
-		
 		require_once("./blocs/formats/{$this->format}/content.php");
 		
 		print("		<div class='left_sides_blocs'>\n" );
