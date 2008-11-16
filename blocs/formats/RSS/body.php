@@ -4,16 +4,16 @@
 	
 	switch( $_GET['enclosure'] ){
 		case 'mp3':
-			require_once( (sprintf("./blocs/feeds/mp3.rss.php", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_)) );
+			require_once("./blocs/formats/RSS/mp3.rss.php");
 		break;
 		
 		case 'hpr':
-			require_once( (sprintf("./blocs/feeds/hpr.rss.php", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_)) );
+			require_once("./blocs/formats/RSS/hpr.rss.php");
 		break;
 		
 		case 'ogg':
 		default:
-			require_once( (sprintf("./blocs/feeds/ogg.rss.php", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_)) );
+			require_once("./blocs/formats/RSS/ogg.rss.php");
 		break;
 	}
 ?>
