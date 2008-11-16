@@ -12,12 +12,15 @@
 		<title>uberChicGeekChick - programming, art, creativity, code, self expression, &amp; women(BTW: WE ROCK!) </title>
 
 		<link rel='shortcut icon' href='./graphics/favicon.png'/>
+		
+		<link rel='alternate' type='application/rss+xml' title='Expressive Programming&#039;s OGG Feed' href='./?Format=RSS&Enclosure=ogg'/>
+		<link rel='alternate' type='application/rss+xml' title='Expressive Programming&#039;s MP3 Feed' href='./?Format=RSS&Enclosure=mp3'/>
+		<link rel='alternate' type='application/rss+xml' title='Expressive Programming&#039;s HPR Feed' href='./?Format=RSS&Enclosure=hpr'/>
 
 		<!--
 		<meta name='description' value='{About my page}'/>
 		<meta name='keywords' content='{My page&#39;s template., keywords, about, this, page.}'/>
 		
-		<link rel='alternate' type='application/rss+xml' title='RSS 2.0 Feed' href='./rss.xml'/>
 		<link rel='alternate' type='application/atom+xml' title='Atom 0.3 Feed' href='./atom.xml'/>
 		
 		<link rel='pingback' type='application/pingback+xml' href='./xmlrpc.php'/>
