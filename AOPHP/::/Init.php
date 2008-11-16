@@ -15,6 +15,9 @@
 	 */
 	require_once("./AOPHP/::/ExceptionHandler.Default.class.php");
 	
+	if( !(isset($_GET['Format'])) )
+		$_GET['Format']="XHTML";
+	
 	switch($_GET['Format']){
 		case 'RSS':
 			$speakingOUT=new AOPHP::Output::Formats::RSS( (require_once("./AOPHP/::/Apps/speakingOUT/Configuration.inc.php")) );
