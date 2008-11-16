@@ -44,11 +44,11 @@
 	ini_set("error_reporting", E_ALL | E_STRICT);
 	ini_set("date.timezone", "America/Denver");
 	
-	require_once("./AOPHP/__autoload.php");
+	require_once("./AOPHP/__define.inc.php");
 	
-	if( _AOPHP_CLASS_SEPARATOR_ == ":" )
-		require_once("./AOPHP/::/Init.php");
-	else
-		require_once("./AOPHP/__/Init.php");
-
+	require_once("./AOPHP/__autoload.function.php");
+	require_once("./AOPHP/__load_method.function.php");
+	
+	require_once("./AOPHP/__init.inc.php");
+	
 ?>

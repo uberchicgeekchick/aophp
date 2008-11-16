@@ -9,7 +9,10 @@
 <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
 	<head>
 		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
-		<title>uberChicGeekChick - programming, art, creativity, code, self expression, &amp; women(BTW: WE ROCK!) </title>
+		<title>uberChicGeekChick: Expressive Programming, the podcast &amp; uber women rock!</title>
+		
+		<meta name='description' value='uberChicGeekChick: Expressive Programming, the podcast &amp; more, about: programming, art, creativity, code, self expression, &amp; uber women (WE ROCK!)'/>
+		<meta name='keywords' content='uberChicGeekChick, Expressive Programming, podcast, social media, programming, art, creativity, code, self expression, women, game development, 3-D, PHP, C, uberChick, uberChicks'/>
 
 		<link rel='shortcut icon' href='./graphics/favicon.png'/>
 		
@@ -18,15 +21,13 @@
 		<link rel='alternate' type='application/rss+xml' title='Expressive Programming&#039;s HPR Feed' href='./?Format=RSS&Enclosure=hpr'/>
 
 		<!--
-		<meta name='description' value='{About my page}'/>
-		<meta name='keywords' content='{My page&#39;s template., keywords, about, this, page.}'/>
-		
 		<link rel='alternate' type='application/atom+xml' title='Atom 0.3 Feed' href='./atom.xml'/>
 		
 		<link rel='pingback' type='application/pingback+xml' href='./xmlrpc.php'/>
 		<link rel='EditURI' type='application/rsd+xml' title='RSD' href='./xmlrpc.php/rsd/>
 		<script language='javascript' src='./javascript.json.js'></script>
 		-->
+		
 		<!-- NOTE: Firebug can't debug @import rules. -->
 		<!-- <style type='text/css'> @import url('./blocs/formats/{$this->format}/alacast.css'); </style> -->
 		<link rel='stylesheet' href='/blocs/formats/{$this->format}/alacast.css' type='text/css'/>

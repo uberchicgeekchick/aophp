@@ -13,18 +13,11 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	require_once("./AOPHP/__/ExceptionHandler.Default.class.php");
+	require_once( (sprintf("./AOPHP/%s%s/ExceptionHandler.Default.class.php", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_)) );
+	require_once("./AOPHP/Applications/speakingOUT/Configuration.inc.php");
 	
-	if( !(isset($_GET['Format'])) )
-		$_GET['Format']="XHTML";
+	$speakingOUT=sprintf("AOPHP%s%sOutput%s%sFormats%s%s%s", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_FORMAT_);
 	
-	switch($_GET['Format']){
-		case 'RSS':
-			$speakingOUT=new AOPHP__Output__Formats__RSS( (require_once("./AOPHP/__/Apps/speakingOUT/Configuration.inc.php")) );
-			break;
-		case 'XHTML':
-		default;
-			$speakingOUT=new AOPHP__Output__Formats__XHTML( (require_once("./AOPHP/__/Apps/speakingOUT/Configuration.inc.php")) );
-			break;
-	}
+	$speakingOUT=new $speakingOUT(_AOPHP_APP_CONFIG_);
+	
 ?>

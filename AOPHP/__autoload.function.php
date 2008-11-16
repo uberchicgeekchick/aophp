@@ -13,18 +13,19 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	require_once("./AOPHP/::/ExceptionHandler.Default.class.php");
 	
-	if( !(isset($_GET['Format'])) )
-		$_GET['Format']="XHTML";
+	function __autoload($Class) {
+		if(!(
+			($AOPHP_Path=preg_replace( (sprintf( "/^(%s|AOPHP)[%s]{2}/", _AOPHP_APP_NAME_, _AOPHP_CLASS_SEPARATOR_ )), "", $Class))
+		))
+			return false;
+		
+		$Object=sprintf("./AOPHP/%s%s/%s.class.php", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, (preg_replace( (sprintf( "/[%s]{2}/", _AOPHP_CLASS_SEPARATOR_ )), "/", $AOPHP_Path)) );
+		
+		if(!( (file_exists($Object)) && (is_readable($Object)) ))
+			return false;
+		
+		return require_once($Object);
+	}//end '__autoload' function
 	
-	switch($_GET['Format']){
-		case 'RSS':
-			$speakingOUT=new AOPHP::Output::Formats::RSS( (require_once("./AOPHP/::/Apps/speakingOUT/Configuration.inc.php")) );
-			break;
-		case 'XHTML':
-		default;
-			$speakingOUT=new AOPHP::Output::Formats::XHTML( (require_once("./AOPHP/::/Apps/speakingOUT/Configuration.inc.php")) );
-			break;
-	}
 ?>

@@ -14,28 +14,6 @@
 	 * language governing rights and limitations under the RPL.
 	 */
 	
-	
-	if( !(defined("_AOPHP_CLASS_SEPARATOR_")) )
-		define("_AOPHP_CLASS_SEPARATOR_", ( ( ( (float)phpversion() ) >= 5.3 ) ? ":" : "_" ) );
-	
-	if( !(defined("_AOPHP_APP_NAME_")) )
-		define("_AOPHP_APP_NAME_", "speakingOUT");
-	
-	
-	function __autoload($Class) {
-		if(!(
-			($AOPHP_Path=preg_replace( (sprintf( "/^(%s|AOPHP)[%s]{2}/", _AOPHP_APP_NAME_, _AOPHP_CLASS_SEPARATOR_ )), "", $Class))
-		))
-			return false;
-		
-		$Object=sprintf("./AOPHP/%s%s/%s.class.php", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, (preg_replace( (sprintf( "/[%s]{2}/", _AOPHP_CLASS_SEPARATOR_ )), "/", $AOPHP_Path)) );
-		
-		if(!( (file_exists($Object)) && (is_readable($Object)) ))
-			return false;
-		
-		return require_once($Object);
-	}//end '__autoload' function
-	
 	function __load_method($Class, $Method){
 		if(!(
 			($AOPHP_Path=preg_replace( (sprintf( "/^(%s|AOPHP)[%s]{2}/", _AOPHP_APP_NAME_, _AOPHP_CLASS_SEPARATOR_ )), "", $Class))
@@ -45,8 +23,8 @@
 		$MethodsDefination=sprintf("./AOPHP/Methods/%s/%s.method.php", (preg_replace( (sprintf( "/[%s]{2}/", _AOPHP_CLASS_SEPARATOR_ )), "/", $AOPHP_Path)), $Method );
 		
 		if(!( (file_exists($MethodsDefination)) && (is_readable($MethodsDefination)) ))
-		return $MethodsDefination;
-		//	return sprintf("./AOPHP/null.php");
+			return sprintf("./AOPHP/null.php");
+		//return $MethodsDefination;
 		return $MethodsDefination;
 		
 	}//__load_method
