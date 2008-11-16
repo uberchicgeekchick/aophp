@@ -29,6 +29,8 @@ BLOC;
 			print <<<BLOC
 					{$rss}
 				&nbsp;
+				Subscription Options:<br/>
+				| <a href='./?Format=RSS&Enclosure=ogg'>OGG</a> | <a href='./?Format=RSS&Enclosure=mp3'>MP3</a> | <a href='./?Format=RSS&Enclosure=hpr'>HPR</a> |
 			</div>
 			<!-- bloc ends -->
 			

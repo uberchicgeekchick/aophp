@@ -22,7 +22,7 @@
 			<link>http://uberChicGeekChick.Com/?episodes=0001</link>
 			<description><![CDATA[Expressive Programming&#039; debut: Welcome to the exhibit!  episode 0001]]></description>
 			<pubDate>2008-08-18</pubDate>
-			<enclosure url='http://www.archive.org/download/ExpressiveProgramming-0002-ByUberchick/ProducingPerfection_64kb.mp3' length='7415558' type='audio/mpeg'/>
+			<enclosure url='http://www.archive.org/download/ExpressiveProgramming-0001-ByUberchick/WelcomeToTheExhibit_64kb.mp3' length='7415558' type='audio/mpeg'/>
 			<guid>http://www.archive.org/download/ExpressiveProgramming-0001-ByUberchick/WelcomeToTheExhibit_64kb.mp3</guid>
 		</item>
 		

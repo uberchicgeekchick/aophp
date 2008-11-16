@@ -1,5 +1,15 @@
 <?php
 	/*
+	 * (c) 2007-Present Kathryn G. Bohmont <uberChicGeekChick.Com -at- uberChicGeekChick.Com>
+	 * 	http://uberChicGeekChick.Com/
+	 * Writen by an uberChick, other uberChicks please meet me & others @:
+	 * 	http://uberChicks.Net/
+	 *I'm also disabled; living with Generalized Dystonia.
+	 * Specifically: DYT1+/Early-Onset Generalized Dystonia.
+	 * 	http://Dystonia-DREAMS.Org/
+	 */
+	
+	/*
 	 * Unless explicitly acquired and licensed from Licensor under another
 	 * license, the contents of this file are subject to the Reciprocal Public
 	 * License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
@@ -13,15 +23,18 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	require_once("./AOPHP/::/ExceptionHandler.Default.class.php");
 	
-	switch($_GET['Format']){
-		case 'RSS':
-			$speakingOUT=new AOPHP::Output::Formats::RSS( (require_once("./AOPHP/::/Apps/speakingOUT/Configuration.inc.php")) );
-			break;
-		case 'XHTML':
-		default;
-			$speakingOUT=new AOPHP::Output::Formats::XHTML( (require_once("./AOPHP/::/Apps/speakingOUT/Configuration.inc.php")) );
-			break;
-	}
+	//Defines AOPHP::Output::Formats::RSS->__construct(); or AOPHP__Output__Formats__RSS->__construct();
+			$this->format="RSS";
+			
+			$this->categories=array(
+				'episodes', 'specials', 'blogs', 'about',
+				'total'=>4
+			);
+			
+			if( !($this->check_get()) )
+				$_GET['Category']="episodes";
+			
+			$this->set_content();
+			parent::__construct();
 ?>

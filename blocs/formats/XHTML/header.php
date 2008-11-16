@@ -1,6 +1,6 @@
 <?php
 
-	header("Content-disposition: inline; filename=uberChicGeekChick's coded art.html");
+	header("Content-disposition: inline; filename=Expressive+Programming.html");
 	header("Content-Type: text/html; charset=utf-8");
 
 	print <<<HEADER

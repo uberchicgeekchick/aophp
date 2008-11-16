@@ -15,5 +15,13 @@
 	 */
 	require_once("./AOPHP/__/ExceptionHandler.Default.class.php");
 	
-	$speakingOUT=new AOPHP__Output__Formats__XHTML( (require_once("./AOPHP/__/Apps/speakingOUT/Configuration.inc.php")) );
+	switch($_GET['Format']){
+		case 'RSS':
+			$speakingOUT=new AOPHP__Output__Formats__RSS( (require_once("./AOPHP/__/Apps/speakingOUT/Configuration.inc.php")) );
+			break;
+		case 'XHTML':
+		default;
+			$speakingOUT=new AOPHP__Output__Formats__XHTML( (require_once("./AOPHP/__/Apps/speakingOUT/Configuration.inc.php")) );
+			break;
+	}
 ?>

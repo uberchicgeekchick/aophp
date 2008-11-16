@@ -79,4 +79,4 @@ div.contents_container{ position:absolute; float:middle; display:inline-block; l
 
 div.copyright{ clear:both; text-align:right; color:#cccccc; font-weight:bold; }
 
-div.rss_bloc{ display:block; text-align:center; color:#820000; vertical-align:middle; top:100px; font:italic small-caps bold 1.5ex Courier; background:url('../../../../../graphics/rss_bloc.png') no-repeat; width:179px; height:500px; padding-top:160px; }
+div.rss_bloc{ display:block; text-align:center; color:#ff9999; vertical-align:middle; top:100px; font:italic small-caps bold 1.75ex Courier; background:url('../../../../../graphics/rss_bloc.png') no-repeat; width:179px; height:500px; padding-top:160px; }
