@@ -33,7 +33,7 @@
 			);
 			
 			if( !($this->check_get()) )
-				$_GET['episodes']="0003";
+				$_GET['episodes']="0004";
 			
 			$this->set_content();
 			parent::__construct();
