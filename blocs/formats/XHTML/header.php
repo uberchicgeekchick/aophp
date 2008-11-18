@@ -8,9 +8,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
 	<head>
-		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 		<title>uberChicGeekChick: Expressive Programming, the podcast &amp; uber women rock!</title>
 		
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 		<meta name='description' value='uberChicGeekChick: Expressive Programming, the podcast &amp; more, about: programming, art, creativity, code, self expression, &amp; uber women (WE ROCK!)'/>
 		<meta name='keywords' content='uberChicGeekChick, Expressive Programming, podcast, social media, programming, art, creativity, code, self expression, women, game development, 3-D, PHP, C, uberChick, uberChicks'/>
 
@@ -30,7 +30,7 @@
 		
 		<!-- NOTE: Firebug can't debug @import rules. -->
 		<!-- <style type='text/css'> @import url('./blocs/formats/{$this->format}/alacast.css'); </style> -->
-		<link rel='stylesheet' href='/blocs/formats/{$this->format}/alacast.css' type='text/css'/>
+		<link rel='stylesheet' href='./blocs/formats/{$this->format}/alacast.css' type='text/css'/>
 	</head>
 	<body>
 HEADER;

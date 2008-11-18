@@ -14,5 +14,17 @@ I also talk about by further work on my new 3-D game project. I talk about the e
 					<li><a href='http://www.raydium.org/'>Raydium: 3-D Game Engine</a></li>
 					<li><a href='http://blender.org/'>Blender</a></li>
 				</ul>
+			</li>
+			<div class='episode_dls'>
+				Download this episode:<br/>
+				| <a href='http://www.archive.org/download/ExpressiveProgramming-0004-ByUberchick/Escapism_and_Resources.ogg'><img src='./graphics/banners/play_ogg.png' class='ogg_vorbis_download' alt='Download this episode.'/></a> | <a href='http://www.archive.org/download/ExpressiveProgramming-0004-ByUberchick/Escapism_and_Resources_64kb.mp3'><img src='./graphics/banners/drm_free_mp3.png' class='drm_free_mp3_download' alt='Download this episode.'/></a> | <a href='http://hackerpublicradio.org/eps/hpr0230.mp3'><img src='./graphics/banners/hpr_mp3.png' class='hpr_mp3_download' alt='Download this episode.'/></a> |
+			</div>
+<!--
+			<a href='http://www.archive.org/download/ExpressiveProgramming-0003-ByUberchick/WhoWhatWhereWhenWhy.ogg'><img src='./graphics/banners/play_ogg.png' alt='Download this episode.'/></a>
+
+			<a href='http://www.archive.org/download/ExpressiveProgramming-0002-ByUberchick/ProducingPerfection.ogg'><img src='./graphics/banners/play_ogg.png' alt='Download this episode.'/></a>
+			
+			<a href='http://www.archive.org/download/ExpressiveProgramming-0001-ByUberchick/WelcomeToTheExhibit.ogg'><img src='./graphics/banners/play_ogg.png' alt='Download this episode.'/></a>
+-->
 BLOC;
 ?>

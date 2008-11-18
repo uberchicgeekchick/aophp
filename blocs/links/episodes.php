@@ -25,8 +25,8 @@ BLOC;
 			fclose($rss_fp);
 			
 			$rss=preg_replace("/(<\/?)item(>)/i", "$1li$2", $rss );
-			$rss=preg_replace("/<title>Expressive\ Programming::([^<]*)<\/title>[^<]*<link>([^<]*)<\/link>/mi", "<a href='$2'>$1</a><br/>", $rss);
-			$rss=preg_replace("/<enclosure.*url=[\"']([^\"']*)[\"'][^>]*\/>/mi", "<a href='$1'><img src='./graphics/banners/play_ogg.png' border='0' alt='Download this episode.'/></a>", $rss);
+			$rss=preg_replace("/<title>Expressive\ Programming::([^<]*)<\/title>[^<]*<link>http:\/\/[^\/]*\/([^<]*)<\/link>/mi", "<a href='$2' title='Downloading Expressive Programming::$1'>$1</a><br/>", $rss);
+			$rss=preg_replace("/<enclosure.*url=[\"']([^\"']*)[\"'][^>]*\/>/mi", "<a href='$1'><img class='ogg_vorbis_download' src='./graphics/banners/play_ogg.png' alt='Download this episode.'/></a>", $rss);
 			$rss=preg_replace("/<(guid|description|pubDate)>.*<\/(guid|description|pubDate)>[\t\r\n]*/mi", "", $rss);
 			
 			print <<<BLOC
