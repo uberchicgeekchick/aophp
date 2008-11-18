@@ -25,14 +25,16 @@ a:hover{color:#ffddee; font-size:1.75ex;}
 
 p, .indentedText{text-indent:5%;}
 
+img{border:0px; border-width:0px;}
+
 img.logo{margin-left:10%; margin-top:2%}
 img.slogan{display:block; margin-left:35%;}
 
 div.please_help{position:absolute; display:inline; top:5%;}
 
-img.favicon_link{width:16px; height:16px; border-width:0px;}
+img.favicon_link{width:16px; height:16px;}
 
-img.openSuSE_countdown{position:absolute; display:block; top:0px; right:2%;width:130px; height:130px;border:0px; right:80px;}
+img.openSuSE_countdown{position:absolute; display:block; top:0px; right:2%;width:130px; height:130px; right:80px;}
 
 /*content: wrapper for left hand blocs*/
 div.left_sides_blocs{position:absolute; display:inline-block; float:left; width:20%;}
