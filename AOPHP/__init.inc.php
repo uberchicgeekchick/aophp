@@ -13,11 +13,17 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
+	
+	require_once("./AOPHP/__define.inc.php");
+	
+	require_once("./AOPHP/__autoload.function.php");
+	require_once("./AOPHP/__load_method.function.php");
+	
 	require_once( (sprintf("./AOPHP/%s%s/ExceptionHandler.Default.class.php", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_)) );
 	require_once("./AOPHP/Applications/speakingOUT/Configuration.inc.php");
 	
-	$speakingOUT=sprintf("AOPHP%s%sOutput%s%sFormats%s%s%s", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_FORMAT_);
+	$AOPHP=sprintf("AOPHP%s%sCore", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_);
 	
-	$speakingOUT=new $speakingOUT(_AOPHP_APP_CONFIG_);
+	$AOPHP=new $AOPHP();
 	
 ?>

@@ -16,9 +16,12 @@
 	namespace AOPHP;
 	
 	class Core{
+		public $separator;
+		public $format;
+		public $output;
 		
 		public function __construct(){
-			
+			return require_once( (::__load_method( "AOPHP::Core", "__construct" )) );
 		}
 		
 	}//AOPHP::Core

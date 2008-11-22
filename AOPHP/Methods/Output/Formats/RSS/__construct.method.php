@@ -24,9 +24,7 @@
 	 * language governing rights and limitations under the RPL.
 	 */
 	
-	//Defines AOPHP::Output::Formats::RSS->__construct(); or AOPHP__Output__Formats__RSS->__construct();
-			$this->format="RSS";
-			
+	//Defines AOPHP::Output::Formats::RSS->__construct(); or AOPHP__Output__Formats__RSS->__construct();			
 			$this->categories=array(
 				'episodes', 'specials', 'blogs', 'about',
 				'total'=>4

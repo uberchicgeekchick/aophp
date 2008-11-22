@@ -25,8 +25,6 @@
 	 */
 	
 	//Defines AOPHP::Output::Formats::XHTML->__construct(); or AOPHP__Output__Formats__XHTML->__construct();
-			$this->format="XHTML";
-			
 			$this->categories=array(
 				'episodes', 'specials', 'blogs', 'about',
 				'total'=>4

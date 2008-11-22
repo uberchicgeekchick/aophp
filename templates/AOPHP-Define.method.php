@@ -24,6 +24,11 @@
 	 * language governing rights and limitations under the RPL.
 	 */
 	
-	//Defines AOPHP::Output::Formats::XHTML->__destruct(); or AOPHP__Output__Formats__XHTML->__destruct();
+	//Defines AOPHP::Core->construct(); or AOPHP__Core->__construct();
+			$this->separator=_AOPHP_CLASS_SEPARATOR_;
+			$this->format=_AOPHP_FORMAT_;
 			
+			$AOPHP->output=sprintf("AOPHP%s%sOutput%s%sFormats%s%s%s", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_FORMAT_);
+			
+			$AOPHP->output=new $AOPHP->output(_AOPHP_APP_CONFIG_);
 ?>

@@ -30,16 +30,16 @@
 		define("_AOPHP_APP_ABOUT_", "Expressive Programming, the podcast.&nbsp; about self expression, art, &amp; freedom through creating &amp; using open source software.");
 	
 	if( !(isset($_GET['Format'])) )
-		define("_AOPHP_FORMAT_", "XHTML");
-	else
-		switch($_GET['Format']){
-			case 'RSS':
-			case 'XHTML':
-				define("_AOPHP_FORMAT_", $_GET['Format']);
-				break;
-			
-			default;
-				define("_AOPHP_FORMAT_", "XHTML");
-				break;
-		}
+		$_GET['Format']="";
+	
+	switch($_GET['Format']){
+		case 'RSS':
+		case 'XHTML':
+			define("_AOPHP_FORMAT_", $_GET['Format']);
+			break;
+		
+		default;
+			define("_AOPHP_FORMAT_", "XHTML");
+			break;
+	}
 ?>

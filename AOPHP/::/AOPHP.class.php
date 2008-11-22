@@ -13,11 +13,14 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	namespace AOPHP::Output;
+	namespace AOPHP;
 	
-	class Formats extends AOPHP::Output::Generator{
+	class ::AOPHP{
+		public $output;
 		
 		public function __construct(){
-			return require_once( (::__load_method( "AOPHP::Output::Formats", "__construct" )) );
+			
 		}
-	}
+		
+	}//AOPHP::Core
+?>
