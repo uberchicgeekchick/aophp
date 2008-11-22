@@ -22,8 +22,13 @@
 		
 		$MethodsDefination=sprintf("./AOPHP/Methods/%s/%s.method.php", (preg_replace( (sprintf( "/[%s]{2}/", _AOPHP_CLASS_SEPARATOR_ )), "/", $AOPHP_Path)), $Method );
 		
+		/*TODO:
+		 *	This currently only outputs on error message.
+		 *	I need to change it to throw on Exception using AOPHP's ExceptionHandler.
+		 *	I also need to make sure that it supports AOPHP's translation output filter.
+		 */
 		if(!( (file_exists($MethodsDefination)) && (is_readable($MethodsDefination)) ))
-			return sprintf("./AOPHP/null.php");
+			return sprintf("./AOPHP/Methods/null.php");
 		//return $MethodsDefination;
 		return $MethodsDefination;
 		

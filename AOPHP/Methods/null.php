@@ -24,5 +24,5 @@
 	 * language governing rights and limitations under the RPL.
 	 */
 	
-	printf("<!-- null included -->");
+	printf("\n\t\t<!-- null included -->\n\t\t<div class='AOPHP_load_error'>I have failed to include %s\n\t\t\t</div>", $MethodsDefination);
 ?>

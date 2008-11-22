@@ -45,5 +45,4 @@
 	ini_set("date.timezone", "America/Denver");
 	
 	require_once("./AOPHP/__init.inc.php");
-	
 ?>
