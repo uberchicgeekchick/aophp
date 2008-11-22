@@ -16,7 +16,7 @@
 	class AOPHP__Output__Formats extends AOPHP__Output__Generator{
 		
 		public function __construct(){
-			return require_once( (::__load_method( "AOPHP::Output::Formats", "__construct" )) );
+			return require_once( (__load_method( "AOPHP::Output::Formats", "__construct" )) );
 		}
 		
 	}

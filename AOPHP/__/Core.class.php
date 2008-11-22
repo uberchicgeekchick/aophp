@@ -19,7 +19,7 @@
 		public $output;
 		
 		public function __construct(){
-			return require_once( (::__load_method( "AOPHP__Core", "__construct" )) );
+			return require_once( (__load_method( "AOPHP__Core", "__construct" )) );
 		}//__construct
 		
 	}//AOPHP__Core
