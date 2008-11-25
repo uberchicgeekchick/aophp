@@ -36,20 +36,10 @@ CREATE TABLE `addresses` (
   `subdomain` varchar(255) default NULL,
   `domain` varchar(255) NOT NULL,
   `path` varchar(255) default NULL,
+  `query_string` varchar(255) NOT NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
-
---
--- Dumping data for table `addresses`
---
-
-LOCK TABLES `addresses` WRITE;
-/*!40000 ALTER TABLE `addresses` DISABLE KEYS */;
-set autocommit=0;
-/*!40000 ALTER TABLE `addresses` ENABLE KEYS */;
-UNLOCK TABLES;
-commit;
 
 --
 -- Table structure for table `apps`
@@ -68,127 +58,126 @@ CREATE TABLE `apps` (
 SET character_set_client = @saved_cs_client;
 
 --
--- Dumping data for table `apps`
+-- Table structure for table `apps_pages`
 --
 
-LOCK TABLES `apps` WRITE;
-/*!40000 ALTER TABLE `apps` DISABLE KEYS */;
-set autocommit=0;
-/*!40000 ALTER TABLE `apps` ENABLE KEYS */;
-UNLOCK TABLES;
-commit;
-
---
--- Table structure for table `bloc_contents`
---
-
-DROP TABLE IF EXISTS `bloc_contents`;
+DROP TABLE IF EXISTS `apps_pages`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
-CREATE TABLE `bloc_contents` (
+CREATE TABLE `apps_pages` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `app_id` int(10) unsigned NOT NULL,
+  `title` varchar(40) NOT NULL,
+  `stylesheets_id` int(10) unsigned NOT NULL,
+  PRIMARY KEY  (`id`),
+  KEY `index-app_pages-theme_id` USING BTREE (`stylesheets_id`),
+  KEY `index-app_pages-app_id` USING BTREE (`app_id`),
+  CONSTRAINT `constraint_app_pages_stylesheet_id` FOREIGN KEY (`stylesheets_id`) REFERENCES `stylesheets` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `constraint_app_pages_app_id` FOREIGN KEY (`app_id`) REFERENCES `apps` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `blocs`
+--
+
+DROP TABLE IF EXISTS `blocs`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `blocs` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `title` varchar(60) NOT NULL,
+  `theme_id` int(11) NOT NULL,
+  `contents_id` int(11) NOT NULL,
+  `multipart` enum('yes','no') NOT NULL default 'yes',
+  PRIMARY KEY  (`id`),
+  KEY `index:blocs:theme_id` (`theme_id`),
+  KEY `index:blocs:contents_id` (`contents_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `blocs_binary`
+--
+
+DROP TABLE IF EXISTS `blocs_binary`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `blocs_binary` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `type` enum('image','audio','video','embed') NOT NULL default 'image',
+  `uri` varchar(255) NOT NULL,
+  `blob` mediumblob NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `blocs_contents`
+--
+
+DROP TABLE IF EXISTS `blocs_contents`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `blocs_contents` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `author` int(10) unsigned NOT NULL,
   `title` varchar(40) NOT NULL,
   `content` mediumtext NOT NULL,
-  `type` enum('podcast','blog','wiki','message','thread') NOT NULL default 'podcast',
-  `tags` mediumtext NOT NULL,
+  `type` enum('column','widget','podcast','blog','wiki','message','thread') NOT NULL default 'podcast',
+  `tags` mediumtext,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
 --
--- Dumping data for table `bloc_contents`
+-- Table structure for table `blocs_enclosures`
 --
 
-LOCK TABLES `bloc_contents` WRITE;
-/*!40000 ALTER TABLE `bloc_contents` DISABLE KEYS */;
-set autocommit=0;
-/*!40000 ALTER TABLE `bloc_contents` ENABLE KEYS */;
-UNLOCK TABLES;
-commit;
-
---
--- Table structure for table `bloc_embed_sources`
---
-
-DROP TABLE IF EXISTS `bloc_embed_sources`;
+DROP TABLE IF EXISTS `blocs_enclosures`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
-CREATE TABLE `bloc_embed_sources` (
+CREATE TABLE `blocs_enclosures` (
   `id` int(10) unsigned NOT NULL auto_increment,
-  `bloc_id` int(10) unsigned NOT NULL,
-  `type` enum('image','audio','video','embed','iframe') NOT NULL default 'image',
-  `uri` varchar(255) NOT NULL,
-  `blob` mediumblob NOT NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-SET character_set_client = @saved_cs_client;
-
---
--- Dumping data for table `bloc_embed_sources`
---
-
-LOCK TABLES `bloc_embed_sources` WRITE;
-/*!40000 ALTER TABLE `bloc_embed_sources` DISABLE KEYS */;
-set autocommit=0;
-/*!40000 ALTER TABLE `bloc_embed_sources` ENABLE KEYS */;
-UNLOCK TABLES;
-commit;
-
---
--- Table structure for table `bloc_enclosures`
---
-
-DROP TABLE IF EXISTS `bloc_enclosures`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
-CREATE TABLE `bloc_enclosures` (
-  `id` int(10) unsigned NOT NULL auto_increment,
-  `bloc_id` int(10) unsigned NOT NULL,
+  `contents_id` int(10) unsigned NOT NULL,
+  `binary_id` int(10) unsigned NOT NULL,
   `type` enum('image','audio','video','xml','document') NOT NULL default 'audio',
-  `uri` varchar(255) NOT NULL,
-  `blob` mediumblob NOT NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
 --
--- Dumping data for table `bloc_enclosures`
+-- Table structure for table `blocs_themes`
 --
 
-LOCK TABLES `bloc_enclosures` WRITE;
-/*!40000 ALTER TABLE `bloc_enclosures` DISABLE KEYS */;
-set autocommit=0;
-/*!40000 ALTER TABLE `bloc_enclosures` ENABLE KEYS */;
-UNLOCK TABLES;
-commit;
-
---
--- Table structure for table `layers`
---
-
-DROP TABLE IF EXISTS `layers`;
+DROP TABLE IF EXISTS `blocs_themes`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
-CREATE TABLE `layers` (
+CREATE TABLE `blocs_themes` (
   `id` int(10) unsigned NOT NULL auto_increment,
-  `namespace` varchar(60) NOT NULL,
-  `GUID` varchar(255) NOT NULL,
-  `version` float unsigned NOT NULL,
+  `title` varchar(40) NOT NULL,
+  `format` enum('xhtml','rss') NOT NULL,
+  `before_title` mediumtext NOT NULL,
+  `between_title_and_content` mediumtext NOT NULL,
+  `after_content` mediumtext NOT NULL,
+  `default` enum('no','yes') NOT NULL default 'no',
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
 --
--- Dumping data for table `layers`
+-- Table structure for table `settings`
 --
 
-LOCK TABLES `layers` WRITE;
-/*!40000 ALTER TABLE `layers` DISABLE KEYS */;
-set autocommit=0;
-/*!40000 ALTER TABLE `layers` ENABLE KEYS */;
-UNLOCK TABLES;
-commit;
+DROP TABLE IF EXISTS `settings`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `settings` (
+  `name` varchar(255) NOT NULL,
+  `value` varchar(255) NOT NULL,
+  PRIMARY KEY  (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Table structure for table `settings_address`
@@ -207,17 +196,6 @@ CREATE TABLE `settings_address` (
 SET character_set_client = @saved_cs_client;
 
 --
--- Dumping data for table `settings_address`
---
-
-LOCK TABLES `settings_address` WRITE;
-/*!40000 ALTER TABLE `settings_address` DISABLE KEYS */;
-set autocommit=0;
-/*!40000 ALTER TABLE `settings_address` ENABLE KEYS */;
-UNLOCK TABLES;
-commit;
-
---
 -- Table structure for table `settings_applications`
 --
 
@@ -234,43 +212,20 @@ CREATE TABLE `settings_applications` (
 SET character_set_client = @saved_cs_client;
 
 --
--- Dumping data for table `settings_applications`
+-- Table structure for table `stylesheets`
 --
 
-LOCK TABLES `settings_applications` WRITE;
-/*!40000 ALTER TABLE `settings_applications` DISABLE KEYS */;
-set autocommit=0;
-/*!40000 ALTER TABLE `settings_applications` ENABLE KEYS */;
-UNLOCK TABLES;
-commit;
-
---
--- Table structure for table `user_profiles`
---
-
-DROP TABLE IF EXISTS `user_profiles`;
+DROP TABLE IF EXISTS `stylesheets`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
-CREATE TABLE `user_profiles` (
+CREATE TABLE `stylesheets` (
   `id` int(10) unsigned NOT NULL auto_increment,
-  `first_name` varchar(90) NOT NULL,
-  `middle_name` varchar(90) NOT NULL,
-  `last_name` varchar(90) NOT NULL,
-  `b-day` date NOT NULL,
+  `title` varchar(40) NOT NULL,
+  `stylesheet` mediumtext NOT NULL,
+  `type` enum('text/css','x-application-xml/xslt','x-application-xml/xul') NOT NULL default 'text/css',
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
-
---
--- Dumping data for table `user_profiles`
---
-
-LOCK TABLES `user_profiles` WRITE;
-/*!40000 ALTER TABLE `user_profiles` DISABLE KEYS */;
-set autocommit=0;
-/*!40000 ALTER TABLE `user_profiles` ENABLE KEYS */;
-UNLOCK TABLES;
-commit;
 
 --
 -- Table structure for table `users_logins`
@@ -290,43 +245,28 @@ CREATE TABLE `users_logins` (
 SET character_set_client = @saved_cs_client;
 
 --
--- Dumping data for table `users_logins`
+-- Table structure for table `users_profiles`
 --
 
-LOCK TABLES `users_logins` WRITE;
-/*!40000 ALTER TABLE `users_logins` DISABLE KEYS */;
-set autocommit=0;
-/*!40000 ALTER TABLE `users_logins` ENABLE KEYS */;
-UNLOCK TABLES;
-commit;
-
---
--- Table structure for table `xhtml_layouts`
---
-
-DROP TABLE IF EXISTS `xhtml_layouts`;
+DROP TABLE IF EXISTS `users_profiles`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
-CREATE TABLE `xhtml_layouts` (
-  `id` int(10) NOT NULL auto_increment,
-  `title` varchar(40) NOT NULL,
-  `header` mediumtext NOT NULL,
-  `body` mediumtext NOT NULL,
-  `footer` mediumtext NOT NULL,
-  PRIMARY KEY  (`id`)
+CREATE TABLE `users_profiles` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `first_name` varchar(90) NOT NULL,
+  `middle_name` varchar(90) NOT NULL,
+  `last_name` varchar(90) NOT NULL,
+  `b-day` date NOT NULL,
+  PRIMARY KEY  (`id`),
+  CONSTRAINT `constraint_users_id` FOREIGN KEY (`id`) REFERENCES `users_logins` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
 --
--- Dumping data for table `xhtml_layouts`
+-- Dumping routines for database 'AOPHP'
 --
-
-LOCK TABLES `xhtml_layouts` WRITE;
-/*!40000 ALTER TABLE `xhtml_layouts` DISABLE KEYS */;
-set autocommit=0;
-/*!40000 ALTER TABLE `xhtml_layouts` ENABLE KEYS */;
-UNLOCK TABLES;
-commit;
+DELIMITER ;;
+DELIMITER ;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -337,4 +277,4 @@ commit;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2008-11-18  2:04:28
+-- Dump completed on 2008-11-25  1:33:58
