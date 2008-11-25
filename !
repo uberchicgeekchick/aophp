@@ -1,1 +1,0 @@
-mysqldump --databases --comment --no-autocommit --extended-insert --socket=/srv/mysql/mysql.sock -uuberChick -p templates//AOPHP.empty.sql templates//AOPHP.empty.sql
