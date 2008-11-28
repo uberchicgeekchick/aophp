@@ -17,7 +17,15 @@ foreach namespace_php ( "`find 'AOPHP/::/' -name '*.class.php'`" )
 		mkdir -p "${no_namespace_dir}"
 	endif
 
+	set update_no_namespace_php = "no"
 	if ( ! -e "${no_namespace_php}"  ) then
+		set update_no_namespace_php = "yes"
+	else
+		set newest_php = "`ls --sort=time '${namespace_php}' '${no_namespace_php}' | head -1`"
+		if ( "${newest_php}" == "${namespace_php}" ) set update_no_namespace_php = "yes"
+	endif
+
+	if ( "${update_no_namespace_php}" == "yes" ) then
 		printf "Creating a copy of %s for PHP versions w/o namespace support.\n" "${class_name}"
 		cp -r "${namespace_php}" "${no_namespace_php}"
 		ex -s '+1,$s/[\t\s]\+namespace \([^;]\+\);[\r\n\t\s]\+\(^[\t\s]*class \)\([^\s]\+\)\s/\2\1__\3 /g' '+1,$s/\([a-zA-Z]\{1\}\)\:\:\([a-zA-Z]\{1\}\)/\1__\2/g' '+1,$s/\:\:\(__load_method\)/\1/g' '+wq' "${no_namespace_php}"
