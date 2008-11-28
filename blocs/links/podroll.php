@@ -2,12 +2,12 @@
 	/*
 	 * Unless explicitly acquired and licensed from Licensor under another
 	 * license, the contents of this file are subject to the Reciprocal Public
-	 * License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
+	 * License ('RPL') Version 1.5, or subsequent versions as allowed by the RPL,
 	 * and You may not copy or use this file in either source code or executable
 	 * form, except in compliance with the terms and conditions of the RPL.
 	 *
-	 * All software distributed under the RPL is provided strictly on an "AS
-	 * IS" basis, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND
+	 * All software distributed under the RPL is provided strictly on an 'AS
+	 * IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND
 	 * LICENSOR HEREBY DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT
 	 * LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
@@ -22,12 +22,15 @@
 				<div class='bloc_content'>
 					<ul>
 						<lh>~Programming~</lh>
-						<li><a href="http://HackerPublicRadio.Org/">HackerPublicRadio</a></li>
-						<li><a href="http://TheCommandLine.Net/">The Command Line Podcast</a></li>
-						<li><a href="http://SE-Radio.Net/">Software Enginering Radio</a></li>
+						<li><a href='http://HackerPublicRadio.Org/'>HackerPublicRadio</a></li>
+						<li><a href='http://TheCommandLine.Net/'>The Command Line Podcast</a></li>
+						<li><a href='http://SE-Radio.Net/'>Software Enginering Radio</a></li>
+					</ul><br/><ul>
+						<lh><em>~Social Media~</em></lh>
+						<li><a href='http://OpenMediaReview.Com/'>http://OpenMediaReview.Com/</a></li>
 					</ul><br/><ul>
 						<lh><em>*NSFW*</em></lh>
-						<li><a href="http://LinuxCranks.Info/">Linux Cranks</a></li>
+						<li><a href='http://LinuxCranks.Info/'>Linux Cranks</a></li>
 					</ul>
 				</div>
 				<div class='bloc_extra'>&nbsp;</div>
