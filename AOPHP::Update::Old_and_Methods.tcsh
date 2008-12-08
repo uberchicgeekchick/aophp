@@ -34,14 +34,14 @@ foreach namespace_php ( "`find 'AOPHP/::/' -name '*.class.php'`" )
 	set method_class_dir = `echo "${namespace_php}" | sed 's/\:\:/Methods/' | sed 's/\.class\.php$//'`
 
 	if ( ! -d "${method_class_dir}" ) then
-		printf "Creating %s's Directory\n" ${class}
+		printf "Creating %s's Directory\n" ${method_class_dir}
 		mkdir -p "${method_class_dir}"
 	endif
 
 	foreach method ( `grep -r 'function' "${namespace_php}" | sed 's/.*function\ \([^\ (]\+\).*/\1/'` )
 		set methods_php = "${method_class_dir}/${method}.method.php"
 		if ( -e "${methods_php}" ) continue
-		printf "Creating %s's %s method file:\n" ${class} ${method}
+		printf "Creating %s's %s method file:\n" ${namespace_php} ${method}
 		if ( ! -e "${template}" ) then
 			touch "${methods_php}"
 		else

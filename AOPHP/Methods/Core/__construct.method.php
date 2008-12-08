@@ -1,14 +1,16 @@
 <?php
 	/*
-	 * (c) 2007-Present Kathryn G. Bohmont <uberChicGeekChick.Com -at- uberChicGeekChick.Com>
+	 * (c) 2007-Present Kaity G. B. <uberChick -at- uberChicGeekChick.Com>
 	 * 	http://uberChicGeekChick.Com/
+	 *
 	 * Writen by an uberChick, other uberChicks please meet me & others @:
 	 * 	http://uberChicks.Net/
-	 *I'm also disabled; living with Generalized Dystonia.
-	 * Specifically: DYT1+/Early-Onset Generalized Dystonia.
+	 *
+	 * I'm also disabled. I live with a progressive neuro-muscular disease.
+	 * I have DYT1+ Early-Onset Generalized Dystonia, a type of Generalized Dystonia.
 	 * 	http://Dystonia-DREAMS.Org/
 	 */
-	
+
 	/*
 	 * Unless explicitly acquired and licensed from Licensor under another
 	 * license, the contents of this file are subject to the Reciprocal Public
@@ -22,13 +24,21 @@
 	 * LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
+	 *
+	 * ------------------------------------------------------------------------
+	 * |	A copy of the RPL 1.5 may be found with this project or online at |
+	 * |		http://opensource.org/licenses/rpl1.5.txt		  |
+	 * ------------------------------------------------------------------------
 	 */
 	
 	//Defines AOPHP::Core->construct(); or AOPHP__Core->__construct();
-			$this->separator=_AOPHP_CLASS_SEPARATOR_;
-			$this->format=_AOPHP_FORMAT_;
+			$this->Set_Format();
 			
-			$this->output=sprintf("AOPHP%s%sOutput%s%sFormats%s%s%s", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_FORMAT_);
+			$this->Output=sprintf("AOPHP%s%sOutput%s%sFormats%s%s%s", $this->separator, $this->separator, $this->separator, $this->separator, $this->separator, $this->separator, $this->format);
 			
-			$this->output=new $this->output(_AOPHP_APP_CONFIG_);
+			$this->Output=new $this->Output(_AOPHP_APP_CONFIG_);
+			
+			$this->Output=sprintf("AOPHP%s%sStorageEngines%s%s%s", $this->separator, $this->separator, $this->separator, $this->separator, $this->separator, $this->separator, _AOPHP_DEFAULT_STORAGE_ENGINE_);
+			
+			$this->Output=new $this->Output(_AOPHP_APP_CONFIG_);
 ?>

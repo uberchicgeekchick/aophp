@@ -1,5 +1,17 @@
 <?php
 	/*
+	 * (c) 2007-Present Kaity G. B. <uberChick -at- uberChicGeekChick.Com>
+	 * 	http://uberChicGeekChick.Com/
+	 *
+	 * Writen by an uberChick, other uberChicks please meet me & others @:
+	 * 	http://uberChicks.Net/
+	 *
+	 * I'm also disabled. I live with a progressive neuro-muscular disease.
+	 * I have DYT1+ Early-Onset Generalized Dystonia, a type of Generalized Dystonia.
+	 * 	http://Dystonia-DREAMS.Org/
+	 */
+
+	/*
 	 * Unless explicitly acquired and licensed from Licensor under another
 	 * license, the contents of this file are subject to the Reciprocal Public
 	 * License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
@@ -12,15 +24,31 @@
 	 * LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
+	 *
+	 * ------------------------------------------------------------------------
+	 * |	A copy of the RPL 1.5 may be found with this project or online at |
+	 * |		http://opensource.org/licenses/rpl1.5.txt		  |
+	 * ------------------------------------------------------------------------
 	 */
-	class AOPHP__Core{
-		public $separator;
-		public $format;
-		public $output;
+	namespace AOPHP;
+	
+	class Core{
+		public $StorageEngine;
+		public $Bloc;
+		public $Format;
+		public $Output;
 		
 		public function __construct(){
-			return require_once( (__load_method( "AOPHP__Core", "__construct" )) );
-		}//__construct
+			return require_once( (__load_method( "AOPHP__Core", "__construct")) );
+		}
+		
+		private function Prepare_Blocs(){
+			return require_once( (__load_method( "AOPHP__Core", "Prepare_Blocs")) );
+		}//Init_Application
+		
+		private function Set_Format(){
+			return require_once( (__load_method( "AOPHP__Core", "Set_Format")) );
+		}//Set_Format
 		
 	}//AOPHP__Core
 ?>

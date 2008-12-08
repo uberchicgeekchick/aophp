@@ -30,19 +30,13 @@
 	 * |		http://opensource.org/licenses/rpl1.5.txt		  |
 	 * ------------------------------------------------------------------------
 	 */
-	function __load_method($Class, $Method){
-		if(!(
-			($AOPHP_Path=preg_replace( (sprintf( "/^(%s|AOPHP)[%s]{2}/", _AOPHP_APP_NAME_, _AOPHP_CLASS_SEPARATOR_ )), "", $Class))
-		))
-			return false;
+	namespace AOPHP;
+	
+	class Bloc extends AOPHP__StorageEngine{
 		
-		$MethodsDefination=sprintf("./AOPHP/Methods/%s/%s.method.php", (preg_replace( (sprintf( "/[%s]{2}/", _AOPHP_CLASS_SEPARATOR_ )), "/", $AOPHP_Path)), $Method );
+		public function __construct(){
+			
+		}//__construct
 		
-		if(!( (file_exists($MethodsDefination)) && (is_readable($MethodsDefination)) ))
-			return new Exception( (AOPHP::Language::Translate( (sprintf("Auto-Magickal __load_method of %s's %s method has failed.<br/>Attemped to load %s.",$Class,$Method,$MethodsDefination)) )) );
-		
-		//return $MethodsDefination;
-		return $MethodsDefination;
-		
-	}//__load_method
+	}//AOPHP__Bloc
 ?>

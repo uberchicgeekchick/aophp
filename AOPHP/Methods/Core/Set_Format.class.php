@@ -1,17 +1,5 @@
 <?php
 	/*
-	 * (c) 2007-Present Kaity G. B. <uberChick -at- uberChicGeekChick.Com>
-	 * 	http://uberChicGeekChick.Com/
-	 *
-	 * Writen by an uberChick, other uberChicks please meet me & others @:
-	 * 	http://uberChicks.Net/
-	 *
-	 * I'm also disabled. I live with a progressive neuro-muscular disease.
-	 * I have DYT1+ Early-Onset Generalized Dystonia, a type of Generalized Dystonia.
-	 * 	http://Dystonia-DREAMS.Org/
-	 */
-
-	/*
 	 * Unless explicitly acquired and licensed from Licensor under another
 	 * license, the contents of this file are subject to the Reciprocal Public
 	 * License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
@@ -24,15 +12,20 @@
 	 * LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
-	 *
-	 * ------------------------------------------------------------------------
-	 * |	A copy of the RPL 1.5 may be found with this project or online at |
-	 * |		http://opensource.org/licenses/rpl1.5.txt		  |
-	 * ------------------------------------------------------------------------
 	 */
-	namespace AOPHP;
+	static $default_format;
 	
-	class StorageEngines extends AOPHP::Language::Translator{
-		
-	}//AOPHP::StorageEngines
+	if( !(isset($default_format)) ) $default_format="XHTML";
+	if( (isset($this->Format)) ) return $this->Format;
+	
+	if( !(isset($_GET['Format'])) ) $_GET['Format']="";
+	
+	switch($_GET['Format']){
+		case 'RSS':
+			return $this->format="RSS";
+			break;
+		case 'XHTML': default:
+			return $this->format=$default_format;
+			break;
+	}
 ?>
