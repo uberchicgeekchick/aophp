@@ -21,15 +21,24 @@
 		public $categories;
 		
 		public function __construct($Configuration){
-			return require_once( (::__load_method( "AOPHP::Output::Formats::RSS", "__construct" )) );
+			$this->categories=array(
+				'episodes', 'specials', 'blogs', 'about',
+				'total'=>4
+			);
+			
+			//if( !($this->check_get()) )
+				$_GET['Category']="episodes";
+			
+			//$this->set_content();
+			parent::__construct();
 		}//::construct
 		
 		private function check_get(){
-			//return require_once( (::__load_method( "AOPHP::Output::Formats::RSS", "check_get" )) );
+			
 		}//check_get
 		
 		private function set_content(){
-			//return require_once( (::__load_method( "AOPHP::Output::Formats::RSS", "set_content" )) );
+			
 		}//set_content
 		
 		public function __destruct(){

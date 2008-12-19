@@ -38,7 +38,7 @@
 		public $categories;
 		
 		public function __construct($Configuration){
-			return require_once( (::__load_method( "AOPHP::Output::Formats::XHTML", "__construct" )) );
+			
 		}//::construct
 		
 		private function check_get(){
@@ -46,7 +46,14 @@
 		}//check_get
 		
 		private function set_content(){
-			return require_once( (::__load_method( "AOPHP::Output::Formats::XHTML", "set_content" )) );
+			if( (isset($_GET['debug'])) && (file_exists( ($this->content_uri="./blocs/debug.php") )) )
+				return;
+			
+			for($n=0; $n<$this->categories['total']; $n++ )
+				if( (isset( $_GET[ $this->categories[$n] ] )) && (file_exists( ($this->content_uri="./blocs/{$this->categories[$n]}/{$_GET[ $this->categories[$n] ]}.php") )) )
+					return;
+			
+			$this->content_uri="./blocs/about/podcast.php";
 		}//set_content
 		
 		public function __destruct(){

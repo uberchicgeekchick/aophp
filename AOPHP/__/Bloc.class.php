@@ -32,10 +32,10 @@
 	 */
 	namespace AOPHP;
 	
-	class Bloc extends AOPHP__StorageEngine{
+	class Bloc{
 		
 		public function __construct(){
-			
+			return require_once( (::__load_method( "AOPHP__Bloc", "__construct")) );
 		}//__construct
 		
 	}//AOPHP__Bloc

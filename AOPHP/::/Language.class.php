@@ -35,11 +35,11 @@
 	class Language{
 		
 		public function __constuct(array $settings){
-			return require_once( (::__load_method( "AOPHP::Language", "__construct" )) );
+			
 		}
 		
 		public function Translate(){
-			return require_once( (::__load_method( "AOPHP::Language", "Translate" )) );
+			
 		}
 	}//AOPHP::Language
 ?>

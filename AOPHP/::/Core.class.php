@@ -33,21 +33,41 @@
 	namespace AOPHP;
 	
 	class Core{
-		public $StorageEngine;
 		public $Bloc;
 		public $Format;
 		public $Output;
+		public $StorageEngine;
 		
 		public function __construct(){
-			return require_once( (::__load_method( "AOPHP::Core", "__construct")) );
-		}
+			$this->Set_Format();
+			
+			$this->Output=sprintf("AOPHP::Output::Formats::%s", $this->format);
+			$this->Output=new $this->Output(_AOPHP_APP_CONFIG_);
+			
+			$this->StorageEngine=sprintf("AOPHP::StorageEngines::%s", _AOPHP_DEFAULT_STORAGE_ENGINE_);
+			$this->StorageEngine=new $this->StorageEngine(_AOPHP_APP_CONFIG_);
+		}//__construct
 		
 		private function Prepare_Blocs(){
-			return require_once( (::__load_method( "AOPHP::Core", "Prepare_Blocs")) );
+			
 		}//Init_Application
 		
 		private function Set_Format(){
-			return require_once( (::__load_method( "AOPHP::Core", "Set_Format")) );
+			static $default_format;
+			
+			if( !(isset($default_format)) ) $default_format="XHTML";
+			if( (isset($this->Format)) ) return $this->Format;
+			
+			if( !(isset($_GET['Format'])) ) $_GET['Format']=$default_format;
+			
+			switch($_GET['Format']){
+				case 'RSS':
+					return $this->format="RSS";
+					break;
+				case 'XHTML': default:
+					return $this->format=$default_format;
+					break;
+			}
 		}//Set_Format
 		
 	}//AOPHP::Core

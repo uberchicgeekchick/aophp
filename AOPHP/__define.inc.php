@@ -48,19 +48,5 @@
 
 	if( !(defined("_AOPHP_APP_ABOUT_")) )
 		define("_AOPHP_APP_ABOUT_", "Expressive Programming, the podcast.&nbsp; about self expression, art, &amp; freedom through creating &amp; using open source software.");
-	
-	if( !(isset($_GET['Format'])) )
-		$_GET['Format']="";
-	
-	switch($_GET['Format']){
-		case 'RSS':
-			define("_AOPHP_FORMAT_", "RSS");
-			break;
-		case 'XHTML':
-			define("_AOPHP_FORMAT_", "XHTML");
-			break;
-		default;
-			define("_AOPHP_FORMAT_", "XHTML");
-			break;
-	}
+	e
 ?>

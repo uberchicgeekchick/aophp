@@ -32,7 +32,7 @@
 	 */
 	namespace AOPHP;
 	
-	class Bloc extends AOPHP::Core{
+	class Bloc{
 		
 		public function __construct(){
 			

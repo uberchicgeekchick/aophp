@@ -14,9 +14,9 @@
 	 * language governing rights and limitations under the RPL.
 	 */
 	
-	namespace AOPHP::Views;
+	namespace AOPHP;
 	
-	class API extends AOPHP::Views {
+	class APIs extends AOPHP::Core {
 		
-	}//AOPHP::Views::API
+	}//AOPHP::APIs
 ?>
