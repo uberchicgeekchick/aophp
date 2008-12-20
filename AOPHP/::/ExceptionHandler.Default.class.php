@@ -1,11 +1,9 @@
 <?php
-	namespace AOPHP;
-	
-	abstract class ExceptionHandler{
+	abstract class speakingOUT__ExceptionHandler{
 		static function Catcher(&$Exception){
 			
 		}
 	}
 	
-	set_exception_handler('AOPHP::ExceptionHandler::Catcher');
+	set_exception_handler('speakingOUT__ExceptionHandler::Catcher');
 ?>

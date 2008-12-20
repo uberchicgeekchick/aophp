@@ -30,15 +30,19 @@
 	 * |		http://opensource.org/licenses/rpl1.5.txt					|
 	 * ---------------------------------------------------------------------------------
 	 */
+	
+	/*
+	 * ALWAYS PROGRAM FOR ENJOYMENT &PLEASURE!!!
+	 * Feel comfortable takeing baby steps.  Every moment is another step; step by step; there are only baby steps.
+	 * Being verbose in comments, variables, functions, methods, & anything else IS GOOD!
+	 * If I forget ANY OF THIS than READ:
+	 * 	"Paul Graham's: Hackers &Painters"
+	 * 	&& ||
+	 * 	"The Mentor's Last Words: The Hackers Manifesto"
+	 */
 	ini_set("display_errors", TRUE);
 	ini_set("error_reporting", E_ALL | E_STRICT);
 	ini_set("date.timezone", "America/Denver");
-	/*
-	 * TODO
-	 *	Have fun with this project!
-	 *	If not pick another or do something different.
-	 *	Find joy!
-	*/
 	
 	require_once("./AOPHP/__init.inc.php");
 ?>

@@ -13,24 +13,30 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
+	
 	print <<<BLOC
 			<!-- bloc starts -->
 			<div class='bloc'>
 				<div class='bloc_title'>
-					My fave podcast
+					(pod|blog)roll
 				</div>
 				<div class='bloc_content'>
 					<ul>
 						<lh>~Programming~</lh>
-						<li><a href='http://HackerPublicRadio.Org/'>HackerPublicRadio</a></li>
+						<li><a href='http://c7y.phparch.com/c/tag/podcast'>php|architect&#039;s: c<sub>7</sub>y p<sup>3</sup> podcast</a></li>
 						<li><a href='http://TheCommandLine.Net/'>The Command Line Podcast</a></li>
 						<li><a href='http://SE-Radio.Net/'>Software Enginering Radio</a></li>
 					</ul><br/><ul>
+						<lh>~Linux &amp; OSS~</lh>
+						<li><a href='http://hackerpublicradio.org/'>Hacker Public Radio</a></li>
+						<li><a href='http://hackervoice.co.uk/'>Hacker Voice Radio</a></li>
+					</ul><br/><ul>
+						<lh>~Hacker Culture~</lh>
+						<li><a href='http://linuxoutlaws.com/'>Linux Outlaws</a></li>
+						<li><a href='http://linuxcranks.info/'>Linux Cranks</a></li>
+					</ul><br/><ul>
 						<lh><em>~Social Media~</em></lh>
 						<li><a href='http://OpenMediaReview.Com/'>http://OpenMediaReview.Com/</a></li>
-					</ul><br/><ul>
-						<lh><em>*NSFW*</em></lh>
-						<li><a href='http://LinuxCranks.Info/'>Linux Cranks</a></li>
 					</ul>
 				</div>
 				<div class='bloc_extra'>&nbsp;</div>

@@ -16,21 +16,18 @@
 	namespace AOPHP::Output;
 	
 	class Generator extends AOPHP::Output::Formatter{
-		public $Content_URI;
-		public $Format;
+		public $content_uri;
+		public $format;
 		
 		public function __construct(){
-			$this->Generate();
-			parent::__construct();
+			return require_once( (::__load_method( "AOPHP::Output::Generator", "__construct")) );
+			//return require_once( "./AOPHP/Methods/Output/Generator/__construct.method.php" );
 		}// __construct
 		
-		private function Generate(){
-			require_once("./blocs/formats/{$this->Format}/header.php");
-			
-			require_once("./blocs/formats/{$this->Format}/body.php");
-			
-			require_once("./blocs/formats/{$this->Format}/footer.php");
-		}//Generate
+		public function generate(){
+			return require_once( (::__load_method( "AOPHP::Output::Generator", "generate")) );
+			//return require_once( "./AOPHP/Methods/Output/Generator/generate.method.php" );
+		}//generate
 		
 	}//AOPHP::Output::Generator
 ?>

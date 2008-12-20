@@ -2,10 +2,10 @@
 		print <<<BLOC
 			<h1>Expessive Programming</h1>
 			<h2>Episode 0005: Drawing the Line</h2>
-			[<a href="http://www.archive.org/details/ExpressiveProgramming-0005-ByUberchick">this episode&#039;s Internet Archive page</a>]<br/>
-			[<a href="http://HackerPublicRadio.Org/eps.php?id=252">this episode&#039;s HPR page</a>]<br/>
+			Please rate &amp; review this episode on <a href='http://www.archive.org/details/ExpressiveProgramming-0005-ByUberchick'>The Internet Archive</a><br/>
+			Please leave me any feedback on this episode through its <a href='http://hackerpublicradio.org/eps.php?id=0254'>Hacker Public Radio</a> page.<br/>
 			<div class='internet_archive_mp3_player'>
-				<embed src="http://www.archive.org/flow/FlowPlayerLight.swf" allowfullscreen="true" allowscriptaccess="always" quality="high" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" bgcolor="ffffff" flashvars="config={&quot;controlBarBackgroundColor&quot;:&quot;0x000000&quot;,&quot;loop&quot;:false,&quot;baseURL&quot;:&quot;http://www.archive.org/download/&quot;,&quot;showVolumeSlider&quot;:true,&quot;controlBarGloss&quot;:&quot;high&quot;,&quot;playList&quot;:[{&quot;url&quot;:&quot;ExpressiveProgramming-0005-ByUberchick/DrawingTheLine_64kb.mp3&quot;}],&quot;showPlayListButtons&quot;:true,&quot;usePlayOverlay&quot;:false,&quot;menuItems&quot;:[false,false,false,false,true,true,false],&quot;initialScale&quot;:&quot;scale&quot;,&quot;autoPlay&quot;:false,&quot;autoBuffering&quot;:false,&quot;showMenu&quot;:false,&quot;showMuteVolumeButton&quot;:true,&quot;showFullScreenButton&quot;:false}" height="28px" width="350px"/>
+				<embed src='http://www.archive.org/flow/FlowPlayerLight.swf' allowfullscreen='true' allowscriptaccess='always' quality='high' type='application/x-shockwave-flash' pluginspage='http://www.adobe.com/go/getflashplayer' bgcolor='ffffff' flashvars='config={&quot;controlBarBackgroundColor&quot;:&quot;0x000000&quot;,&quot;loop&quot;:false,&quot;baseURL&quot;:&quot;http://www.archive.org/download/&quot;,&quot;showVolumeSlider&quot;:true,&quot;controlBarGloss&quot;:&quot;high&quot;,&quot;playList&quot;:[{&quot;url&quot;:&quot;ExpressiveProgramming-0005-ByUberchick/DrawingTheLine_64kb.mp3&quot;}],&quot;showPlayListButtons&quot;:true,&quot;usePlayOverlay&quot;:false,&quot;menuItems&quot;:[false,false,false,false,true,true,false],&quot;initialScale&quot;:&quot;scale&quot;,&quot;autoPlay&quot;:false,&quot;autoBuffering&quot;:false,&quot;showMenu&quot;:false,&quot;showMuteVolumeButton&quot;:true,&quot;showFullScreenButton&quot;:false}' height='28px' width='350px'/>
 			</div>
 			<p>
 				There comes a time when you have to take the next step.
@@ -28,14 +28,10 @@
 			</ul>
 			<div class='episode_dls'>
 				Download this episode:<br/>
-				| <a href='http://www.archive.org/download/ExpressiveProgramming-0005-ByUberchick/Escapism_and_Resources.ogg'><img src='./graphics/banners/play_ogg.png' class='ogg_vorbis_download' alt='Download this episode.'/></a> | <a href='http://www.archive.org/download/ExpressiveProgramming-0005-ByUberchick/Escapism_and_Resources_64kb.mp3'><img src='./graphics/banners/drm_free_mp3.png' class='drm_free_mp3_download' alt='Download this episode.'/></a> | <a href='http://hackerpublicradio.org/eps/hpr252.mp3'><img src='./graphics/banners/hpr_mp3.png' class='hpr_mp3_download' alt='Download this episode.'/></a> |
+				| <a href='http://www.archive.org/download/ExpressiveProgramming-0005-ByUberchick/Escapism_and_Resources.ogg'><img src='./graphics/icons/downloads/OGG.png' class='OGG_Download' alt='Download this episode&#039;s Highest-Quality OGG Vorbis file.'/></a>
+				| <a href='http://www.archive.org/download/ExpressiveProgramming-0005-ByUberchick/Escapism_and_Resources_64kb.mp3'><img src='./graphics/icons/downloads/MP3.png' class='MP3_Download' alt='Download this episode&#039;s low quality MP3 file.'/></a>
+				| <a href='http://hackerpublicradio.org/eps/hpr0254.mp3'><img src='./graphics/icons/downloads/HPR.png' class='HPR_Download' alt='Download this episode&#039;s medium quality MP3 file.&nbsp; Courteous of Hacker Public Radio.'/></a>
+				|
 			</div>
-<!--
-			<a href='http://www.archive.org/download/ExpressiveProgramming-0003-ByUberchick/WhoWhatWhereWhenWhy.ogg'><img src='./graphics/banners/play_ogg.png' alt='Download this episode.'/></a>
-
-			<a href='http://www.archive.org/download/ExpressiveProgramming-0002-ByUberchick/ProducingPerfection.ogg'><img src='./graphics/banners/play_ogg.png' alt='Download this episode.'/></a>
-			
-			<a href='http://www.archive.org/download/ExpressiveProgramming-0001-ByUberchick/WelcomeToTheExhibit.ogg'><img src='./graphics/banners/play_ogg.png' alt='Download this episode.'/></a>
--->
 BLOC;
 ?>

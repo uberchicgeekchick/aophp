@@ -1,17 +1,5 @@
 <?php
 	/*
-	 * (c) 2007-Present Kaity G. B. <uberChick -at- uberChicGeekChick.Com>
-	 * 	http://uberChicGeekChick.Com/
-	 *
-	 * Writen by an uberChick, other uberChicks please meet me & others @:
-	 * 	http://uberChicks.Net/
-	 *
-	 * I'm also disabled. I live with a progressive neuro-muscular disease.
-	 * I have DYT1+ Early-Onset Generalized Dystonia, a type of Generalized Dystonia.
-	 * 	http://Dystonia-DREAMS.Org/
-	 */
-
-	/*
 	 * Unless explicitly acquired and licensed from Licensor under another
 	 * license, the contents of this file are subject to the Reciprocal Public
 	 * License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
@@ -24,11 +12,6 @@
 	 * LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
-	 *
-	 * ------------------------------------------------------------------------
-	 * |	A copy of the RPL 1.5 may be found with this project or online at |
-	 * |		http://opensource.org/licenses/rpl1.5.txt		  |
-	 * ------------------------------------------------------------------------
 	 */
 	namespace AOPHP::Output::Formats;
 	
@@ -38,7 +21,7 @@
 		public $categories;
 		
 		public function __construct($Configuration){
-			
+			return require_once( (::__load_method( "AOPHP::Output::Formats::XHTML", "__construct" )) );
 		}//::construct
 		
 		private function check_get(){
@@ -46,14 +29,7 @@
 		}//check_get
 		
 		private function set_content(){
-			if( (isset($_GET['debug'])) && (file_exists( ($this->content_uri="./blocs/debug.php") )) )
-				return;
-			
-			for($n=0; $n<$this->categories['total']; $n++ )
-				if( (isset( $_GET[ $this->categories[$n] ] )) && (file_exists( ($this->content_uri="./blocs/{$this->categories[$n]}/{$_GET[ $this->categories[$n] ]}.php") )) )
-					return;
-			
-			$this->content_uri="./blocs/about/podcast.php";
+			return require_once( (::__load_method( "AOPHP::Output::Formats::XHTML", "set_content" )) );
 		}//set_content
 		
 		public function __destruct(){

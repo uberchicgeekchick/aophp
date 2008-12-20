@@ -1,17 +1,5 @@
 <?php
 	/*
-	 * (c) 2007-Present Kaity G. B. <uberChick -at- uberChicGeekChick.Com>
-	 * 	http://uberChicGeekChick.Com/
-	 *
-	 * Writen by an uberChick, other uberChicks please meet me & others @:
-	 * 	http://uberChicks.Net/
-	 *
-	 * I'm also disabled. I live with a progressive neuro-muscular disease.
-	 * I have DYT1+ Early-Onset Generalized Dystonia, a type of Generalized Dystonia.
-	 * 	http://Dystonia-DREAMS.Org/
-	 */
-
-	/*
 	 * Unless explicitly acquired and licensed from Licensor under another
 	 * license, the contents of this file are subject to the Reciprocal Public
 	 * License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
@@ -24,11 +12,6 @@
 	 * LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
-	 *
-	 * ------------------------------------------------------------------------
-	 * |	A copy of the RPL 1.5 may be found with this project or online at |
-	 * |		http://opensource.org/licenses/rpl1.5.txt		  |
-	 * ------------------------------------------------------------------------
 	 */
 	
 	if( !(defined("_AOPHP_CLASS_SEPARATOR_")) )
@@ -38,15 +21,25 @@
 		define("_AOPHP_APP_NAME_", "speakingOUT");
 	
 	if( !(defined("_AOPHP_APP_CONFIG_")) )
-		if( !(file_exists( (sprintf("./AOPHP/Configuration/Applications/%s.inc.php", _AOPHP_APP_NAME_)) )) )
+		if( !(file_exists( (sprintf("./AOPHP/Applications/%s/Configuration.inc.php", _AOPHP_APP_NAME_)) )) )
 			define("_AOPHP_APP_CONFIG_", "./AOPHP/null.php");
 		else
-			define("_AOPHP_APP_CONFIG_", (sprintf("./AOPHP/Configuration/Applications/%s.inc.php", _AOPHP_APP_NAME_)) );
-
-	if( !(defined("_AOPHP_DEFAULT_STORAGE_ENGINE_")) )
-		define("_AOPHP_DEFAULT_STORAGE_ENGINE_", "MySQL");
-
+			define("_AOPHP_APP_CONFIG_", (sprintf("./AOPHP/Applications/%s/Configuration.inc.php", _AOPHP_APP_NAME_)) );
+	
 	if( !(defined("_AOPHP_APP_ABOUT_")) )
 		define("_AOPHP_APP_ABOUT_", "Expressive Programming, the podcast.&nbsp; about self expression, art, &amp; freedom through creating &amp; using open source software.");
-	e
+	
+	if( !(isset($_GET['Format'])) )
+		$_GET['Format']="";
+	
+	switch($_GET['Format']){
+		case 'RSS':
+		case 'XHTML':
+			define("_AOPHP_FORMAT_", $_GET['Format']);
+			break;
+		
+		default;
+			define("_AOPHP_FORMAT_", "XHTML");
+			break;
+	}
 ?>
