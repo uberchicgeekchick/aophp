@@ -19,9 +19,9 @@
 			<div class='rss_bloc'>
 				<div class='rss_header'>
 					Downloads<br/>
-					| <a href='./?Enclosures=OGG'>OGGs</a> <a href='./?Format=RSS&Enclosures=OGG'><img src='./graphics/rss/mini_rss.png' width='24' height='24' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with high quality OGG episodes.' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with high quality OGG episodes.'/></a> |<br/>
-					| <a href='./?Enclosures=MP3'>MP3s</a> <a href='./?Format=RSS&Enclosures=MP3'><img src='./graphics/rss/mini_rss.png' width='24' height='24' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with low quality MP3 episodes.' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with low quality MP3 episodes.'/></a> |<br/>
-					| <a href='./?Enclosures=HPR'>HPR</a> <a href='./?Format=RSS&Enclosures=MP3'><img src='./graphics/rss/mini_rss.png' width='24' height='24' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with medium quality MP3 episodes.&nbsp; Thnx to Hacker Public Radio.' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with medium quality MP3 episodes.&nbsp; Thnx to Hacker Public Radio..'/></a>
+					| <a href='./?Enclosures=OGG'>OGGs</a> <a href='./?Format=RSS&Enclosures=OGG'><img src='./graphics/rss/rss_24x24.png' width='24' height='24' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with high quality OGG episodes.' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with high quality OGG episodes.'/></a> |<br/>
+					| <a href='./?Enclosures=MP3'>MP3s</a> <a href='./?Format=RSS&Enclosures=MP3'><img src='./graphics/rss/rss_24x24.png' width='24' height='24' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with low quality MP3 episodes.' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with low quality MP3 episodes.'/></a> |<br/>
+					| <a href='./?Enclosures=HPR'>HPR</a> <a href='./?Format=RSS&Enclosures=MP3'><img src='./graphics/rss/rss_24x24.png' width='24' height='24' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with medium quality MP3 episodes.&nbsp; Thnx to Hacker Public Radio.' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with medium quality MP3 episodes.&nbsp; Thnx to Hacker Public Radio..'/></a>
 					|
 				</div>
 				<div class='rss_inner'>
@@ -58,9 +58,9 @@ BLOC;
 					{$rss}
 				</div><nobr><div class='rss_footer'>
 					RSS 2.0 feeds:<br/>
-					|<a href='./?Format=RSS&Enclosures=OGG'>OGG&nbsp;&nbsp;<img src='./graphics/rss/tiny_rss.png' width='16' height='16' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 OGG Feed' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with high quality OGG episodes.'/></a>
-					|<a href='./?Format=RSS&Enclosures=MP3'>MP3&nbsp;&nbsp;<img src='./graphics/rss/tiny_rss.png' width='16' height='16' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with low quality MP3 episodes.' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with low quality MP3 episodes.'/></a>
-					|<a href='./?Format=RSS&Enclosures=HPR'>HPR&nbsp;&nbsp;<img src='./graphics/rss/tiny_rss.png' width='16' height='16' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with medium quality MP3 episodes.' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with medium quality MP3 episodes.&nbsp; Thnx to Hacker Public Radio.'/></a>|
+					|<a href='./?Format=RSS&Enclosures=OGG'>OGG&nbsp;&nbsp;<img src='./graphics/rss/rss_16x16.png' width='16' height='16' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 OGG Feed' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with high quality OGG episodes.'/></a>
+					|<a href='./?Format=RSS&Enclosures=MP3'>MP3&nbsp;&nbsp;<img src='./graphics/rss/rss_16x16.png' width='16' height='16' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with low quality MP3 episodes.' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with low quality MP3 episodes.'/></a>
+					|<a href='./?Format=RSS&Enclosures=HPR'>HPR&nbsp;&nbsp;<img src='./graphics/rss/rss_16x16.png' width='16' height='16' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with medium quality MP3 episodes.' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with medium quality MP3 episodes.&nbsp; Thnx to Hacker Public Radio.'/></a>|
 				</div></nobr>
 			</div>
 			<!-- bloc ends -->

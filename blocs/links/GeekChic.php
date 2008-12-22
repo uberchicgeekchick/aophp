@@ -20,8 +20,8 @@ print <<<BLOC
 					Geek Chicks are Chic
 				</div><div class='bloc_content'>
 					<ul>
-						<li><a href='http://www.geekischic.org/' title='Geek is Chic Podcast!'>Geek is Chic</a>&nbsp;&nbsp;&nbsp;<a href='http://feeds.feedburner.com/geekischic?format=xml'><img src='./graphics/rss/mini_rss.png' width='24' height='24' alt='Geek is Chic Podcast!' title='Geek is Chic Podcast!' alt='Geek is ChicGeek Podcast!'/></a></li>
-						<li><a href='http://chicgeekpodcast.blogspot.com/' title='ChicGeek Podcast: Almost as good as a closet full of shoes!'>ChicGeek Podcast</a>&nbsp;&nbsp;&nbsp;<a href='http://www.switchpod.com/users/chicgeekpodcast/feed.xml' title='ChicGeek Podcast&#039;s feed.'><img src='./graphics/rss/mini_rss.png' width='24' height='24' alt='ChicGeek Podcast: Almost as good as a closet full of shoes!' title='ChicGeek Podcast: Almost as good as a closet full of shoes!'/></a></li>
+						<li><a href='http://www.geekischic.org/' title='Geek is Chic Podcast!'>Geek is Chic</a>&nbsp;&nbsp;&nbsp;<a href='http://feeds.feedburner.com/geekischic?format=xml'><img src='./graphics/rss/rss_24x24.png' width='24' height='24' alt='Geek is Chic Podcast!' title='Geek is Chic Podcast!' alt='Geek is ChicGeek Podcast!'/></a></li>
+						<li><a href='http://chicgeekpodcast.blogspot.com/' title='ChicGeek Podcast: Almost as good as a closet full of shoes!'>ChicGeek Podcast</a>&nbsp;&nbsp;&nbsp;<a href='http://www.switchpod.com/users/chicgeekpodcast/feed.xml' title='ChicGeek Podcast&#039;s feed.'><img src='./graphics/rss/rss_24x24.png' width='24' height='24' alt='ChicGeek Podcast: Almost as good as a closet full of shoes!' title='ChicGeek Podcast: Almost as good as a closet full of shoes!'/></a></li>
 					</ul>
 				</div>
 				<div class='bloc_extra'>&nbsp;</div>
