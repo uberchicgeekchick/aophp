@@ -14,8 +14,8 @@
 	 * language governing rights and limitations under the RPL.
 	 */
 	
-	class AOPHP__API__Twitter__RSS{
-		private $URI;
+	class AOPHP__XML__RSS__Status{
+		private $RSS_URI;
 		private $Cache_File;
 		private $Max_Tweets;
 		private $User_Name;
@@ -73,12 +73,11 @@
 		
 	}//AOPHP__API__Twitter__RSS
 	
-	$Twitters_RSS=new AOPHP__API__Twitter__RSS( "uberChick", "http://twitter.com/statuses/user_timeline/8685112.rss");
+	$Twitters_RSS=new AOPHP__XML__RSS__Status("uberChick", "http://twitter.com/statuses/user_timeline/8685112.rss");
 	
 print <<<BLOC
 			<!-- bloc starts -->
 			<div class='bloc_tweets'>
-			<div class='bloc_'>
 				<div class='bloc_title'>
 					<a href='http://twitter.com/uberChick' class='bloc_title'>@uberChick</>::MyTweets
 				</div><div class='bloc_content'>
