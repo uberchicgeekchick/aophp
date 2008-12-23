@@ -14,17 +14,19 @@
 	 * language governing rights and limitations under the RPL.
 	 */
 	
-	class AOPHP__API__Twitter{
+	class AOPHP__API__Twitter__RSS{
 		private $URI;
 		private $Cache_File;
 		private $Max_Tweets;
+		private $User_Name;
 		
 		public $My_Tweets;
 		
-		public function __construct($URI, $Max_Tweets=40){
-			$this->URI=$URI;
+		public function __construct($User_Name, $RSS_URI, $Max_Tweets=40){
+			$this->RSS_URI=$RSS_URI;
 			$this->Max_Tweets=$Max_Tweets;
 			$this->My_Tweets="";
+			$this->User_Name=$User_Name;
 			
 			$this->Load_My_Tweets();
 		}//__construct
@@ -42,24 +44,24 @@
 		private function Get_Tweets(){
 			$this->My_Tweets="";
 			
-			if( !($My_Tweets_fp=fopen($this->URI, 'r')) )
+			if( !($My_Tweets_fp=fopen($this->RSS_URI, 'r')) )
 				return;
 			
-			while( !(feof($My_Tweets_fp)) ){
-				$this->My_Tweets.=fread($My_Tweets_fp, 30000);
-			}
+			while( !(feof($My_Tweets_fp)) ) $this->My_Tweets.=fread($My_Tweets_fp, 4048);
+			
 			fclose($My_Tweets_fp);
 		}//Get_Tweets
 		
 		private function Parse_Tweets(){
 			if( !($this->My_Tweets) ) return;
 			
-			$Tweets_Array=preg_split("/.*<item>(.*)<\/item>.*/im", $this->My_Tweets, -1, PREG_SPLIT_NO_EMPTY );
-			$Total_Tweets=count($Tweets_Array);
-			for($Tweet=0; $Tweet<$Total_Tweets; $Tweet++)
-				$Tweets_Array[$Tweet]=preg_replace("/.*<description>([^<]+)<\/description>.*<pubDate>([^<]+)<\/pubDate>.*<link>([^<]+)<\/link>.*/im", "<p><a href='$2'>$1</a></p><p>@$3</p><br/><br/>", $Tweets_Array[$Tweet]);
-			
-			$this->My_Tweets=implode("<br/>\t\t\t\n", $Tweets_Array);
+			$this->My_Tweets=preg_replace("/[\r\n]+/", "", $this->My_Tweets);
+			$this->My_Tweets=preg_replace("/(<\/item>)/", "$1\n", $this->My_Tweets);
+			$this->My_Tweets=preg_replace(
+				"/^.*<item>.*<title>[^<]+<\/title>.*<description>{$this->User_Name}:\ ([^<]+)<\/description>.*<pubDate>([^<]+)<\/pubDate>.*<guid>[^<]+<\/guid>.*<link>([^<]+)<\/link>.*<\/item>$/im", 
+				"<p><a href='$3'>$1</a></p><p>@$2</p><br/>\n\n",
+				$this->My_Tweets
+			);
 		}//Parse_Tweets
 		
 		public function Display_Tweets(){
@@ -69,17 +71,18 @@
 		private function Save_Tweets(){
 		}//Save_Tweets
 		
-	}//AOPHP__API__Twitter
+	}//AOPHP__API__Twitter__RSS
 	
-	$My_Tweets=new AOPHP__API__Twitter("http://twitter.com/statuses/user_timeline/8685112.rss");
+	$Twitters_RSS=new AOPHP__API__Twitter__RSS( "uberChick", "http://twitter.com/statuses/user_timeline/8685112.rss");
 	
 print <<<BLOC
 			<!-- bloc starts -->
-			<div class='bloc'>
+			<div class='bloc_tweets'>
+			<div class='bloc_'>
 				<div class='bloc_title'>
 					<a href='http://twitter.com/uberChick' class='bloc_title'>@uberChick</>::MyTweets
 				</div><div class='bloc_content'>
-					{$My_Tweets->My_Tweets}
+					{$Twitters_RSS->My_Tweets}
 					&nbsp;
 				</div>
 				<div class='bloc_extra'>&nbsp;</div>
