@@ -59,13 +59,13 @@
 			$this->My_Tweets=preg_replace("/(<\/item>)/", "$1\n", $this->My_Tweets);
 			$this->My_Tweets=preg_replace(
 				"/^.*<item>.*<title>[^<]+<\/title>.*<description>{$this->User_Name}:\ ([^<]+)<\/description>.*<pubDate>([^<]+)<\/pubDate>.*<guid>[^<]+<\/guid>.*<link>([^<]+)<\/link>.*<\/item>$/im", 
-				"<p><a href='$3'>$1</a></p><p>@$2</p><br/>\n\n",
+				"\n\t\t\t\t<li><a href='$3'>$1</a> &ndash; @$2</li><br/>\n\t\t\t\t",
 				$this->My_Tweets
 			);
 		}//Parse_Tweets
 		
 		public function Display_Tweets(){
-			print($this->My_Tweets);
+			print("\n\t\t\t<ul>{$this->My_Tweets}\n\t\t\t</ul>");
 		}//Display_Tweets
 		
 		private function Save_Tweets(){
