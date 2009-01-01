@@ -27,11 +27,11 @@
 						<li><a href='http://TheCommandLine.Net/'>The Command Line Podcast</a></li>
 						<li><a href='http://SE-Radio.Net/'>Software Enginering Radio</a></li>
 					</ul><br/><ul>
-						<lh>~Linux &amp; OSS~</lh>
+						<lh>~Hacker Culture~</lh>
 						<li><a href='http://hackerpublicradio.org/'>Hacker Public Radio</a></li>
 						<li><a href='http://hackervoice.co.uk/'>Hacker Voice Radio</a></li>
 					</ul><br/><ul>
-						<lh>~Hacker Culture~</lh>
+						<lh>~Linux &amp; OSS~</lh>
 						<li><a href='http://linuxoutlaws.com/'>Linux Outlaws</a></li>
 						<li><a href='http://linuxcranks.info/'>Linux Cranks</a></li>
 					</ul><br/><ul>

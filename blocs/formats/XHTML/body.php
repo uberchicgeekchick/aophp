@@ -7,6 +7,7 @@
 		require_once("./blocs/links/projects.php");
 		require_once("./blocs/links/me_online.php");
 		require_once("./blocs/links/CodingChicas.php");
+		require_once("./blocs/widgets/podiobooks.com.php");
 		require_once("./blocs/links/podroll.php");
 		require_once("./blocs/links/GeekChic.php");
 		print("		</div>\n");
