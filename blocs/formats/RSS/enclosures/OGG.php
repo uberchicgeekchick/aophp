@@ -1,5 +1,14 @@
 		
 		<item>
+			<title>Expressive Programming::0006::How do you view programming: artistically, scientifically, or statically?</title>
+			<link>http://uberChicGeekChick.Com/?episodes=0006</link>
+			<description><![CDATA[<h1>Expressive Programming</h1><h2>Episode 0006::How do you view programming: artistically, scientifically, or statically?</h2><p>Is programming an artistic expression, a scientific practice, or a matter of using the best patterns & algorithms that already exist?</p><p>Is programming creative, discovery, or simply a way to solve a problem?</p><ul><lh>Music by <a href="http://hotbitcharsenal.com/">Hot.Bitch.Arsenal</a> featured in this episode:</lh><li>ebb.first.then.you.flow</li><li>every.time.is.the.last.time</li><li>get.my.drift</li><li>fifo(fade.in.fade.out)</li><li>wheels.come.off</li></ul>]]></description>
+			<pubDate>2008-01-18</pubDate>
+			<enclosure url='http://www.archive.org/download/UberchicksExpressiveProgramming0006HowDoYouViewProgramming/HowDoYouViewProgrammingArtisticlyScientificlyOrStaticly.ogg' length='23474242' type='audio/mpeg'/>
+			<guid>http://www.archive.org/download/UberchicksExpressiveProgramming0006HowDoYouViewProgramming/HowDoYouViewProgrammingArtisticlyScientificlyOrStaticly.ogg</guid>
+		</item>
+		
+		<item>
 			<title>Expressive Programming::0005::Drawing the Line.</title>
 			<link>http://uberChicGeekChick.Com/?episodes=0005</link>
 			<description><![CDATA[<h1>Expressive Programming</h1><h2>Episode 0005::Drawing the Line.</h2><p>There comes a time when you have to take the next step.</p><p>A time when you have to stop planning and start programming.</p><p>Stop perfecting and start moving on.</p><p>Some times its a stick figure, some times its the piece flows complete.</p><p>But our plans & goals only become projects & parts of our life once we draw our first line.</p><p>I also talk about by further work on my new 3-D game project. I talk about the engine I've chosen & what work I've done so far. Mostly I discuss managing 'non-code resources' of any large project. I especially focus on my game's 3-D models & textures.</p><ul><lh>Links mentioned in this episode:</lh><li><a href='http://www.raydium.org/'>Raydium: 3-D Game Engine</a></li><li><a href='http://libSDL.org/'>SDL</a></li><li><a href='http://www.paulgraham.com/artistsship.html'>Paul Graham&#039;s: &quot;The Other Half of Artists Ship&quot;</a></li></ul>]]></description>

@@ -1,7 +1,7 @@
 <?php
 
-	header("Content-disposition: inline; filename=Expressive+Programming.html");
 	header("Content-Type: text/html; charset=utf-8");
+	header("Content-disposition: inline; filename=Expressive+Programming.html");
 
 	print <<<HEADER
 <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.1//EN' 'http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd'>
