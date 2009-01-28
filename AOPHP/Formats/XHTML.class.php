@@ -46,14 +46,14 @@
 		
 		private function set_content(){
 			//Defines AOPHP::Output::Formats::XHTML->set_content(); or AOPHP__Output__Formats__XHTML->set_content();
-			if( (isset($_GET['debug'])) && (file_exists( ($this->content_uri="./AOPHP/blocs/formats/{$this->mimetype}/debug.php") )) )
+			if( (isset($_GET['debug'])) && (file_exists( ($this->content_uri="./AOPHP/Formats/{$this->mimetype}/debug.php") )) )
 				return;
 			
 			for($n=0; $n<$this->categories['total']; $n++ )
-				if( (isset( $_GET[ $this->categories[$n] ] )) && (file_exists( ($this->content_uri="./AOPHP/blocs/formats/{$this->mimetype}/{$this->categories[$n]}/{$_GET[ $this->categories[$n] ]}.php") )) )
+				if( (isset( $_GET[ $this->categories[$n] ] )) && (file_exists( ($this->content_uri="./AOPHP/Formats/{$this->mimetype}/{$this->categories[$n]}/{$_GET[ $this->categories[$n] ]}.php") )) )
 					return;
 			
-			$this->content_uri="./AOPHP/blocs/formats/{$this->mimetype}/podcast.php";
+			$this->content_uri="./AOPHP/Formats/{$this->mimetype}/projects/podcast.php";
 		}//set_content
 		
 		public function __destruct(){
