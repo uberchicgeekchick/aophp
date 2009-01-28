@@ -18,11 +18,8 @@
 	require_once("./AOPHP/__autoload.function.php");
 	require_once("./AOPHP/__load_method.function.php");
 	
-	require_once( (sprintf("./AOPHP/%s%s/ExceptionHandler.Default.class.php", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_)) );
-	require_once("./AOPHP/Applications/speakingOUT/Configuration.inc.php");
+	require_once("./AOPHP/ExceptionHandler.Default.class.php");
 	
-	$AOPHP=(sprintf("AOPHP%s%sCore", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_));
-	
-	$AOPHP=new $AOPHP();
+	$AOPHP=new AOPHP__Core("./AOPHP/Applications/speakingOUT/Configuration.inc.php");
 	
 ?>

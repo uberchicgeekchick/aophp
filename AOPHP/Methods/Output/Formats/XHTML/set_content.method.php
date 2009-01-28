@@ -23,14 +23,4 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	
-	//Defines AOPHP::Output::Formats::XHTML->set_content(); or AOPHP__Output__Formats__XHTML->set_content();
-			if( (isset($_GET['debug'])) && (file_exists( ($this->content_uri="./blocs/debug.php") )) )
-				return;
-			
-			for($n=0; $n<$this->categories['total']; $n++ )
-				if( (isset( $_GET[ $this->categories[$n] ] )) && (file_exists( ($this->content_uri="./blocs/{$this->categories[$n]}/{$_GET[ $this->categories[$n] ]}.php") )) )
-					return;
-			
-			$this->content_uri="./blocs/about/podcast.php";
 ?>

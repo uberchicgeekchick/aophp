@@ -23,16 +23,4 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	
-	//Defines AOPHP::Output::Formats::RSS->__construct(); or AOPHP__Output__Formats__RSS->__construct();			
-			$this->categories=array(
-				'episodes', 'specials', 'blogs', 'about',
-				'total'=>4
-			);
-			
-			//if( !($this->check_get()) )
-				$_GET['Category']="episodes";
-			
-			//$this->set_content();
-			parent::__construct();
 ?>

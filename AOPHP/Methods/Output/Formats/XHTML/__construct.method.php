@@ -23,16 +23,4 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	
-	//Defines AOPHP::Output::Formats::XHTML->__construct(); or AOPHP__Output__Formats__XHTML->__construct();
-			$this->categories=array(
-				'episodes', 'specials', 'blogs', 'about',
-				'total'=>4
-			);
-			
-			if( !($this->check_get()) )
-				$_GET['episodes']="0006";
-			
-			$this->set_content();
-			parent::__construct();
 ?>

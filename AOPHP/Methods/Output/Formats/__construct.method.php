@@ -23,8 +23,4 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	
-	//Defines AOPHP::Output::Formats->__construct(); && AOPHP__Output__Formats->__construct();
-			$this->format=_AOPHP_FORMAT_;
-			parent::__construct();
 ?>

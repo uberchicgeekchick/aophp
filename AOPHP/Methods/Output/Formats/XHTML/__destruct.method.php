@@ -23,7 +23,4 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	
-	//Defines AOPHP::Output::Formats::XHTML->__destruct(); or AOPHP__Output__Formats__XHTML->__destruct();
-			print("<!-- __destruct -->");
 ?>

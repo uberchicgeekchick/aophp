@@ -14,11 +14,10 @@
 	 * language governing rights and limitations under the RPL.
 	 */
 	
-	if( !(defined("_AOPHP_CLASS_SEPARATOR_")) )
-		define("_AOPHP_CLASS_SEPARATOR_", ( ( ( (float)phpversion() ) >= 5.3 ) ? ":" : "_" ) );
-	
 	if( !(defined("_AOPHP_APP_NAME_")) )
 		define("_AOPHP_APP_NAME_", "speakingOUT");
+		
+	define("_AOPHP_CLASS_SEPARATOR_", "_");
 	
 	if( !(defined("_AOPHP_APP_CONFIG_")) )
 		if( !(file_exists( (sprintf("./AOPHP/Applications/%s/Configuration.inc.php", _AOPHP_APP_NAME_)) )) )
@@ -28,18 +27,4 @@
 	
 	if( !(defined("_AOPHP_APP_ABOUT_")) )
 		define("_AOPHP_APP_ABOUT_", "Expressive Programming, the podcast.&nbsp; about self expression, art, &amp; freedom through creating &amp; using open source software.");
-	
-	if( !(isset($_GET['Format'])) )
-		$_GET['Format']="";
-	
-	switch($_GET['Format']){
-		case 'RSS':
-		case 'XHTML':
-			define("_AOPHP_FORMAT_", $_GET['Format']);
-			break;
-		
-		default;
-			define("_AOPHP_FORMAT_", "XHTML");
-			break;
-	}
 ?>

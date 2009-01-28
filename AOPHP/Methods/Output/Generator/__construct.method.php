@@ -13,8 +13,4 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-
-			//Defines AOPHP::Output::Generator->__construct(); or AOPHP__Output__Generator->__construct();
-			$this->generate();
-			parent::__construct();
 ?>

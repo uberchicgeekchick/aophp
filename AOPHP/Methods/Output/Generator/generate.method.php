@@ -13,11 +13,4 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-
-			//Defines AOPHP::Output::Generator->generate(); or AOPHP__Output__Generator->generate();
-			require_once("./blocs/formats/{$this->format}/header.php");
-			
-			require_once("./blocs/formats/{$this->format}/body.php");
-			
-			require_once("./blocs/formats/{$this->format}/footer.php");
 ?>

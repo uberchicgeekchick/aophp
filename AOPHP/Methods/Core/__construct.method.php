@@ -23,12 +23,4 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	
-	//Defines AOPHP::Core->construct(); or AOPHP__Core->__construct();
-			$this->separator=_AOPHP_CLASS_SEPARATOR_;
-			$this->format=_AOPHP_FORMAT_;
-			
-			$this->output=sprintf("AOPHP%s%sOutput%s%sFormats%s%s%s", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_FORMAT_);
-			
-			$this->output=new $this->output(_AOPHP_APP_CONFIG_);
 ?>

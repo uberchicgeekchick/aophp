@@ -20,7 +20,7 @@
 		))
 			return false;
 		
-		$Object=sprintf("./AOPHP/%s%s/%s.class.php", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, (preg_replace( (sprintf( "/[%s]{2}/", _AOPHP_CLASS_SEPARATOR_ )), "/", $AOPHP_Path)) );
+		$Object=sprintf("./AOPHP/%s.class.php", (preg_replace( (sprintf( "/[%s]{2}/", _AOPHP_CLASS_SEPARATOR_ )), "/", $AOPHP_Path)) );
 		
 		if(!( (file_exists($Object)) && (is_readable($Object)) ))
 			return false;
