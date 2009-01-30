@@ -18,14 +18,13 @@
 	class AOPHP__Formats__RSS extends AOPHP__Formats{
 		public $content_uri;
 		public $format;
-		public $mimetype;
 		public $categories;
 		
 		public $enclosures;
 		
 		public function __construct(){
 			//Defines AOPHP::Output::Formats::RSS->__construct(); or AOPHP__Output__Formats__RSS->__construct();
-			$this->mimetype="RSS";
+			$this->format="RSS";
 			
 			$this->categories=array(
 				'episodes', 'specials', 'blogs', 'projects',
@@ -63,8 +62,15 @@
 		}//check_get
 		
 		private function set_content(){
-				$this->content_uri="./AOPHP/Formats/{$this->mimetype}/enclosures/{$this->enclosures}.RSS.php";
+				$this->content_uri="./AOPHP/Formats/{$this->format}/enclosures/{$this->enclosures}.RSS.php";
 		}//set_content
+		
+		public function paint(){
+			//Defines AOPHP::Output::Format->generate(); or AOPHP__Output__Format->generate();
+			require_once("./AOPHP/Formats/{$this->format}/header.php");
+			require_once("./AOPHP/Formats/{$this->format}/body.php");
+			require_once("./AOPHP/Formats/{$this->format}/footer.php");
+		}//generate
 		
 		public function __destruct(){
 		}//__destruct

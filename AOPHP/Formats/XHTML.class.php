@@ -18,12 +18,11 @@
 	class AOPHP__Formats__XHTML extends AOPHP__Formats{
 		public $content_uri;
 		public $format;
-		public $mimetype;
 		public $categories;
 		
 		public function __construct(){
 			//Defines AOPHP::Output::Formats::XHTML->__construct(); / AOPHP__Output__Formats__XHTML->__construct();
-			$this->mimetype="XHTML";
+			$this->format="XHTML";
 			
 			$this->categories=array(
 				'episodes', 'specials', 'blogs', 'projects',
@@ -46,15 +45,22 @@
 		
 		private function set_content(){
 			//Defines AOPHP::Output::Formats::XHTML->set_content(); or AOPHP__Output__Formats__XHTML->set_content();
-			if( (isset($_GET['debug'])) && (file_exists( ($this->content_uri="./AOPHP/Formats/{$this->mimetype}/debug.php") )) )
+			if( (isset($_GET['debug'])) && (file_exists( ($this->content_uri="./AOPHP/Formats/{$this->format}/debug.php") )) )
 				return;
 			
 			for($n=0; $n<$this->categories['total']; $n++ )
-				if( (isset( $_GET[ $this->categories[$n] ] )) && (file_exists( ($this->content_uri="./AOPHP/Formats/{$this->mimetype}/{$this->categories[$n]}/{$_GET[ $this->categories[$n] ]}.php") )) )
+				if( (isset( $_GET[ $this->categories[$n] ] )) && (file_exists( ($this->content_uri="./AOPHP/Formats/{$this->format}/{$this->categories[$n]}/{$_GET[ $this->categories[$n] ]}.php") )) )
 					return;
 			
-			$this->content_uri="./AOPHP/Formats/{$this->mimetype}/projects/podcast.php";
+			$this->content_uri="./AOPHP/Formats/{$this->format}/projects/podcast.php";
 		}//set_content
+		
+		public function paint(){
+			//Defines AOPHP::Output::Format->generate(); or AOPHP__Output__Format->generate();
+			require_once("./AOPHP/Formats/{$this->format}/header.php");
+			require_once("./AOPHP/Formats/{$this->format}/body.php");
+			require_once("./AOPHP/Formats/{$this->format}/footer.php");
+		}//generate
 		
 		public function __destruct(){
 			//Defines AOPHP::Output::Formats::XHTML->__destruct(); or AOPHP__Output__Formats__XHTML->__destruct();

@@ -17,12 +17,12 @@
 	
 	class AOPHP__Formats{
 		public $content_uri;
-		public $format;
+		public $painter;
 		
 		public function __construct(){
 			//Defines AOPHP::Formats->__construct(); && AOPHP__Formats->__construct();
 			$this->set_format();
-			$this->generate();
+			$this->paint();
 		}//__construct
 		
 		
@@ -33,25 +33,20 @@
 			
 			switch($_GET['Format']){
 				case 'RSS':
-					$this->format=new AOPHP__Formats__RSS();
+					$this->painter=new AOPHP__Formats__RSS();
 					return;
 				
 				case 'XHTML':
 				default;
-					$this->format=new AOPHP__Formats__XHTML();
+					$this->painter=new AOPHP__Formats__XHTML();
 					return;
 				}
 		}//set_format
 		
 		
 		
-		public function generate(){
-			//Defines AOPHP::Output::Format->generate(); or AOPHP__Output__Format->generate();
-			require_once("./AOPHP/blocs/formats/{$this->format}/header.php");
-			
-			require_once("./AOPHP/blocs/formats/{$this->format}/body.php");
-			
-			require_once("./AOPHP/blocs/formats/{$this->format}/footer.php");
-		}//generate
+		public function paint(){
+			$this->painter->paint();
+		}//paint
 		
 	}
