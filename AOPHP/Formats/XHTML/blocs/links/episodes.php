@@ -38,11 +38,11 @@ BLOC;
 	}
 	
 	if(!(
-		(file_exists("./blocs/formats/RSS/enclosures/{$enclosure_type}.php"))
+		(file_exists( ($rss_file=sprintf("./AOPHP/Formats/RSS/enclosures/%s.RSS.php", $enclosure_type)) ))
 		&&
-		($rss_fp=(fopen("./blocs/formats/RSS/enclosures/{$enclosure_type}.php", "r")))
+		($rss_fp=(fopen($rss_file, "r")))
 		&&
-		($rss=fread($rss_fp, (filesize( "./blocs/formats/RSS/enclosures/{$enclosure_type}.php" )) ))
+		($rss=fread($rss_fp, (filesize($rss_file)) ))
 	))
 			$rss="<div class='error'>I was unable to load the specified episodes&#039; feed.</div>";
 	else {

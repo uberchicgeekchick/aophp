@@ -26,7 +26,7 @@ CONTENT_HEADER;
 		
 			require_once($this->content_uri);
 			
-			require_once("./blocs/hugs_and_bye.php");
+			require_once("./AOPHP/Formats/{$this->format}/blocs/hugs_and_bye.php");
 		
 	print <<<CONTENT_FOOTER
 				<!-- Ends displaying: {$this->content_uri} -->

@@ -1,3 +1,3 @@
 <?php
-	require_once({$this->content_uri});
+	require_once($this->content_uri);
 ?>

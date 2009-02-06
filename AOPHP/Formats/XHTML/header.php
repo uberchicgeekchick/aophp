@@ -29,8 +29,8 @@
 		-->
 		
 		<!-- NOTE: Firebug can't debug @import rules. -->
-		<!-- <style type='text/css'> @import url('./blocs/formats/{$this->format}/alacast.css'); </style> -->
-		<link rel='stylesheet' href='./blocs/formats/{$this->format}/alacast.css' type='text/css'/>
+		<!-- <style type='text/css'> @import url('./AOPHP/Formats/{$this->format}/alacast.css'); </style> -->
+		<link rel='stylesheet' href='./AOPHP/Formats/{$this->format}/alacast.css' type='text/css'/>
 	</head>
 	<body>
 HEADER;

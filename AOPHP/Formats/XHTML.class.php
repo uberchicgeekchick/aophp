@@ -55,12 +55,14 @@
 			$this->content_uri="./AOPHP/Formats/{$this->format}/projects/podcast.php";
 		}//set_content
 		
+		
+		
 		public function paint(){
-			//Defines AOPHP::Output::Format->generate(); or AOPHP__Output__Format->generate();
+			//Defines AOPHP::Formats::XHTML->paint(); or AOPHP__Format__XHTML->paint();
 			require_once("./AOPHP/Formats/{$this->format}/header.php");
 			require_once("./AOPHP/Formats/{$this->format}/body.php");
 			require_once("./AOPHP/Formats/{$this->format}/footer.php");
-		}//generate
+		}//paint
 		
 		public function __destruct(){
 			//Defines AOPHP::Output::Formats::XHTML->__destruct(); or AOPHP__Output__Formats__XHTML->__destruct();

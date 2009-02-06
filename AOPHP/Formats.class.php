@@ -46,6 +46,7 @@
 		
 		
 		public function paint(){
+			//Defines AOPHP::Format->paint(); or AOPHP__Format->paint();
 			$this->painter->paint();
 		}//paint
 		

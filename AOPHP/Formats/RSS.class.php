@@ -65,12 +65,14 @@
 				$this->content_uri="./AOPHP/Formats/{$this->format}/enclosures/{$this->enclosures}.RSS.php";
 		}//set_content
 		
+		
+		
 		public function paint(){
-			//Defines AOPHP::Output::Format->generate(); or AOPHP__Output__Format->generate();
+			//Defines AOPHP::Formats::RSS->paint(); or AOPHP__Format__RSS->paint();
 			require_once("./AOPHP/Formats/{$this->format}/header.php");
 			require_once("./AOPHP/Formats/{$this->format}/body.php");
 			require_once("./AOPHP/Formats/{$this->format}/footer.php");
-		}//generate
+		}//paint
 		
 		public function __destruct(){
 		}//__destruct
