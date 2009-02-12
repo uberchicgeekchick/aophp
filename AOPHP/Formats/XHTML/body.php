@@ -13,7 +13,7 @@
 		print("		</div>\n");
 		
 		print("		<div class='right_sides_blocs'>");
-		require_once("./AOPHP/Formats/{$this->format}/blocs/widgets/episodes.php");
+		require_once("./AOPHP/Formats/{$this->format}/blocs/widgets/convert_rss.php");
 		require_once("./AOPHP/Formats/{$this->format}/blocs/about_me/COPYING.php");
 		require_once("./AOPHP/Formats/{$this->format}/blocs/widgets/MyTweets.php");
 		require_once("./AOPHP/Formats/{$this->format}/blocs/widgets/MyBlogLog.php");
