@@ -16,9 +16,9 @@
 
 		<link rel='shortcut icon' href='./graphics/favicon.png'/>
 		
-		<link rel='alternate' type='application/rss+xml' title='Expressive Programming&#039;s OGG Feed' href='./?Format=RSS&Enclosure=ogg'/>
-		<link rel='alternate' type='application/rss+xml' title='Expressive Programming&#039;s MP3 Feed' href='./?Format=RSS&Enclosure=mp3'/>
-		<link rel='alternate' type='application/rss+xml' title='Expressive Programming&#039;s HPR Feed' href='./?Format=RSS&Enclosure=hpr'/>
+		<link rel='alternate' type='application/rss+xml' title='Expressive Programming&#039;s OGG Feed' href='./?XML=RSS&Enclosure=ogg'/>
+		<link rel='alternate' type='application/rss+xml' title='Expressive Programming&#039;s MP3 Feed' href='./?XML=RSS&Enclosure=mp3'/>
+		<link rel='alternate' type='application/rss+xml' title='Expressive Programming&#039;s HPR Feed' href='./?XML=RSS&Enclosure=hpr'/>
 		
 		<link rel="openid.server" href="http://www.myopenid.com/server" />  
 		<link rel="openid.delegate" href="http://uberChicCeekChick.myopenid.com/" />  
@@ -35,8 +35,8 @@
 		-->
 		
 		<!-- NOTE: Firebug can't debug @import rules. -->
-		<!-- <style type='text/css'> @import url('./AOPHP/Formats/{$this->format}/alacast.css'); </style> -->
-		<link rel='stylesheet' href='./AOPHP/Formats/{$this->format}/alacast.css' type='text/css'/>
+		<!-- <style type='text/css'> @import url('./AOPHP/XML/{$this->format}/alacast.css'); </style> -->
+		<link rel='stylesheet' href='./AOPHP/XML/{$this->format}/alacast.css' type='text/css'/>
 	</head>
 	<body>
 HEADER;

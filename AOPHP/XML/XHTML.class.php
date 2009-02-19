@@ -15,13 +15,13 @@
 	 */
 	//namespace AOPHP::Formats;
 	
-	class AOPHP__Formats__XHTML extends AOPHP__Formats{
+	class AOPHP__XML__XHTML extends AOPHP__XML{
 		public $content_uri;
 		public $format;
 		public $categories;
 		
 		public function __construct(){
-			//Defines AOPHP::Output::Formats::XHTML->__construct(); / AOPHP__Output__Formats__XHTML->__construct();
+			//Defines AOPHP::XML::XHTML->__construct(); / AOPHP__XML__XHTML->__construct();
 			$this->format="XHTML";
 			
 			$this->categories=array(
@@ -36,7 +36,7 @@
 		}//__construct
 		
 		private function check_get(){
-			//Defines AOPHP::Output::Formats::XHTML->check_get(); / AOPHP__Output__Formats__XHTML->check_get();
+			//Defines AOPHP::XML::XHTML->check_get(); / AOPHP__XML__XHTML->check_get();
 			for($n=0; $n<$this->categories['total']; $n++ )
 				if( (isset( $_GET[ $this->categories[$n] ] )) )
 					return 1;
@@ -44,35 +44,35 @@
 		}//check_get
 		
 		private function set_content(){
-			//Defines AOPHP::Output::Formats::XHTML->set_content(); or AOPHP__Output__Formats__XHTML->set_content();
-			if( (isset($_GET['debug'])) && (file_exists( ($this->content_uri="./AOPHP/Formats/{$this->format}/debug.php") )) )
+			//Defines AOPHP::XML::XHTML->set_content(); or AOPHP__XML__XHTML->set_content();
+			if( (isset($_GET['debug'])) && (file_exists( ($this->content_uri="./AOPHP/XML/{$this->format}/debug.php") )) )
 				return;
 			
 			for($n=0; $n<$this->categories['total']; $n++ )
-				if( (isset( $_GET[ $this->categories[$n] ] )) && (file_exists( ($this->content_uri="./AOPHP/Formats/{$this->format}/{$this->categories[$n]}/{$_GET[ $this->categories[$n] ]}.php") )) )
+				if( (isset( $_GET[ $this->categories[$n] ] )) && (file_exists( ($this->content_uri="./AOPHP/XML/{$this->format}/{$this->categories[$n]}/{$_GET[ $this->categories[$n] ]}.php") )) )
 					return;
 			
-			$this->content_uri="./AOPHP/Formats/{$this->format}/projects/podcast.php";
+			$this->content_uri="./AOPHP/XML/{$this->format}/projects/podcast.php";
 		}//set_content
 		
 		
 		
 		public function paint(){
 			//Defines AOPHP::Formats::XHTML->paint(); or AOPHP__Format__XHTML->paint();
-			require_once("./AOPHP/Formats/{$this->format}/header.php");
-			require_once("./AOPHP/Formats/{$this->format}/body.php");
-			require_once("./AOPHP/Formats/{$this->format}/footer.php");
+			require_once("./AOPHP/XML/{$this->format}/header.php");
+			require_once("./AOPHP/XML/{$this->format}/body.php");
+			require_once("./AOPHP/XML/{$this->format}/footer.php");
 		}//paint
 		
 		public function __destruct(){
-			//Defines AOPHP::Output::Formats::XHTML->__destruct(); or AOPHP__Output__Formats__XHTML->__destruct();
+			//Defines AOPHP::XML::XHTML->__destruct(); or AOPHP__XML__XHTML->__destruct();
 			
 			/* A very evil php bug is stopping this from working:
-			return require_once( "./AOPHP/Methods/Output/Formats/XHTML/__destruct.method.php" );
+			return require_once( "./AOPHP/Methods/Output/XML/XHTML/__destruct.method.php" );
 			return require_once( (__load_method( (get_class( $this )), "__destruct" )) );
 			*/
 			print("<!-- __destruct -->");
 		}//__destruct
 		
-	}//AOPHP__Output__Formats__XHTML
+	}//AOPHP__XML__XHTML
 ?>

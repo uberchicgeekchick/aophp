@@ -15,7 +15,7 @@
 	 */
 	//namespace AOPHP::Formats;
 	
-	class AOPHP__Formats__RSS extends AOPHP__Formats{
+	class AOPHP__XML__RSS extends AOPHP__XML{
 		public $content_uri;
 		public $format;
 		public $categories;
@@ -23,7 +23,7 @@
 		public $enclosures;
 		
 		public function __construct(){
-			//Defines AOPHP::Output::Formats::RSS->__construct(); or AOPHP__Output__Formats__RSS->__construct();
+			//Defines AOPHP::XML::RSS->__construct(); or AOPHP__XML__RSS->__construct();
 			$this->format="RSS";
 			
 			$this->categories=array(
@@ -62,20 +62,27 @@
 		}//check_get
 		
 		private function set_content(){
-				$this->content_uri="./AOPHP/Formats/{$this->format}/enclosures/{$this->enclosures}.RSS.php";
+				$this->content_uri="./AOPHP/XML/{$this->format}/enclosures/{$this->enclosures}.RSS.php";
 		}//set_content
 		
 		
 		
 		public function paint(){
 			//Defines AOPHP::Formats::RSS->paint(); or AOPHP__Format__RSS->paint();
-			require_once("./AOPHP/Formats/{$this->format}/header.php");
-			require_once("./AOPHP/Formats/{$this->format}/body.php");
-			require_once("./AOPHP/Formats/{$this->format}/footer.php");
+			require_once("./AOPHP/XML/{$this->format}/header.php");
+			require_once("./AOPHP/XML/{$this->format}/body.php");
+			require_once("./AOPHP/XML/{$this->format}/footer.php");
 		}//paint
+
+		public function addtag($tag_type){
+		}//paint_tag
+
+		private function format_pubDate(){
+			printf( "<pubDate>%s</pubDate>", (date( "%c", (mktime()) )) );
+		}//addtag_pubDate
 		
 		public function __destruct(){
 		}//__destruct
 		
-	}//AOPHP__Output__Formats__RSS
+	}//AOPHP__XML__RSS
 ?>

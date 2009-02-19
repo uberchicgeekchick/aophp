@@ -38,7 +38,7 @@ BLOC;
 	}
 	
 	if(!(
-		(file_exists( ($rss_file=sprintf("./AOPHP/Formats/RSS/enclosures/%s.RSS.php", $enclosure_type)) ))
+		(file_exists( ($rss_file=sprintf("./AOPHP/XML/RSS/enclosures/%s.RSS.php", $enclosure_type)) ))
 		&&
 		($rss_fp=(fopen($rss_file, "r")))
 		&&

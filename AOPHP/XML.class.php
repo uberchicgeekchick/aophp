@@ -15,12 +15,12 @@
 	 */
 	//namespace AOPHP;
 	
-	class AOPHP__Formats{
+	class AOPHP__XML{
 		public $content_uri;
 		public $painter;
 		
 		public function __construct(){
-			//Defines AOPHP::Formats->__construct(); && AOPHP__Formats->__construct();
+			//Defines AOPHP::XML->__construct(); && AOPHP__XML->__construct();
 			$this->set_format();
 			$this->paint();
 		}//__construct
@@ -31,22 +31,29 @@
 			if( !(isset($_GET['Format'])) )
 				$_GET['Format']="";
 			
+			$painter=NULL;
 			switch($_GET['Format']){
 				case 'RSS':
-					$this->painter=new AOPHP__Formats__RSS();
-					return;
+					$painter="RSS";
+					break;
 				
 				case 'XHTML':
 				default;
-					$this->painter=new AOPHP__Formats__XHTML();
-					return;
-				}
+					$painter="XHTML";
+					break;
+			}
+			
+			if(!$painter)
+				Exception::throw("Unable to find XML format for this session");
+			
+			$painter="AOPHP__XML__{$painter}";
+			$this->painter=new $painter();
 		}//set_format
 		
 		
 		
 		public function paint(){
-			//Defines AOPHP::Format->paint(); or AOPHP__Format->paint();
+			//Defines AOPHP::XML->paint(); or AOPHP__XML->paint();
 			$this->painter->paint();
 		}//paint
 		

@@ -17,10 +17,12 @@
 	
 	class AOPHP__Core{
 		public $format;
+		public $doctype;
 		
 		public function __construct($Configuration_file){
 			//Defines AOPHP::Core->construct(); or AOPHP__Core->__construct();
-			$this->format=new AOPHP__Formats();
+			$this->format="XML";
+			$this->doctype=new AOPHP__XML();
 		}//__construct
 		
 	}//AOPHP__Core
