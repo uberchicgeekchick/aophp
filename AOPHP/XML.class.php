@@ -44,7 +44,7 @@
 			}
 			
 			if(!$painter)
-				Exception::throw("Unable to find XML format for this session");
+				new Exception("Unable to find XML format for this session");
 			
 			$painter="AOPHP__XML__{$painter}";
 			$this->painter=new $painter();
