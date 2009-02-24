@@ -47,15 +47,15 @@
 						$_GET['Enclosures']='OGG';
 				
 				switch( $_GET['Enclosures'] ){
+					case 'FLAC': case 'OGG':
+						$this->enclusures=$_GET['Enclosures'];
+						break;
 					case 'MP3': case 'hpr': case 'mp3':
-						$this->enclosures="MP3";
-						break;
-					
 					case 'HPR': case 'hpr':
-						$this->enclosures="OGG";
+						$this->enclosures="ERROR";
 						break;
 					
-					case 'OGG': case 'ogg': default:
+					default:
 						$this->enclosures="OGG";
 						break;
 				}

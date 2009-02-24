@@ -92,9 +92,8 @@ div.right_sides_blocs{position:absolute; display:inline-block; clear:all; width:
 		div.rss_footer{display:block; text-align:center; color:#ff9999; vertical-align:middle; font:italic small-caps bold 1.75ex Courier; background:url('../../../../../graphics/rss/footer.png') no-repeat; width:220px; height:61px;}
 
 	div.episode_dls{display:block; text-align:center; border-style:invert; border-width:2px;}
-		img.OGG_Download{width:80px; height:27px;}
-		img.MP3_Download{width:112px; height:24px;}
-		img.HPR_Download{width:96px; height:30px;}
+		img.OGG_Download{width:80px!important; height:27px!important;}
+		img.FLAC_Download{width:85px!important; height:25px!important;}
 
 	div.copyright{clear:both; text-align:right; color:#cccccc; font-weight:bold;}
 /* ends right hand blocs */

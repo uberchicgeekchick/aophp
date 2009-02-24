@@ -8,7 +8,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
 	<head>
-		<title>uberChicGeekChick: Expressive Programming, the podcast &amp; uber women rock!</title>
+		<title>uberChicGeekChick &rArr; Expressive Programming&ndash;&rarr;art & expression &amp; uber women rock!</title>
 		
 		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 		<meta name='description' value='uberChicGeekChick: Expressive Programming, the podcast &amp; more, about: programming, art, creativity, code, self expression, &amp; uber women (WE ROCK!)'/>

@@ -18,7 +18,7 @@
 	class AOPHP__XML__XHTML extends AOPHP__XML{
 		public $content_uri;
 		public $format;
-		public $categories;
+		private $categories;
 		
 		public function __construct(){
 			//Defines AOPHP::XML::XHTML->__construct(); / AOPHP__XML__XHTML->__construct();
@@ -30,7 +30,7 @@
 			);
 			
 			if( !($this->check_get()) )
-				$_GET['episodes']="0006";
+				$_GET['episodes']="0007";
 			
 			$this->set_content();
 		}//__construct
@@ -49,8 +49,10 @@
 				return;
 			
 			for($n=0; $n<$this->categories['total']; $n++ )
-				if( (isset( $_GET[ $this->categories[$n] ] )) && (file_exists( ($this->content_uri="./AOPHP/XML/{$this->format}/{$this->categories[$n]}/{$_GET[ $this->categories[$n] ]}.php") )) )
+				if( (isset( $_GET[ $this->categories[$n] ] )) && (file_exists( ($this->content_uri="./AOPHP/XML/{$this->format}/{$this->categories[$n]}/{$_GET[ $this->categories[$n] ]}.php") )) ){
+					$this->category=$this->categories[$n];
 					return;
+				}
 			
 			$this->content_uri="./AOPHP/XML/{$this->format}/projects/podcast.php";
 		}//set_content
