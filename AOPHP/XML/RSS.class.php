@@ -73,12 +73,12 @@
 			require_once("./AOPHP/XML/{$this->format}/body.php");
 			require_once("./AOPHP/XML/{$this->format}/footer.php");
 		}//paint
-
+		
 		public function addtag($tag_type){
 		}//paint_tag
-
+		
 		private function format_pubDate(){
-			printf( "<pubDate>%s</pubDate>", (date( "%c", (mktime()) )) );
+			printf( "<pubDate>%s</pubDate>", (date( "r", (mktime()) )) );
 		}//addtag_pubDate
 		
 		public function __destruct(){
