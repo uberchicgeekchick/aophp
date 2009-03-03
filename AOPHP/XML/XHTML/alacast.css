@@ -55,7 +55,9 @@ div.bloc,div.rss,div.bloc_tweets{display:inline-table; clear:both; padding-botto
 
 	ul.my_websites_listing{list-style-image:url('../../../../../graphics/favicon.png');}
 	ul.github_repo_listing{list-style-image:url('../../../../../graphics/icons/art/github.png');}
+	ul.github_releases{margin-left:0.5em;}
 	li.github_repo{font-weight:bold;}
+	li.github_release{font-style:italics; font-variant:small-caps;}
 /* ends left hand side blocs */
 
 /*starts pages primary content*/

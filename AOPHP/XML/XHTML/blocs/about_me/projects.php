@@ -15,7 +15,13 @@
 						<lh>~My github repos~</lh>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/alacast/tree/master'>alacast</a></li>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/connectED/tree/master'>connectED</a></li>
-						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/twitux/tree/master'>twitux</a></li>
+							<ul class='github_releases'>
+								<li class='github_release'><a href='http://cli.gs/connected-1.0.1'>version 1.0.0</a></li>
+							</ul>
+						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/g-greet/tree/master'>G-Greet</a></li>
+							<ul class='github_releases'>
+								<li class='github_release'><a href='http://cli.gs/g-greet-0.1.0'>version 0.1.0</a></li>
+							</ul>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/speaking-out/tree/master'>speaking-out</a></li>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/realfriends/tree/master'>realfriends</a></li>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/uberchicks-oss-social-network/tree/master'>uberchicks-oss-social-network</a></li>
