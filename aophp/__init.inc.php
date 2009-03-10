@@ -1,15 +1,5 @@
 <?php
 	/*
-	 * (c) 2007-Present Kathryn G. Bohmont <uberChicGeekChick.Com -at- uberChicGeekChick.Com>
-	 * 	http://uberChicGeekChick.Com/
-	 * Writen by an uberChick, other uberChicks please meet me & others @:
-	 * 	http://uberChicks.Net/
-	 *I'm also disabled; living with Generalized Dystonia.
-	 * Specifically: DYT1+/Early-Onset Generalized Dystonia.
-	 * 	http://Dystonia-DREAMS.Org/
-	 */
-	
-	/*
 	 * Unless explicitly acquired and licensed from Licensor under another
 	 * license, the contents of this file are subject to the Reciprocal Public
 	 * License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
@@ -23,12 +13,21 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
+	require_once("./aophp/__define.inc.php");
 	
-	//Defines AOPHP::Core->construct(); or AOPHP__Core->__construct();
-			$this->separator=_AOPHP_CLASS_SEPARATOR_;
-			$this->format=_AOPHP_FORMAT_;
-			
-			$AOPHP->output=sprintf("AOPHP%s%sOutput%s%sFormats%s%s%s", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_FORMAT_);
-			
-			$AOPHP->output=new $AOPHP->output(_AOPHP_APP_CONFIG_);
+	require_once("./aophp/__autoload.function.php");
+	
+	require_once("./aophp/exception_handler:default.class.php");
+	
+	$aophp=new aophp__core("./aophp/apps/speakingOUT/Configuration.inc.php");
+	
+	if( (preg_match("/(\/save\/)/i", $_SERVER['REQUEST_URI'])) ) {
+		$aophp->save();
+		header(
+			"Location:http://{$_SERVER['HTTP_HOST']}/"
+			.(preg_replace( "/(\/save\/)/i", "", $aophp->query_string ))
+		);
+		exit(0);
+	}
+	
 ?>

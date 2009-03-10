@@ -1,15 +1,5 @@
 <?php
 	/*
-	 * (c) 2007-Present Kathryn G. Bohmont <uberChicGeekChick.Com -at- uberChicGeekChick.Com>
-	 * 	http://uberChicGeekChick.Com/
-	 * Writen by an uberChick, other uberChicks please meet me & others @:
-	 * 	http://uberChicks.Net/
-	 *I'm also disabled; living with Generalized Dystonia.
-	 * Specifically: DYT1+/Early-Onset Generalized Dystonia.
-	 * 	http://Dystonia-DREAMS.Org/
-	 */
-	
-	/*
 	 * Unless explicitly acquired and licensed from Licensor under another
 	 * license, the contents of this file are subject to the Reciprocal Public
 	 * License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
@@ -24,11 +14,17 @@
 	 * language governing rights and limitations under the RPL.
 	 */
 	
-	//Defines AOPHP::Core->construct(); or AOPHP__Core->__construct();
-			$this->separator=_AOPHP_CLASS_SEPARATOR_;
-			$this->format=_AOPHP_FORMAT_;
-			
-			$AOPHP->output=sprintf("AOPHP%s%sOutput%s%sFormats%s%s%s", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_FORMAT_);
-			
-			$AOPHP->output=new $AOPHP->output(_AOPHP_APP_CONFIG_);
+	if( !(defined("_AOPHP_APP_NAME_")) )
+		define("_AOPHP_APP_NAME_", "speakingOUT");
+		
+	define("_AOPHP_CLASS_SEPARATOR_", "_");
+	
+	if( !(defined("_AOPHP_APP_CONFIG_")) )
+		if( !(file_exists( (sprintf("./aophp/apps/%s/Configuration.inc.php", _AOPHP_APP_NAME_)) )) )
+			define("_AOPHP_APP_CONFIG_", "./aophp/null.php");
+		else
+			define("_AOPHP_APP_CONFIG_", (sprintf("./aophp/Applications/%s/Configuration.inc.php", _AOPHP_APP_NAME_)) );
+	
+	if( !(defined("_AOPHP_APP_ABOUT_")) )
+		define("_AOPHP_APP_ABOUT_", "Expressive Programming, the podcast.&nbsp; about self expression, art, &amp; freedom through creating &amp; using open source software.");
 ?>

@@ -1,15 +1,5 @@
 <?php
 	/*
-	 * (c) 2007-Present Kathryn G. Bohmont <uberChicGeekChick.Com -at- uberChicGeekChick.Com>
-	 * 	http://uberChicGeekChick.Com/
-	 * Writen by an uberChick, other uberChicks please meet me & others @:
-	 * 	http://uberChicks.Net/
-	 *I'm also disabled; living with Generalized Dystonia.
-	 * Specifically: DYT1+/Early-Onset Generalized Dystonia.
-	 * 	http://Dystonia-DREAMS.Org/
-	 */
-	
-	/*
 	 * Unless explicitly acquired and licensed from Licensor under another
 	 * license, the contents of this file are subject to the Reciprocal Public
 	 * License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
@@ -24,11 +14,18 @@
 	 * language governing rights and limitations under the RPL.
 	 */
 	
-	//Defines AOPHP::Core->construct(); or AOPHP__Core->__construct();
-			$this->separator=_AOPHP_CLASS_SEPARATOR_;
-			$this->format=_AOPHP_FORMAT_;
-			
-			$AOPHP->output=sprintf("AOPHP%s%sOutput%s%sFormats%s%s%s", _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_CLASS_SEPARATOR_, _AOPHP_FORMAT_);
-			
-			$AOPHP->output=new $AOPHP->output(_AOPHP_APP_CONFIG_);
+	function __autoload($class) {
+		if(!(
+			($aophp_path=preg_replace( (sprintf( "/^(%s|aophp)[%s]{2}/", _AOPHP_APP_NAME_, _AOPHP_CLASS_SEPARATOR_ )), "", $class))
+		))
+			return false;
+		
+		$object=sprintf("./aophp/%s.class.php", (preg_replace( (sprintf( "/[%s]{2}/", _AOPHP_CLASS_SEPARATOR_ )), "/", $aophp_path)) );
+		
+		if(!( (file_exists($object)) && (is_readable($object)) ))
+			return false;
+		
+		return require_once($object);
+	}//end '__autoload' function
+	
 ?>

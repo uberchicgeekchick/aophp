@@ -2,7 +2,7 @@
 	/*
 	 * Unless explicitly acquired and licensed from Licensor under another
 	 * license, the contents of this file are subject to the Reciprocal Public
-	 * License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
+	 * License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,s
 	 * and You may not copy or use this file in either source code or executable
 	 * form, except in compliance with the terms and conditions of the RPL.
 	 *
@@ -13,17 +13,8 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-print <<<BLOC
-			<!-- bloc starts -->
-			<div class='bloc'>
-				<div class='bloc_title'>
-					&nbsp;
-				</div><div class='bloc_content'>
-					&nbsp;
-				</div>
-				<div class='bloc_extra'>&nbsp;</div>
-			</div>
-			<!-- bloc ends -->
-			
-BLOC;
+	//namespace aophp::storage;
+	class aophp__storage__databases extends aophp__storage{
+		
+	}//aophp__storage__databases
 ?>
