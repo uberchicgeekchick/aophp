@@ -1,3 +1,4 @@
+<br/><hr size="1"><br/>
 <div id="disqus_thread"></div>
 <script type="text/javascript" src="http://disqus.com/forums/expressive-programming/embed.js"></script>
 <noscript><a href="http://expressive-programming.disqus.com/?url=ref">View the discussion thread.</a></noscript>

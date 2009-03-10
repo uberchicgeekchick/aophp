@@ -26,10 +26,12 @@ CONTENT_HEADER;
 		
 			require_once($this->xml->content_uri);
 			
+			require_once("./aophp/xml/{$this->xml->doctype}/blocs/widgets/disqus.php");
+			
 			require_once("./aophp/xml/{$this->xml->doctype}/blocs/hugs_and_bye.php");
 		
 	print <<<CONTENT_FOOTER
-				<!-- Ends displaying: {$this->content_uri} -->
+				<!-- Ends displaying: {$this->xml->content_uri} -->
 			</div>
 			<div class='contents_body_padding_2'>&nbsp;</div>
 			<div class='contents_bottom'>
