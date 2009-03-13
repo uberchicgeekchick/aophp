@@ -13,7 +13,7 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-		
+	
 	print <<<CONTENT_HEADER
 		<div class='contents_container'>
 			<div class='contents_top'>
@@ -23,18 +23,25 @@
 			<div class='contents_body_output'>
 				<!-- Begins displaying: {$this->xml->content_uri} -->
 CONTENT_HEADER;
-		
-			require_once($this->xml->content_uri);
-			
-			require_once("./aophp/xml/{$this->xml->doctype}/blocs/widgets/disqus.php");
-			
-			require_once("./aophp/xml/{$this->xml->doctype}/blocs/hugs_and_bye.php");
-		
+	
+	require_once( $this->xml->content_uri );
+	
+	require_once( "./aophp/xml/{$this->xml->doctype}/page/hugs_and_bye.php" );
+	
 	print <<<CONTENT_FOOTER
 				<!-- Ends displaying: {$this->xml->content_uri} -->
 			</div>
 			<div class='contents_body_padding_2'>&nbsp;</div>
 			<div class='contents_bottom'>
+				<div class='contents_body_padding_1'>&nbsp;</div><div class='contents_bottom_middle'>
+CONTENT_FOOTER;
+	
+	require_once( "./aophp/xml/{$this->xml->doctype}/page/disqus.php" );
+	
+	print <<<CONTENT_FOOTER
+				</div>
+			<div class='contents_body_padding_2'>&nbsp;</div>
+			</div><div class='contents_bottom'>
 				<div class='contents_bottom_left'>&nbsp;</div><div class='contents_bottom_middle'>&nbsp;</div><div class='contents_bottom_right'>&nbsp;</div>
 			</div>
 		</div>

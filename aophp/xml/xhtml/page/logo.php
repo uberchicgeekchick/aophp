@@ -13,17 +13,8 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-print <<<BLOC
-			<!-- bloc starts -->
-			<div class='bloc'>
-				<div class='bloc_title'>
-					<a href="http://podiobooks.com/">podiobooks.com</a>
-				</div><div class='bloc_content'>
-					<script language="javascript" src="http://www.podiobooks.com/jspb/uberchick" type="text/javascript" ></script>
-				</div>
-				<div class='bloc_extra'>&nbsp;</div>
-			</div>
-			<!-- bloc ends -->
-			
-BLOC;
+	
+	printf("
+		<a href='./'><img class='logo' src='./graphics/logo.png' alt='uberChicGeekChick.Com&#039 logo which links back to the homepage of %s' title='%s' /></a>
+		<img class='slogan' src='./graphics/slogan.png' alt='%s' title='%s'>\n", _AOPHP_APP_ABOUT_, _AOPHP_APP_ABOUT_, _AOPHP_APP_ABOUT_, _AOPHP_APP_ABOUT_);
 ?>

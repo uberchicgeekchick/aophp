@@ -35,9 +35,12 @@
 		
 		<!-- NOTE: Firebug can't debug @import rules. -->
 		<style type='text/css'>
-			@import url('./aophp/xml/{$this->xml->doctype}/speakingOUT.css');
+			@import url('./aophp/xml/{$this->xml->doctype}/stylesheets/speakingOUT.css');
 		</style>
-		<!--<link rel='stylesheet' href='./aophp/xml/{$this->xml->doctype}/speakingOUT.css' type='text/css'/>-->
+		<!--<link rel='stylesheet' href='./aophp/xml/{$this->xml->doctype}/stylesheets/speakingOUT.css' type='text/css'/>-->
+		<script type="text/javascript">
+			var disqus_iframe_css="http://uberchicgeekchick.com/aophp/xml/xhtml/stylesheets/disqus.css";
+		</script>
 	</head>
 	<body>
 HEADER;
