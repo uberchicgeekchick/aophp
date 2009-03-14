@@ -29,7 +29,7 @@
 			if( (isset($_GET['debug'])) && (file_exists( ($this->content_uri="./aophp/xml/{$this->doctype}/debug.php") )) )
 				return;
 			
-			if( $this->category == "projects" && (file_exists( ($this->content_uri="./aophp/xml/{$this->doctype}/{$this->category}.php") )) && (!file_exists( "./aophp/xml/{$this->doctype}/{$this->category}/{$this->content}.php" )) ) return;
+			if( $this->category == "projects" && (file_exists( ($this->content_uri="./aophp/xml/{$this->doctype}/{$this->category}/core.php") )) && (!file_exists( "./aophp/xml/{$this->doctype}/{$this->category}/{$this->content}.php" )) ) return;
 			
 			if( (file_exists( ($this->content_uri="./aophp/xml/{$this->doctype}/{$this->category}/{$this->content}.php") )) ) return;
 			
