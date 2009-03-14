@@ -20,8 +20,8 @@
 				<div class='rss_header'>
 					<br/>
 					Downloads &amp; Feeds<br/>
-					| <a href='./?enclosures=flac'>FLAC</a> <a href='./?xml=atom&enclosures=flac'><img src='./graphics/feeds/atom_24x24.png' width='24' height='24' alt='Subscribe to Expressive Programming&#039;s Atom 2.0 feed with very high quality FLAC episodes.' title='Subscribe to Expressive Programming&#039;s Atom 2.0 feed with very high quality FLAC episodes.'/></a> <a href='./?xml=rss&enclosures=flac'><img src='./graphics/feeds/rss_24x24.png' width='24' height='24' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with very high quality FLAC episodes.' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with very high quality FLAC episodes.'/></a> |<br/>
-					| <a href='./?enclosures=ogg'>OGG</a> <a href='./?xml=atom&enclosures=flac'><img src='./graphics/feeds/atom_24x24.png' width='24' height='24' alt='Subscribe to Expressive Programming&#039;s Atom 2.0 feed with very high quality FLAC episodes.' title='Subscribe to Expressive Programming&#039;s Atom 2.0 feed with very high quality FLAC episodes.'/></a> <a href='./?xml=rss&enclosures=ogg'><img src='./graphics/feeds/rss_24x24.png' width='24' height='24' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with high quality OGG episodes.' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with high quality OGG episodes.'/></a> |<br/>
+					| <a href='./?enclosures=flac'>FLAC</a> <a href='./?xml=atom&enclosures=flac'><img class='xml_atom_enclosures_flac' src='./graphics/feeds/atom_24x24.png' alt='Subscribe to Expressive Programming&#039;s Atom 2.0 feed with very high quality FLAC episodes.' title='Subscribe to Expressive Programming&#039;s Atom 2.0 feed with very high quality FLAC episodes.'/></a> <a href='./?xml=rss&enclosures=flac'><img class='xml_rss_enclosures_flac' src='./graphics/feeds/rss_24x24.png' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with very high quality FLAC episodes.' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with very high quality FLAC episodes.'/></a> |<br/>
+					| <a href='./?enclosures=ogg'>OGG</a> <a href='./?xml=atom&enclosures=ogg'><img class='xml_atom_enclosures_ogg' src='./graphics/feeds/atom_24x24.png' alt='Subscribe to Expressive Programming&#039;s Atom 2.0 feed with high quality ogg episodes.' title='Subscribe to Expressive Programming&#039;s Atom 2.0 feed with high quality ogg episodes.'/></a> <a href='./?xml=rss&enclosures=ogg'><img class=xml_rss_enclosures_ogg' src='./graphics/feeds/rss_24x24.png' alt='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with high quality OGG episodes.' title='Subscribe to Expressive Programming&#039;s RSS 2.0 feed with high quality OGG episodes.'/></a> |<br/>
 				</div>
 				<div class='rss_inner'>
 					<ul class='episodes'>
@@ -54,7 +54,7 @@ BLOC;
 		
 		$rss=preg_replace("/(<\/?)item(>)/i", "$1li$2", $rss );
 		$rss=preg_replace("/<title>Expressive\ Programming::([^<]*)<\/title>[^<]*<link>http:\/\/[^\/]*\/([^<]*)<\/link>/mi", "<br/><a href='$2' title='Downloading Expressive Programming::$1'>$1</a><br/>", $rss);
-		$rss=preg_replace("/<enclosure.*url=[\"']([^\"']*)[\"'][^>]*\/>/mi", "<a href='$1'><img class='{$enclosure_type}_Download' src='./graphics/icons/downloads/{$enclosure_type}.png' alt='Download this episode.'/></a>", $rss);
+		$rss=preg_replace("/<enclosure.*url=[\"']([^\"']*)[\"'][^>]*\/>/mi", "<a href='$1'><img class='{$enclosure_type}_download' src='./graphics/icons/downloads/{$enclosure_type}.png' alt='Download this episode.'/></a>", $rss);
 		$rss=preg_replace("/<(guid|description|pubDate)>.*<\/(guid|description|pubDate)>[\t\r\n]*/mi", "", $rss);
 	}
 	

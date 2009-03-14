@@ -13,7 +13,7 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-		print <<<BLOC
+	print <<<BLOC
 			<h1>Expessive Programming</h1>
 			<h2>Episode {$episode}: {$title}</h2>
 			Please rate &amp; review this episode on [<a href='http://www.archive.org/details/ExpressiveProgramming-{$episode}-ByUberchick'>Internet Archive</a>]<br/>

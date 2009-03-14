@@ -29,8 +29,9 @@
 			if( (isset($_GET['debug'])) && (file_exists( ($this->content_uri="./aophp/xml/{$this->doctype}/debug.php") )) )
 				return;
 			
-			if( (file_exists( ($this->content_uri="./aophp/xml/{$this->doctype}/{$this->category}/{$this->content}.php") )) )
-					return;
+			if( $this->category == "projects" && (file_exists( ($this->content_uri="./aophp/xml/{$this->doctype}/{$this->category}.php") )) && (!file_exists( "./aophp/xml/{$this->doctype}/{$this->category}/{$this->content}.php" )) ) return;
+			
+			if( (file_exists( ($this->content_uri="./aophp/xml/{$this->doctype}/{$this->category}/{$this->content}.php") )) ) return;
 			
 			printf( "<center class='error'>aophp could not find the default content @ &#039;%s&#039;</center>", $this->content_uri );
 			$this->content_uri="./aophp/xml/{$this->doctype}/projects/podcast.php";

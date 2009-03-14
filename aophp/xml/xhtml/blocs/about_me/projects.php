@@ -6,21 +6,30 @@
 					My other projects
 				</div>
 				<div class='bloc_content'>
-					<ul class='my_websites_listing'>
+					<ul class='my_projects'>
 						<lh>~My Websites~</lh>
 						<li class='my_websites'><a href='http://Dystonia-DREAMS.Org/'>Dystonia-DREAMS.Org</a></li>
 						<li class='my_websites'><a href='http://uberChicks.Net/'>uberChicks.Net</a> <!--&ndash; <a href='javascript:show_info("uberChicks_Net");' id='uberChicks_Net_About_Link'>[&darr;]</a>--></li>
 					</ul><br/>
-					<ul class='github_repo_listing'>
+					<ul class='my_projects_list'>
 						<lh>~My GNOME Apps~</lh>
-						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/alacast/tree/master'>alacast</a></li>
-						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/connectED/tree/master'>connectED</a></li>
-						<ul class='github_releases'>
-							<li class='github_release'><a href='http://cli.gs/connected-1.0.1'>version 1.0.0</a></li>
+						<ul class='my_projects'><li class='my_projects'><a href='./?projects=Alacast'>Alacast</a></li>
+							<ul class='github_releases'>
+								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/alacast/tree/master'>master repo</a></li>
+							</ul>
 						</ul>
-						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/greet-tweet-know/tree/master'>Greet-Tweet-Know</a></li>
-						<ul class='github_releases'>
-							<li class='github_release'><a href='http://github.com/uberchicgeekchick/greet-tweet-know/commit/818f2ab6e21a092c87be8983c495d1597ee837ef'>version 0.1.0.1</a></li>
+						<ul class='my_projects'><li class='my_projects'><a href='./?projects=connectED'>connectED</a></li>
+							<ul class='github_releases'>
+								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/connectED/tree/master'>master repo</a></li>
+								<li class='github_release'><a href='http://cli.gs/connected-1.0.1'>version 1.0.0.1</a></li>
+							</ul>
+						</ul>
+						<ul class='my_projects'><li class='my_projects'><a href='./?projects=Greet-Tweet-Know'>Greet-Tweet-Know</a></li>
+							<ul class='github_releases'>
+								<li class='github_repo'><a href='http://uberchicgeekchick.github.com/greet-tweet-know'>Greet-Tweet-Know</a></li>
+								<li class='github_release'><a href='http://github.com/uberchicgeekchick/greet-tweet-know/commit/818f2ab6e21a092c87be8983c495d1597ee837ef'>version 0.1.0.1</a></li>
+								<li><a href='https://www.github.com/uberchicgeekchick/greet-tweet-know/tree/master'>master repo</li>
+							</ul>
 						</ul>
 					</ul><br/>
 					<ul class='github_repo_listing'>

@@ -16,6 +16,8 @@
 	
 	require_once("./aophp/xml/{$this->xml->doctype}/page/logo.php");
 	
+	require_once("./aophp/xml/{$this->xml->doctype}/page/menu.php");
+	
 	require_once("./aophp/xml/{$this->xml->doctype}/page/content.php");
 	
 	print("		<div class='left_sides_blocs'>\n" );
