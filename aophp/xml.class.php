@@ -17,39 +17,39 @@
 	
 	class aophp__xml{
 		public $xml;
-		public $categories;
-		public $category;
+		public $app;
 		public $content;
 		
 		public function __construct(){
-			$this->set_category();
-			$this->set_xml();
+			$this->load_app();
+			$this->load_xml();
 			$this->load();
 		}//__construct
 		
-		public function set_category(){
-			$this->categories=array(
+		public function load_app(){
+			$applications=array(
 				'episodes', 'specials', 'blogs', 'projects',
 				'total'=>4
 			);
 			
-			for($n=0; $n<$this->categories['total']; $n++ )
-				if( (isset( $_GET[ $this->categories[$n] ] )) ){
-					$this->category=$this->categories[$n];
-					$this->content=$_GET[ $this->category ];
+			for($n=0; $n<$applications['total']; $n++ )
+				if( (isset( $_GET[ $applications[$n] ] )) ){
+					$this->app=$applications[$n];
+					$this->content=$_GET[ $this->app ];
 					return 1;
 				}
 			
-			$this->category="episodes";
+			$this->app="episodes";
 			$this->content="0007";
 			return 0;
 		}//set_category
 		
 		
 		
-		private function set_xml(){
+		private function load_xml(){
 			if( !(isset($_GET['xml'])) )
 				return $this->xml=new aophp__xml__xhtml();
+			
 			switch($_GET['xml']){
 				case 'rss': return $this->xml=new aophp__xml__feeds__rss();
 				case 'atom': return $this->xml=new aophp__xml__feeds__atom();

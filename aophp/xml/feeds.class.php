@@ -25,7 +25,7 @@
 		public $enclosures;
 		
 		public function __construct(){
-			parent::set_category();
+			parent::load_app();
 			$this->set_content();
 		}//__construct
 		

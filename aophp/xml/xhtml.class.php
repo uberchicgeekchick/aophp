@@ -21,7 +21,7 @@
 		
 		public function __construct(){
 			$this->doctype="xhtml";
-			parent::set_category();
+			parent::load_app();
 			$this->set_content();
 		}//__construct
 		
@@ -29,9 +29,11 @@
 			if( (isset($_GET['debug'])) && (file_exists( ($this->content_uri="./aophp/xml/{$this->doctype}/debug.php") )) )
 				return;
 			
-			if( $this->category == "projects" && (file_exists( ($this->content_uri="./aophp/xml/{$this->doctype}/{$this->category}/core.php") )) && (!file_exists( "./aophp/xml/{$this->doctype}/{$this->category}/{$this->content}.php" )) ) return;
+			if( $this->app == "projects" && (file_exists( ($this->content_uri="./aophp/apps/oss-canvas/core.php") )) ) return;
 			
-			if( (file_exists( ($this->content_uri="./aophp/xml/{$this->doctype}/{$this->category}/{$this->content}.php") )) ) return;
+			if( $this->app == "episodes" && (file_exists( ($this->content_uri="./aophp/apps/speakingOUT/episodes/{$this->content}.php") )) ) return;
+			
+			if( (file_exists( ($this->content_uri="./aophp/xml/{$this->doctype}/{$this->app}/{$this->content}.php") )) ) return;
 			
 			printf( "<center class='error'>aophp could not find the default content @ &#039;%s&#039;</center>", $this->content_uri );
 			$this->content_uri="./aophp/xml/{$this->doctype}/projects/podcast.php";

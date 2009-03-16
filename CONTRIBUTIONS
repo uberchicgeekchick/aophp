@@ -1,0 +1,50 @@
+CODING STYLE:
+	Will you have enjoyed, had fun, and feel good about writing your contributions?
+	If so than you've met all of the requirements for this project.
+	All attemps will be made to preserve your syntax and personal coding sytle
+	I truly feel programming is a way of expressing one's self.
+	As such all attempt will be made to preserve how you've created what you've
+	contributed.  The only changes that may be made to your code is when it
+	will improve preformance.
+
+EXPRESS YOURSELF, BE PROUD OF YOUR CODE, & OWN WHAT YOU DO :
+	Programming is an art form: EXPRESS your self!:
+
+	So please wrap your contributions with a commented personal messages.
+	Please include a method of contact, in case of any substanstantial
+	changes that may need your okay, eg change of lisence or etc.
+	Otherwise you can include whatever you'd like in your personal massage including a
+	link to your personal web site, a message about how you're doing & feeling.
+	So long as you include nothing derogitory your personal message will not be modified.
+	& Yes sarcism and jokes are fine so long as they are not derogitory, racist, sexist,
+	or etc.
+
+OWN-IT!:
+	Even though this project & thus your code & contribtions are open source its still
+	your's.  As such you're personal message should include your name, date, and of
+	course your own copyright.  Your copyright can be formatted as the date & time you
+	started your work to when you completed it.  Or just date it as the date you submitted
+	your [art]work.
+
+	Please add your name to the list of AUTHORS that are listed at the top of any source
+	file you work on.  All authors of the file are listed after the project's lisencing
+	information.  Adding a contact method, either email or url, is optional.
+
+	Note your contribution(s) in the projects ChangeLog file.  The NEWS file & announcement
+	made on the project's website are genarated from the notes in the ChangeLog.
+
+NOTICE:
+	If you don't want to include a contact method that's fine but than
+	you are agreeing to allow you code to follow any of this project's
+	changes without your prior approval.
+
+EXAMPLE:
+	/* copyright (c) 2009-03-01 Janice Programmer <dev@null>
+	 * 	My code allows users to express themselves via a built-in
+	 *	feedback form.
+	 */
+	static void janice_programmers_feedback_callback(){
+	}
+	/* I'm done, no hopefully users will share how they feel about
+	 * this project.
+	 */

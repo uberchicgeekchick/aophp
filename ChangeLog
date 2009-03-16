@@ -1,0 +1,17 @@
+2009-03-16:	Kaity G. B. <uberChick@uberChicGeekChick.Com>
+
+	* ./aophp/xml.class.php: load_app, load_xml, & load
+		I have move my podcast episodes & projects into their correct
+		aophp application.
+		
+		speakingOUT is for podcast, episodes, chapters, & etc.
+		
+		oss-canvas is for open source projects. my goal for oss-canvas
+		is for it to provide an actual open source alternative to
+		'launchpad'.  I'm targetting launchpad specifically for all of
+		the obvious reasons.
+	
+	* ./ChangeLog: Created for changes, updates, & etc.
+		I'm very verbose in my ChangeLog updates, I often include
+		changes in my life as well as anything that effects my art.
+

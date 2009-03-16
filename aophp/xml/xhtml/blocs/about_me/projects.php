@@ -21,13 +21,13 @@
 						<ul class='my_projects'><li class='my_projects'><a href='./?projects=connectED'>connectED</a></li>
 							<ul class='github_releases'>
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/connectED/tree/master'>master repo</a></li>
-								<li class='github_release'><a href='http://cli.gs/connected-1.0.1'>version 1.0.0.1</a></li>
+								<li class='github_release'><a href='http://cli.gs/connected.release'>version 1.0.1.2</a></li>
 							</ul>
 						</ul>
 						<ul class='my_projects'><li class='my_projects'><a href='./?projects=Greet-Tweet-Know'>Greet-Tweet-Know</a></li>
 							<ul class='github_releases'>
 								<li class='github_repo'><a href='http://uberchicgeekchick.github.com/greet-tweet-know'>Greet-Tweet-Know</a></li>
-								<li class='github_release'><a href='http://github.com/uberchicgeekchick/greet-tweet-know/commit/818f2ab6e21a092c87be8983c495d1597ee837ef'>version 0.1.0.1</a></li>
+								<li class='github_release'><a href='http://cli.gs/greet-tweet-know.release'>version 0.1.0.2</a></li>
 								<li><a href='https://www.github.com/uberchicgeekchick/greet-tweet-know/tree/master'>master repo</li>
 							</ul>
 						</ul>
