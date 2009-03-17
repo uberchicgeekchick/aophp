@@ -28,8 +28,8 @@
 	print <<<BLOC
 					<div class="projects_container">
 						<div class="projects_download">
-							<a href="http://www.github.com/{$github_profile}/{$project_dir}/tarball/master"><img border="0" width="90" src="./graphics/icons/downloads/tar.png"></a>
-							<a href="http://www.github.com/{$github_profile}/{$project_dir}/zipball/master"><img border="0" width="90" src="./graphics/icons/downloads/zip.png"></a>
+							<a href="http://www.github.com/{$github_profile}/{$project_dir}/tarball/master"><img class="projects_download" src="./graphics/icons/downloads/tar.png"></a>
+							<a href="http://www.github.com/{$github_profile}/{$project_dir}/zipball/master"><img class="projects_download" src="./graphics/icons/downloads/zip.png"></a>
 						</div>
 						
 						<div class="projects_description">
