@@ -1,0 +1,9 @@
+project tarballs cleaned up
+
+I have updated my git commit script to keep tarballs, and certain special art files, from being committed & tracked by git.  So aophp no longer contains tarballs for Alacast, versions 1 & 2, connectED, or Greet-Tweet-Know.
+
+Tarballs are still synced though, so they will copied to you web server or etc mirror but not actually in your git repo. are still available from my site @ http://uberChickGeekChick.Com/?projects=connectEd &  http://uberChicGeekChick.Com/?projects=Greet-Tweet-Know or from my github repos @ http://github.com/uberchicgeekchick
+
+For tarballs I'm just skipping files which end with 'tar.bz2', 'tar.gz', or 'zip'.  My git commit script is available as part or my tcsh-dev repo @ http://github.com/uberchicgeekchick/tcsh-console-dev-scripts its specifically 'devel/git:commit+push+sync' which can be checked out on its own or as part of the entire repo which is a large collection of, mostly completed, tcsh & perl scrpts designed to help with web & gnome development on Linux.
+
+Committed on: 2009-03-18 @ 01:20:07 AM
