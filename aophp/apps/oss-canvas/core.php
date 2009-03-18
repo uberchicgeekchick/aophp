@@ -13,6 +13,9 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
+	if(!( (isset($this->content)) && $this->content )
+		$this->content="aophp";
+	
 	$project_dir=strtolower( $this->content );
 	$github_profile='uberchicgeekchick';
 	//http://github.com/uberchicgeekchick/greet-tweet-know/tarball/e1d73512840ea0ba6ccfc6a43a43bc1497e98285
