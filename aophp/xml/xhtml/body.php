@@ -30,7 +30,6 @@
 	
 	print("		<div class='right_sides_blocs'>");
 	require_once("./aophp/xml/{$this->xml->doctype}/blocs/widgets/rss.convert.php");
-	require_once("./aophp/xml/{$this->xml->doctype}/blocs/about_me/COPYING.php");
 	require_once("./aophp/xml/{$this->xml->doctype}/blocs/widgets/MyTweets.php");
 	require_once("./aophp/xml/{$this->xml->doctype}/blocs/widgets/MyBlogLog.php");
 	print("		</div>");

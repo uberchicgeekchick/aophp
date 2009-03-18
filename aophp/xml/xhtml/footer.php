@@ -13,7 +13,9 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	
+
+	require_once("./aophp/xml/{$this->xml->doctype}/page/COPYING.php");
+
 	print <<<BLOC
 	</body>
 </html>
