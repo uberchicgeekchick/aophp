@@ -30,4 +30,6 @@
 	 * |		http://opensource.org/licenses/rpl1.5.txt		  |
 	 * ------------------------------------------------------------------------
 	 */
+	return "connectED is an IDE built for GTK+ with a focus toward collaborative PHP and web based programming. connectED's social networking features include integrated support for online social network and collaboration. For example connectED includes an integrated IRC client, Identi.ca &amp; Twitter support, Instant Messaging, and the ability to work on the same source code as others, and other social network &amp; communication support. PHP programming focused features of connectED include: PHP function tool tips &amp; tab listed auto-completion, PHP manual integration (by pressing F1 while a function is highlighted), and a built in class browser. connectED also supports the basics of any IDE including: syntax highlighting, auto-completion, session management, a plug-in system, and regular expression find and replace among many others. *Please note:* connectED's social network features are in their early stages of being programmed.";
 ?>
+

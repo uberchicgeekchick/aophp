@@ -30,4 +30,6 @@
 	 * |		http://opensource.org/licenses/rpl1.5.txt		  |
 	 * ------------------------------------------------------------------------
 	 */
+	return "Alacast takes a new but familar approach to social & online media for GNOME.  Alacast can be used as a podcatcher but is so much more.  Alacast is designed around an accessible, intuitive, & easy to use interface while being beautiful & fun to use.  Alacast takes an entirely new look at online media.  Its being designed to provide a new & fun way to access & interact with your favorite online media.  While exposing you to the best that online media has to offer  All through a fun, accessible, intuitive, and beautiful user interface.";
 ?>
+

@@ -1,6 +1,6 @@
 2009-03-16:	Kaity G. B. <uberChick@uberChicGeekChick.Com>
 
-	* ./aophp/xml.class.php: load_app, load_xml, & load
+	* .xml.class.php: load_app, load_xml, & load
 		I have move my podcast episodes & projects into their correct
 		aophp application.
 		

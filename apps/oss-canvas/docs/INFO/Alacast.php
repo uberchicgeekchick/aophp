@@ -30,4 +30,6 @@
 	 * |		http://opensource.org/licenses/rpl1.5.txt		  |
 	 * ------------------------------------------------------------------------
 	 */
+	return "Alacast is a social & online media browser for GNOME through a fun, accessible, intuitive, and beautiful user interface.";
 ?>
+
