@@ -43,7 +43,7 @@
 								%s
 							</p>
 						</div>
-						<div class='copyright'>by <a href='http://www.github.com/{$github_profile}/{$project_dir}'>Me :-), Kaity G. B. / uberChick / uberchicgeekchick</a></div>
+						<div class='copyright'>by <a href='http://www.github.com/ubercicgeekchick'>Me :-), Kaity G. B. / uberChick / uberchicgeekchick</a></div>
 				
 						<hr/>
 						<ul class='my_projects'>

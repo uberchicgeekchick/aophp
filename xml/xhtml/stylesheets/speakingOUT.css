@@ -23,7 +23,12 @@ lh{font-weight:bold;}
 
 a:hover{color:#ffddee; font-size:1.75ex;}
 
-p, .indentedText{text-indent:5%;}
+h1, p, .indentedText{text-indent:5%;}
+h1{font-size:3ex;}
+h2{font-size:2.75ex;}
+h3{font-size:2.5ex;}
+h4{font-size:1.75ex;}
+h5{font-size:1.5ex;}
 
 img{border:0px; border-width:0px;}
 
