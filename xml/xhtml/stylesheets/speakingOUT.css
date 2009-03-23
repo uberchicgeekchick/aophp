@@ -25,10 +25,10 @@ a:hover{color:#ffddee; font-size:1.75ex;}
 
 h1, p, .indentedText{text-indent:5%;}
 h1{font-size:3ex;}
-h2{font-size:2.75ex;}
-h3{font-size:2.5ex;}
-h4{font-size:1.75ex;}
-h5{font-size:1.5ex;}
+h2{font-size:2.5ex;}
+h3{font-size:2ex;}
+h4{font-size:1.5ex;}
+h5{font-size:15ex;}
 
 img{border:0px; border-width:0px;}
 
@@ -64,7 +64,7 @@ div.bloc,div.rss,div.bloc_tweets{display:inline-table; clear:both; padding-botto
 
 /* starts my project management pages styles */
 	ul.my_projects{list-style-image:url('../graphics/favicon.png');}
-	li.my_projects{font-style:italics; font-variant:small-caps; font-weight:bold;}
+	lh.my_projects,li.my_projects{font-style:italics; font-variant:small-caps; font-weight:bold;}
 	ul.github_releases{list-style-image:url('../graphics/icons/art/github.png'); margin-left:0.5em;}
 	li.github_repo{font-variant:small-caps;}
 	li.github_release{font-style:italics; font-variant:small-caps;}

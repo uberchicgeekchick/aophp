@@ -23,10 +23,17 @@
 		public function __construct(){
 			$this->load_app();
 			$this->load_xml();
+			$this->validate_app();
 			$this->load();
 		}//__construct
 		
 		public function load_app(){
+			$this->app="projects";
+			$this->content="life";
+			
+			if(!( (isset($_GET['app'])) && $_GET['app'] ))
+				$_GET['app']=$this->app;
+			
 			$applications=array(
 				'episodes', 'specials', 'blogs', 'projects',
 				'total'=>4
@@ -38,16 +45,13 @@
 					$this->content=$_GET[ $this->app ];
 					return 1;
 				}
-			
-			$this->app="episodes";
-			$this->content="0007";
 			return 0;
 		}//set_category
 		
 		
 		
 		private function load_xml(){
-			if( !(isset($_GET['xml'])) )
+			if(! (isset($_GET['xml'])) )
 				return $this->xml=new aophp__xml__xhtml();
 			
 			switch($_GET['xml']){
@@ -56,6 +60,24 @@
 				case 'xhtml': default: return $this->xml=new aophp__xml__xhtml();
 			}
 		}//set_xml
+		
+		
+		
+		private function validate_app(){
+			switch($_GET['app']){
+			case 'projects':
+				$this->app="oss-canvas";
+				break;
+			case 'episodes':
+				$this->app="speakingOUT";
+				break;
+			default:
+				return -1;
+			}//switch
+			$this->content_uri="./apps/{$this->app}/core.php";
+		}//load_app
+		
+		
 		
 		public function add_tag( $tag, $attributes, $value ){
 			switch( $tag ){

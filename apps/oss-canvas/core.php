@@ -13,6 +13,7 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
+	$this->app="oss-canvas";
 	if(!( (isset($this->content)) && $this->content ))
 		$this->content="aophp";
 	
@@ -25,8 +26,8 @@
 	 *	./oss-canvas/{$this->content}.php
 	 */
 	
-	if( (file_exists( "./apps/oss-canvas/{$this->content}.php" )) )
-		return require_once( ($this->content_uri="./oss-canvas/{$this->content}.php") );
+	if( (file_exists( ($this->content_uri="./apps/oss-canvas/{$this->content}.php") )) )
+		return require_once( $this->content_uri );
 	
 	$this->content_uri='./apps/oss-canvas/docs/';
 	
@@ -43,7 +44,7 @@
 								%s
 							</p>
 						</div>
-						<div class='copyright'>by <a href='http://www.github.com/ubercicgeekchick'>Me :-), Kaity G. B. / uberChick / uberchicgeekchick</a></div>
+						<div class='copyright'>by <a href='./?projects=life'>Me :-), Kaity G. B. / uberChick / uberchicgeekchick</a></div>
 				
 						<hr/>
 						<ul class='my_projects'>

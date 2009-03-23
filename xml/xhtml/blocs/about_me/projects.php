@@ -27,26 +27,29 @@
 					</ul><br/>
 					<ul class='my_projects_list'>
 						<lh>~My GNOME Apps~</lh>
-						<ul class='my_projects'><li class='my_projects'><a href='./?projects=Alacast'>Alacast</a></li>
+						<ul class='my_projects'>
+							<li class='my_projects'><a href='./?projects=Alacast'>Alacast</a></li>
 							<ul class='github_releases'>
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/alacast/tree/master'>master repo</a></li>
 							</ul>
 						</ul>
-						<ul class='my_projects'><li class='my_projects'><a href='./?projects=connectED'>connectED</a></li>
+						<ul class='my_projects'>
+							<li class='my_projects'><a href='./?projects=connectED'>connectED</a></li>
 							<ul class='github_releases'>
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/connectED/tree/master'>master repo</a></li>
 								<li class='github_release'><a href='http://cli.gs/connected.release'>version 1.0.1.2</a></li>
 							</ul>
 						</ul>
-						<ul class='my_projects'><li class='my_projects'><a href='./?projects=Greet-Tweet-Know'>Greet-Tweet-Know</a></li>
+						<ul class='my_projects'>
+							<li class='my_projects'><a href='./?projects=Greet-Tweet-Know'>Greet-Tweet-Know</a></li>
 							<ul class='github_releases'>
-								<li class='github_repo'><a href='http://uberchicgeekchick.github.com/greet-tweet-know'>Greet-Tweet-Know</a></li>
+								<li class='github_repo'><a href='http://uberchicgeekchick.github.com/greet-tweet-know'>GitHub page</a></li>
 								<li class='github_release'><a href='http://cli.gs/greet-tweet-know.release'>version 0.1.0.2</a></li>
-								<li><a href='https://www.github.com/uberchicgeekchick/greet-tweet-know/tree/master'>master repo</li>
+								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/greet-tweet-know/tree/master'>master repo</li>
 							</ul>
 						</ul>
 					</ul><br/>
-					<ul class='github_repo_listing'>
+					<ul class='my_projects'>
 						<lh>~Empowering my Site~</lh>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/aophp/tree/master'>AOPHP</a></li>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/speaking-out/tree/master'>speakingOUT</a></li>

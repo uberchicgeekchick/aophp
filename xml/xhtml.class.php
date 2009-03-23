@@ -31,7 +31,7 @@
 			
 			if( $this->app == "projects" && (file_exists( ($this->content_uri="./apps/oss-canvas/core.php") )) ) return;
 			
-			if( $this->app == "episodes" && (file_exists( ($this->content_uri="./apps/speakingOUT/episodes/{$this->content}.php") )) ) return;
+			if( $this->app == "episodes" && (file_exists( ($this->content_uri="./apps/speakingOUT/core.php") )) ) return;
 			
 			if( (file_exists( ($this->content_uri="./xml/{$this->doctype}/{$this->app}/{$this->content}.php") )) ) return;
 			
