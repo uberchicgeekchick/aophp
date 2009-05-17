@@ -13,7 +13,7 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	return "<li>libglade >= 0.23</li>
+	return "
 							<li>libxml >= 2.6.16</li>
 							<li>glib >= 2.15.0</li>
 							<li>gtk >= 2.14.0</li>

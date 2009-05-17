@@ -21,15 +21,15 @@
 			</div>
 			<div class='contents_body_padding_1'>&nbsp;</div>
 			<div class='contents_body_output'>
-				<!-- Begins displaying: {$this->xml->content_uri} -->
+				<!-- Begins displaying: {$this->xml->uri} -->
 CONTENT_HEADER;
 	
-	require_once( $this->xml->content_uri );
+	require_once( $this->xml->uri );
 	
 	require_once( "./xml/{$this->xml->doctype}/page/hugs_and_bye.php" );
 	
 	print <<<CONTENT_FOOTER
-				<!-- Ends displaying: {$this->xml->content_uri} -->
+				<!-- Ends displaying: {$this->xml->uri} -->
 			</div>
 			<div class='contents_body_padding_2'>&nbsp;</div>
 			<div class='contents_bottom'>

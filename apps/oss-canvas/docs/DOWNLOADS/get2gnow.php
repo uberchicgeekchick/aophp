@@ -46,4 +46,13 @@
 	 * User must be fully accessible, exportable, and deletable to that User.
 	 *
 	 */
+	$versions=array(
+		array('00.00.DB.aF9', "http://github.com/uberchicgeekchick/get2gnow/commit/19de49adb8b5784bddc7967b6bd33f8d943401b9"),
+	);
+	
+	$output="<ul>\n";
+	for($i=0; isset($versions[$i]); $i++)
+		$output=sprintf("%s\n\t\t\t\t\t\t\t<a href=\"%s\">%s</a><br/>", $output, $versions[$i][1], $versions[$i][0]);
+	return sprintf("%s</ul>", $output);
 ?>
+

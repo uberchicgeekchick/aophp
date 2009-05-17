@@ -13,6 +13,8 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-		print <<<BLOC
+print <<<BLOC
+			<script src="http://nmp.newsgator.com/NGBuzz/buzz.ashx?buzzId=34803&apiToken=6EE6F3764F094605A37F20ABFF55A59B&trkP=&trkM=F8F1E462-3E44-D2D8-70B1-217F5491648C" type="text/javascript"></script>
 BLOC;
 ?>
+

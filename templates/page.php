@@ -46,4 +46,8 @@
 	 * User must be fully accessible, exportable, and deletable to that User.
 	 *
 	 */
+		printf("<h1>TITLE</h1>
+			<h1>SUBTITLE</h1>
+			<p>
+			</p>");
 ?>

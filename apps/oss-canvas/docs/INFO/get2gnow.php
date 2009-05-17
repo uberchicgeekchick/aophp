@@ -13,15 +13,5 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	return "<li>libglade >= 0.23</li>
-							<li>libxml >= 2.6.16</li>
-							<li>glib >= 2.15.0</li>
-							<li>gtk >= 2.14.0</li>
-							<li>gconf >= 1.2.0</li>
-							<li>libgnomeui >= 2.15.5</li>
-							<li>libgio >= 2.15.5</li>
-							<li>dbus >= 0.61</li>
-							<li>libcanberra >= 0.4</li>
-							<li>enchant >= 1.2.0</li>
-							<li>iso-codes >= 0.35</li>"
+	return "get2gnow&#039;s a micro-blogging, eg Twitter, Identi.ca, & Laconica, client for GTK+/GNOME focused on creating the most full featured online communication platform available one any platform, get2gnow just so <i>happens</i> to be exclusively available on Linux, GTK+, & GNOME.  With our goal for get2gnow is to create the very best, most robust, useful, beautiful, and feature rich communication platform imaginable while remaining yet straight forward &amp; easy to use.";
 ?>

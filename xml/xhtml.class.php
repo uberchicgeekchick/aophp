@@ -16,31 +16,39 @@
 	//namespace AOPHP::Formats;
 	
 	class aophp__xml__xhtml extends aophp__xml{
-		public $content_uri;
 		public $doctype;
 		
 		public function __construct(){
 			$this->doctype="xhtml";
 			parent::load_app();
-			$this->set_content();
 		}//__construct
 		
 		private function set_content(){
-			if( (isset($_GET['debug'])) && (file_exists( ($this->content_uri="./xml/{$this->doctype}/debug.php") )) )
+			if( (isset($_GET['debug'])) && (file_exists( ($this->uri="./xml/{$this->doctype}/debug.php") )) )
 				return;
 			
-			if( $this->app == "projects" && (file_exists( ($this->content_uri="./apps/oss-canvas/core.php") )) ) return;
+			if(
+				(
+					(($this->app == "projects") && (is_dir( ($this->dir="./apps/oss-canvas") )) )
+					||
+					(($this->app == "episodes") && (is_dir( ($this->dir="./apps/speakingOUT") )) )
+				)
+				&&
+				(file_exists( ($this->uri=sprintf("%s/%s.php", $this->dir, ($this->doc="core") )) ))
+			) return;
 			
-			if( $this->app == "episodes" && (file_exists( ($this->content_uri="./apps/speakingOUT/core.php") )) ) return;
+			if( (file_exists( ($this->uri="./xml/{$this->doctype}/{$this->app}/{$this->doc}.php") )) ) return;
 			
-			if( (file_exists( ($this->content_uri="./xml/{$this->doctype}/{$this->app}/{$this->content}.php") )) ) return;
-			
-			printf( "<center class='error'>aophp could not find the default content @ &#039;%s&#039;</center>", $this->content_uri );
-			$this->content_uri="./xml/{$this->doctype}/projects/podcast.php";
+			printf( "<center class='error'>aophp could not find the default content @ &#039;%s&#039;</center>", $this->uri );
+			$this->uri="./xml/{$this->doctype}/{$this->app}/{$this->doc}.php";
 		}//set_content
 		
+		public function set_uri(){
+			$this->set_content();
+		}//set_uri
 		
-		private function save(){
+		
+		public function save(){
 			
 		}//save
 		

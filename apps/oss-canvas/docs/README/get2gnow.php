@@ -13,5 +13,12 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	return "Greet-Tweet-Know is a a Twitter client for GTK+/GNOME focused on creating the most full featured Twitter client available any where, not just on GNOME & Linux, even though the experience of using Greet-Tweet-Know. Greet-Tweet-Know goals are to provide access to all of Twitter's functions and to add interfaces that make using & managing your Twitter status, messages, friends, & followers. Greet-Tweet-Know can easily be embedded into other applications.";
+return "<pre>
+get2gnow's a micro-blogging, eg Twitter, Identi.ca, & Laconica, client for GTK+/GNOME.
+I'm focused on creating the most full featured online communication client on any platform.
+get2gnow just so 'happens' to be exclusively available on Linux, GTK+, & GNOME.
+Our goal for get2gnow is to create the very best, most robust, useful, beautiful,
+	and feature rich communication platform imaginable.
+While remaining straight forward & easy to use.
+While making get2gnow easily embeddable into other applications.</pre>";
 ?>

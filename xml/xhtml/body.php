@@ -24,6 +24,7 @@
 	require_once("./xml/{$this->xml->doctype}/blocs/about_me/projects.php");
 	require_once("./xml/{$this->xml->doctype}/blocs/about_me/online_profiles.php");
 	require_once("./xml/{$this->xml->doctype}/blocs/links/CodingChicas.php");
+	require_once("./xml/{$this->xml->doctype}/blocs/widgets/Discovery.com.php");
 	require_once("./xml/{$this->xml->doctype}/blocs/links/podroll.php");
 	require_once("./xml/{$this->xml->doctype}/blocs/links/GeekChic.php");
 	print("		</div>\n");

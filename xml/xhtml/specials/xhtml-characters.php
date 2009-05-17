@@ -46,4 +46,14 @@
 	 * User must be fully accessible, exportable, and deletable to that User.
 	 *
 	 */
+		$fp=fopen("./xml/xhtml/specials/xhtml-symbol.ent", "r");
+		printf(
+				"<h1>Valid DTDs</h1>
+				<h1>XHTML Special Characters</h1>
+					<blockquote class=\"cite\" cite=\"http://www.w3.org/TR/xhtml1/dtds.html#dtdentry_xhtml-symbol.ent_HTMLsymbol\"><a href=\"http://www.w3.org/TR/xhtml1/dtds.html#dtdentry_xhtml-symbol.ent_HTMLsymbol\">http://www.w3.org/TR/xhtml1/dtds.html#dtdentry_xhtml-symbol.ent_HTMLsymbol</a></blockquote>
+				<p>
+					%s
+				</p>",
+				(fread($fp, (filesize("./xml/xhtml/specials/xhtml-symbol.ent")) ))
+		);
 ?>

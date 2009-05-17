@@ -13,5 +13,22 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	return "Greet-Tweet-Know is a a Twitter client for GTK+/GNOME focused on creating the most full featured Twitter client available any where.";
+return "
+						<li>libsexy</li>
+						<li>openssl</li>
+						<li>libsoup-2.4 &gt;= 2.24.3</li>
+						<li>libnotify</li>
+						<li>gnome-vfs-2.0</li>
+						<li>gtk+-2.0 &gt;= 2.12.12</li>
+						<li>glib-2.0 &gt;= 2.20</li>
+						<li>gio-2.0 &gt;= 2.15.5</li>
+						<li>libcanberra-gtk &gt;= 0.4</li>
+						<li>libxml-2.0 &gt;= 2.6.16</li>
+						<li>gobject-2.0</li>
+						<li>gthread-2.0</li>
+						<li>gconf-2.0 &gt;= 1.2.0</li>
+						<li>gnome-keyring-1</li>
+						<li>gnome-doc-utils &gt;= 0.3.2</li>
+
+"
 ?>

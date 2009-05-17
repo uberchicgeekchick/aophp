@@ -28,7 +28,7 @@
 		function __construct() {
 			
 			if( ! (
-				(isSet($_SERVER['QUERY_STRING']))
+				(isset($_SERVER['QUERY_STRING']))
 					&&
 				(count($_GET))
 			) ) {

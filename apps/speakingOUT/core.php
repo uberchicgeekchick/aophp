@@ -21,13 +21,13 @@
 	);
 	
 	if(
-		(file_exists( ($this->content_uri="./apps/{$this->app}/shows/{$default['show']}/episodes/{$this->content}.php") ))
+		(file_exists( ($this->doc="./apps/{$this->app}/shows/{$default['show']}/episodes/{$this->doc}.php") ))
 		||
-		(file_exists( ($this->content_uri="./apps/{$this->app}/shows/{$default['show']}/episodes/{$default['episode']}.php") ))
+		(file_exists( ($this->doc="./apps/{$this->app}/shows/{$default['show']}/episodes/{$default['episode']}.php") ))
 		||
-		(file_exists( ($this->content_uri="./apps/{$this->app}/shows/{$default['show']}/about.php") ))
+		(file_exists( ($this->doc="./apps/{$this->app}/shows/{$default['show']}/about.php") ))
 	)
-		return require_once($this->content_uri);
+		return require_once($this->doc);
 
 	printf("<pre>");
 	require_once("./apps/speakingOUT/README");

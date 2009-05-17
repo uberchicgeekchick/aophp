@@ -15,7 +15,7 @@
 	 */
 	
 	if( !(defined("AOPHP_APP_NAME")) )
-		define("AOPHP_APP_NAME", "speakingOUT");
+		define("AOPHP_APP_NAME", "oss-canvas");
 		
 	define("AOPHP_CLASS_SEPARATOR", "_");
 	

@@ -46,4 +46,16 @@
 	 * User must be fully accessible, exportable, and deletable to that User.
 	 *
 	 */
+	return "
+						<ul>
+							<lh>You can download {$this->doc}'s:</lh>
+							<!--<li><a href='./?projects={$this->doc}&download=packages' alt='Download {$this->uri}'s package for your Linux distribution.' title='Download {$this->uri}'s package for your Linux distribution.'>package for your Linux distribution</a></li>-->
+							<li><a href='http://www.github.com/{$github_profile}/{$project_dir}/zipball/master' alt='Download {$this->uri}'s curent source code tarball.' title='Download {$this->doc}'s curent source code tarball.'>curent source code tarball</a></li>
+							<li><a href='http://www.github.com/{$github_profile}/{$project_dir}/zipball/master' alt='Download {$this->uri}'s curent source code tarball.' title='Download {$this->doc}'s curent source code tarball.'>curent source code in a zipped archive</a></li>
+						</ul>
+						<p>You can also clone {$this->doc} with <a href='http://git-scm.com'>Git</a>
+							by running:
+							<pre>$ git clone git://github.com/{$github_profile}/{$project_dir}</pre>
+						</p>";
 ?>
+

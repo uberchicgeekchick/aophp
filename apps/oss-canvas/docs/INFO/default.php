@@ -13,5 +13,5 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	return "{$this->content} is an OSS project";
+	return "{$this->uri} is an OSS project";
 ?>

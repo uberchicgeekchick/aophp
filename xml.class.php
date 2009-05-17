@@ -18,40 +18,41 @@
 	class aophp__xml{
 		public $xml;
 		public $app;
-		public $content;
+		public $doc;
+		public $dir;
+		public $uri;
 		
 		public function __construct(){
 			$this->load_app();
 			$this->load_xml();
-			$this->validate_app();
+			$this->xml->set_uri();
 			$this->load();
 		}//__construct
 		
 		public function load_app(){
-			$this->app="projects";
-			$this->content="life";
-			
-			if(!( (isset($_GET['app'])) && $_GET['app'] ))
-				$_GET['app']=$this->app;
-			
 			$applications=array(
 				'episodes', 'specials', 'blogs', 'projects',
 				'total'=>4
 			);
 			
+			$this->dir="./xml/xhtml";
+			
 			for($n=0; $n<$applications['total']; $n++ )
 				if( (isset( $_GET[ $applications[$n] ] )) ){
 					$this->app=$applications[$n];
-					$this->content=$_GET[ $this->app ];
+					$this->doc=$_GET[ $this->app ];
 					return 1;
 				}
+			
+			$this->app="projects";
+			$this->doc="life";
 			return 0;
-		}//set_category
+		}//load_app
 		
 		
 		
 		private function load_xml(){
-			if(! (isset($_GET['xml'])) )
+			if( !(isset($_GET['xml'])) )
 				return $this->xml=new aophp__xml__xhtml();
 			
 			switch($_GET['xml']){
@@ -59,25 +60,7 @@
 				case 'atom': return $this->xml=new aophp__xml__feeds__atom();
 				case 'xhtml': default: return $this->xml=new aophp__xml__xhtml();
 			}
-		}//set_xml
-		
-		
-		
-		private function validate_app(){
-			switch($_GET['app']){
-			case 'projects':
-				$this->app="oss-canvas";
-				break;
-			case 'episodes':
-				$this->app="speakingOUT";
-				break;
-			default:
-				return -1;
-			}//switch
-			$this->content_uri="./apps/{$this->app}/core.php";
-		}//load_app
-		
-		
+		}//load_xml
 		
 		public function add_tag( $tag, $attributes, $value ){
 			switch( $tag ){

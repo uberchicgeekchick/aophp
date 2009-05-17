@@ -13,18 +13,18 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	return "{$this->content} can be installed from source using the standard process for building applications.
+	return "{$this->uri} can be installed from source using the standard process for building applications.
 							<ul>
-								<lh>Start by downloading {$this->content}'s source as a tarball or zipped archive.&nbsp; Than</lh>
+								<lh>Start by downloading {$this->uri}'s source as a tarball or zipped archive.&nbsp; Than</lh>
 								<li>Extract the tarball, or zipped archive, you've downloaded.</li>
 								<li>open a terminal in, or cd to, the directory the tarball created.</li>
-								<li>Now you're ready to start installing {$this->content} by 1st running:</li>
+								<li>Now you're ready to start installing {$this->uri} by 1st running:</li>
 									<ul><li>./configure</li></ul>
 								<li>Note: on 64bit Linux distros you may need to help out configure a lil by running:</li>
 									<ul><li>./configure --libdir=/usr/lib64</li></ul>
 								<li>After you've run the above command simply run:</li>
 									<ul><li>make</li></ul>
-								<li>If after running make you don't have any errors than go ahead & install {$this->content}. By default make will install {$this->content} to /usr so you may need root privileges to finish installing {$this->content}. if this is the case, which it usually is, than you'll need to run the following command:</li>
+								<li>If after running make you don't have any errors than go ahead & install {$this->uri}. By default make will install {$this->uri} to /usr so you may need root privileges to finish installing {$this->uri}. if this is the case, which it usually is, than you'll need to run the following command:</li>
 									<ul><li>sudo make install</li></ul>
 								<li>If you don't need to have root privileges to install Greet-Tweet-Know than simply run:</li>
 									<ul><li>make install</li></ul>
