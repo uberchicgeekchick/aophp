@@ -38,7 +38,7 @@
 							<ul class='github_releases'>
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/get2gnow/tree/master'>master repo</li>
 								<li class='github_release'><a href='http://cli.gs/get2gnow.release'>[stable release]</a></li>
-								<li class="github_repo">release 00.00.DB.aFF</li>
+								<li class="github_release">release 00.00.DB.aFF</li>
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/get2gnow/tree/master'>master repo</li>
 							</ul>
 						</ul>
@@ -55,7 +55,7 @@
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/aophp/tree/master'>AOPHP</a></li>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/speaking-out/tree/master'>speakingOUT</a></li>
 					</ul><br/>
-					<ul class='github_repo_listing'>
+					<ul class='github_releases'>
 						<lh>~My Other Web Apps~</lh>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/realfriends/tree/master'>realfriends</a></li>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/uberchicks-oss-social-network/tree/master'>uberchicks-oss-social-network</a></li>

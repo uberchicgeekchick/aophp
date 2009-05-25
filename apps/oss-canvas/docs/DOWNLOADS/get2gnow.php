@@ -50,9 +50,9 @@
 		array('00.00.DB.aFF', "http://github.com/uberchicgeekchick/get2gnow/tree/4b789ae4d47f77cc786d7f0e7ebdc7a1d6760cc8"),
 	);
 	
-	$output="<ul>\n";
+	$output="<ul class=\"my_projects\">\n";
 	for($i=0; isset($versions[$i]); $i++)
-		$output=sprintf("%s\n\t\t\t\t\t\t\t<a href=\"%s\">%s</a><br/>", $output, $versions[$i][1], $versions[$i][0]);
+		$output=sprintf("%s\n\t\t\t\t\t\t\t<li class=\"my_projects\"><a href=\"%s\">%s</a></li>", $output, $versions[$i][1], $versions[$i][0]);
 	return sprintf("%s</ul>", $output);
 ?>
 

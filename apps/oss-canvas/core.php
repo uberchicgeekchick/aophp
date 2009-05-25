@@ -62,7 +62,7 @@
 							%s
 						</p>
 						<hr/>
-						<a name='DOWNLOAD'>Download</a>
+						<a name='DOWNLOAD'>Downloads</a>
 							%s
 						<hr/>
 						<a name='INSTALL'>Installation</a>
