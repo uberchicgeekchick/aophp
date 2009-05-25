@@ -34,18 +34,19 @@
 							</ul>
 						</ul>
 						<ul class='my_projects'>
+							<li class='my_projects'><a href='./?projects=get2gnow'>get2gnow</a></li>
+							<ul class='github_releases'>
+								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/get2gnow/tree/master'>master repo</li>
+								<li class='github_release'><a href='http://cli.gs/get2gnow.release'>[stable release]</a></li>
+								<li class="github_repo">release 00.00.DB.aFF</li>
+								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/get2gnow/tree/master'>master repo</li>
+							</ul>
+						</ul>
+						<ul class='my_projects'>
 							<li class='my_projects'><a href='./?projects=connectED'>connectED</a></li>
 							<ul class='github_releases'>
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/connectED/tree/master'>master repo</a></li>
 								<li class='github_release'><a href='http://cli.gs/connected.release'>version 1.0.1.2</a></li>
-							</ul>
-						</ul>
-						<ul class='my_projects'>
-							<li class='my_projects'><a href='./?projects=get2gnow'>get2gnow</a></li>
-							<ul class='github_releases'>
-								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/get2gnow/tree/master'>master repo</li>
-								<li class='github_release'><a href='http://cli.gs/get2gnow.release'>version 00.00.DB.F9</a></li>
-								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/get2gnow/tree/master'>master repo</li>
 							</ul>
 						</ul>
 					</ul><br/>

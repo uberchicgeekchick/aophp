@@ -47,7 +47,7 @@
 	 *
 	 */
 	$versions=array(
-		array('00.00.DB.aF9', "http://github.com/uberchicgeekchick/get2gnow/commit/19de49adb8b5784bddc7967b6bd33f8d943401b9"),
+		array('00.00.DB.aFF', "http://github.com/uberchicgeekchick/get2gnow/tree/4b789ae4d47f77cc786d7f0e7ebdc7a1d6760cc8"),
 	);
 	
 	$output="<ul>\n";
