@@ -39,7 +39,7 @@
 						</div>
 						
 						<div class='projects_description'>
-							<h1>{$this->doc} @ <a href='http://www.github.com/{$github_profile}/{$project_dir}'>github</a></h1>
+							<h1>{$this->doc}</h1><h2 class='resources'><a href='http://www.github.com/{$github_profile}/{$project_dir}'>@github</a></h2>
 							<p>
 								%s
 							</p>
