@@ -41,7 +41,7 @@
 							<ul class='github_releases'>
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/get2gnow/tree/master'>master repo</li>
 								<li class='github_release'><a href='http://cli.gs/get2gnow.release'>[stable release: #0000DDaC4]</a></li>
-								<li class="github_release"><span style="color:#999999; background-color:#0000DDaC4;"><a href="hhttp://github.com/uberchicgeekchick/get2gnow/tree/2bab9e55af50050c0ab7c1a0419485bd7b268d8f">release #0000DDaC4</a></span></li>
+								<li class="github_release"><span style="color:#999999; background-color:#0000DDaC4;"><a href="http://github.com/uberchicgeekchick/get2gnow/tree/6ac38a335ed176c3c4032aebacd975a91b61fc47">release #0000DDaC4</a></span></li>
 								<ul class='my_projects'>
 									<li class='my_projects'><a href='./?projects=get2gnow#DOWNLOAD'>All Versions</li>
 								</ul>
