@@ -28,18 +28,23 @@
 					<ul class='my_projects_list'>
 						<lh>~My GNOME Apps~</lh>
 						<ul class='my_projects'>
-							<li class='my_projects'><a href='./?projects=Alacast'>Alacast</a></li>
+							<li class='my_projects'><a href='./?projects=alacast'>Alacast</a></li>
 							<ul class='github_releases'>
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/alacast/tree/master'>master repo</a></li>
+								<ul class='my_projects'>
+									<li class='my_projects'><a href='./?projects=alacast#DOWNLOAD'>All Versions</li>
+								</ul>
 							</ul>
 						</ul>
 						<ul class='my_projects'>
 							<li class='my_projects'><a href='./?projects=get2gnow'>get2gnow</a></li>
 							<ul class='github_releases'>
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/get2gnow/tree/master'>master repo</li>
-								<li class='github_release'><a href='http://cli.gs/get2gnow.release'>[stable release: #00.00.DB.a09]</a></li>
-								<li class="github_release"><span style="color:#999999; background-color:#0000DBa09;"><a href="http://github.com/uberchicgeekchick/get2gnow/tree/9c8cf017e8fafc9ea8945ed9a9d582fa922425c4">release #00.00.DD.a09</a></span></li>
-								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/get2gnow/tree/master'>master repo</li>
+								<li class='github_release'><a href='http://cli.gs/get2gnow.release'>[stable release: #0000DDaC4]</a></li>
+								<li class="github_release"><span style="color:#999999; background-color:#0000DDaC4;"><a href="http://github.com/uberchicgeekchick/get2gnow/tree/16ddfa92ffcf4848cbb99d0d810c1aba0018e9a8">release #0000DDaC4</a></span></li>
+								<ul class='my_projects'>
+									<li class='my_projects'><a href='./?projects=get2gnow#DOWNLOAD'>All Versions</li>
+								</ul>
 							</ul>
 						</ul>
 						<ul class='my_projects'>
@@ -47,6 +52,9 @@
 							<ul class='github_releases'>
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/connectED/tree/master'>master repo</a></li>
 								<li class='github_release'><a href='http://cli.gs/connected.release'>version 1.0.1.2</a></li>
+								<ul class='my_projects'>
+									<li class='my_projects'><a href='./?projects=connectED#DOWNLOAD'>All Versions</li>
+								</ul>
 							</ul>
 						</ul>
 					</ul><br/>
