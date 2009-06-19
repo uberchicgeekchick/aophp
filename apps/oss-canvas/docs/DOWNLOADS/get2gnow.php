@@ -47,7 +47,7 @@
 	 *
 	 */
 	$versions=array(
-		array("#0000F6aEC", "http://github.com/uberchicgeekchick/get2gnow/tree/4304be5cd029ae80aacba741966214edcbfbc8c1"),
+		array("#0000F6aEC", "http://github.com/uberchicgeekchick/get2gnow/tree/657ce1b94df1789f4efe9974d1851962e068d941"),
 		array("#0000DDaC4", "http://github.com/uberchicgeekchick/get2gnow/tree/2153cc59673836859000652727bd78e99f5f5806"),
 		array('00.00.DB.a09', "http://github.com/uberchicgeekchick/get2gnow/tree/9c8cf017e8fafc9ea8945ed9a9d582fa922425c4"),
 		array('00.00.DB.aFF', "http://github.com/uberchicgeekchick/get2gnow/tree/4b789ae4d47f77cc786d7f0e7ebdc7a1d6760cc8"),
