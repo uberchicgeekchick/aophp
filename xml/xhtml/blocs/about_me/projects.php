@@ -40,6 +40,12 @@
 							<li class='my_projects'><a href='./?projects=get2gnow'>get2gnow</a></li>
 							<ul class='github_releases'>
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/get2gnow/tree/master'>master repo</li>
+								<li class="github_release"><span style="color:#999999; background-color:#0000F6aEC;"><a href="http://github.com/uberchicgeekchick/get2gnow/tree/b85bbf20f4b35e7b179519be8de0fe5badfc7799">release #0000F6aEC</a></span></li>
+								<ul class='my_projects'>
+									<lh>ScreenShots</lh>
+									<li class='my_projects'><a href='./apps/oss-canvas/graphics/get2gnow/get2gnow.png'>ScreenShot #1</a></li>
+									<li class='my_projects'><a href='./apps/oss-canvas/graphics/get2gnow/get2gnow-0000F6aEC-with-tweet-0000F6aEC-with-tweet.png'>ScreenShot #2 - with a tweet selected</a></li>
+								</ul>
 								<li class='github_release'><a href='http://cli.gs/get2gnow.release'>[stable release: #0000DDaC4]</a></li>
 								<li class="github_release"><span style="color:#999999; background-color:#0000DDaC4;"><a href="http://github.com/uberchicgeekchick/get2gnow/tree/2153cc59673836859000652727bd78e99f5f5806">release #0000DDaC4</a></span></li>
 								<ul class='my_projects'>

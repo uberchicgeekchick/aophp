@@ -16,9 +16,9 @@
 
 		<link rel='shortcut icon' href='./graphics/favicon.png'/>
 		
-		<link rel='alternate' type='application/rss+xml' title='Subscribe to Expressive Programming&#039;s FLAC episodes via our Atom feed.' href='./?xml=atom&enclosures=flac'/>
+		<link rel='alternate' type='application/atom+xml' title='Subscribe to Expressive Programming&#039;s FLAC episodes via our Atom feed.' href='./?xml=atom&enclosures=flac'/>
 		<link rel='alternate' type='application/rss+xml' title='Subscribe to Expressive Programming&#039;s FLAC episodes via our RSS feed.' href='./?xml=rss&Enclosures=flac'/>
-		<link rel='alternate' type='application/rss+xml' title='Subscribe to Expressive Programming&#039;s OGG episodes via our Atom feed.' href='./?xml=atom&enclosures=ogg'/>
+		<link rel='alternate' type='application/atom+xml' title='Subscribe to Expressive Programming&#039;s OGG episodes via our Atom feed.' href='./?xml=atom&enclosures=ogg'/>
 		<link rel='alternate' type='application/rss+xml' title='Subscribe to Expressive Programming&#039;s OGG episodes via our RSS feed.' href='./?xml=rss&Enclosures=ogg'/>
 		
 		<link rel="openid.server" href="http://www.myopenid.com/server" />  

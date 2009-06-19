@@ -49,6 +49,7 @@
 						<hr/>
 						<ul class='my_projects'>
 							<li><a href='#INFO'>Description</a></li>
+							<li><a href='#SCREENSHOTS'>Screenshots</a></li>
 							<li><a href='#DOWNLOAD'>Download</a></li>
 							<li><a href='#INSTALL'>Installation</a></li>
 							<li><a href='#DEPENDENCIES'>Dependencies</a></li>
@@ -57,7 +58,12 @@
 							<li><a href='#AUTHORS'>Authors</a></li>
 						</ul>
 						<hr/>
-						<a href='INFO'>Description</a>
+						<a name='INFO'>Description</a>
+						<p>
+							%s
+						</p>
+						<hr/>
+						<a name='SCREENSHOTS'>Screenshots</a>
 						<p>
 							%s
 						</p>
@@ -75,7 +81,7 @@
 							%s
 						</ul>
 						<hr/>
-						<a name='LICENSE'>
+						<a name='LICENSE'>License</a>
 							%s
 						</p>
 						<hr/>
@@ -86,11 +92,14 @@
 							%s
 						<hr/>
 					</div>
-				",( !(file_exists( ($doc="{$this->uri}/INFO/{$this->doc}.php") ))
+				",( !(file_exists( ($doc="{$this->uri}/README/{$this->doc}.php") ))
+					?(require_once("{$this->uri}/README/default.php"))
+					:(require_once($doc))
+				),( !(file_exists( ($doc="{$this->uri}/INFO/{$this->doc}.php") ))
 					?(require_once("{$this->uri}/INFO/default.php"))
 					:(require_once($doc))
-				),( !(file_exists( ($doc="{$this->uri}/README/{$this->doc}.php") ))
-					?(require_once("{$this->uri}/README/default.php"))
+				),( !(file_exists( ($doc="{$this->uri}/SCREENSHOTS/{$this->doc}.php") ))
+					?"{$this->uri} has no screen shots available at this time."
 					:(require_once($doc))
 				),( !(file_exists( ($doc="{$this->uri}/DOWNLOADS/{$this->doc}.php") ))
 					?(require_once("{$this->uri}/DOWNLOADS/default.php"))
