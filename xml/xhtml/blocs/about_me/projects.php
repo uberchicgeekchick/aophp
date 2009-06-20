@@ -40,7 +40,7 @@
 							<li class='my_projects'><a href='./?projects=get2gnow'>get2gnow</a></li>
 							<ul class='github_releases'>
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/get2gnow/tree/master'>master repo</li>
-								<li class="github_release"><span style="color:#999999; background-color:#0000F6aEC;"><a href="http://github.com/uberchicgeekchick/get2gnow/tree/657ce1b94df1789f4efe9974d1851962e068d941">release #0000F6aEC</a></span></li>
+								<li class="github_release"><span style="color:#999999; background-color:#0000F6aEC;"><a href="http://github.com/uberchicgeekchick/get2gnow/tree/74eee7ef76ae8db5ed7fa3ecdfef7cf0badc1897">release #0000F6aEC</a></span></li>
 								<ul class='my_projects'>
 									<lh>ScreenShots</lh>
 									<li class='my_projects'><a href='./apps/oss-canvas/graphics/get2gnow/get2gnow.png'>ScreenShot #1</a></li>
