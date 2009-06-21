@@ -17,8 +17,8 @@
 	if(!( (isset($this->doc)) && $this->doc ))
 		$this->doc="life";
 	
-	$project_dir=strtolower( $this->doc );
 	$github_profile='uberchicgeekchick';
+	$github_project=strtolower( $this->doc );
 	//http://github.com/uberchicgeekchick/greet-tweet-know/tarball/e1d73512840ea0ba6ccfc6a43a43bc1497e98285
 	/* old local uri:
 	 *	./xml/{$this->doctype}/{$this->category}/{$this->content}.php
@@ -29,17 +29,18 @@
 	if( (file_exists( ($this->uri="./apps/oss-canvas/{$this->doc}.php") )) )
 		return require_once( $this->uri );
 	
-	$this->uri='./apps/oss-canvas/docs/';
+	$this->uri='./apps/oss-canvas';
 	
 	printf("<!-- -->
 					<div class='projects_container'>
 						<div class='projects_download'>
-							<a href='http://www.github.com/{$github_profile}/{$project_dir}/tarball/master'><img class='projects_download' src='./graphics/icons/downloads/tar.png'></a>
-							<a href='http://www.github.com/{$github_profile}/{$project_dir}/zipball/master'><img class='projects_download' src='./graphics/icons/downloads/zip.png'></a>
+							<a href='{$this->uri}/downloads/{$this->doc}.x86_64.rpm'><img class='projects_download' src='{$this->uri}/graphics/rpm.png' alt='Download {$this->doc}&#039;s rpm.' title='Download {$this->doc}&#039;s rpm.'/></a>
+							<a href='http://www.github.com/{$github_profile}/{$github_project}/tarball/master'><img class='projects_download' alt='Download {$this->doc}&#039;s latest tarball.' title='Download {$this->doc}&#039;s latest tarball.' src='{$this->uri}/graphics/tarball.png'></a>
+							<a href='http://www.github.com/{$github_profile}/{$github_project}/zipball/master'><img class='projects_download' alt='Download {$this->doc}&#039;s latest zip archive.' alt='Download {$this->doc}&#039;s latzip archive.' src='{$this->uri}/graphics/zip.png'></a>
 						</div>
 						
 						<div class='projects_description'>
-							<h1>{$this->doc}</h1><h2 class='resources'><a href='http://www.github.com/{$github_profile}/{$project_dir}'>@github</a></h2>
+							<h1>{$this->doc}</h1><h2 class='resources'><a href='http://www.github.com/{$github_profile}/{$github_project}'>@github</a></h2>
 							<p>
 								%s
 							</p>
@@ -92,32 +93,30 @@
 							%s
 						<hr/>
 					</div>
-				",( !(file_exists( ($doc="{$this->uri}/README/{$this->doc}.php") ))
-					?(require("{$this->uri}/README/default.php"))
+				",(
+					require("{$this->uri}/docs/README/default.php")
+				),( !(file_exists( ($doc="{$this->uri}/docs/INFO/{$this->doc}.php") ))
+					?(require("{$this->uri}/docs/INFO/default.php"))
 					:(require($doc))
-				),( !(file_exists( ($doc="{$this->uri}/INFO/{$this->doc}.php") ))
-					?(require("{$this->uri}/INFO/default.php"))
-					:(require($doc))
-				),( !(file_exists( ($doc="{$this->uri}/SCREENSHOTS/{$this->doc}.php") ))
+				),( !(file_exists( ($doc="{$this->uri}/docs/SCREENSHOTS/{$this->doc}.php") ))
 					?"{$this->uri} has no screen shots available at this time."
 					:(require($doc))
-				),( !(file_exists( ($doc="{$this->uri}/DOWNLOADS/{$this->doc}.php") ))
-					?(require("{$this->uri}/DOWNLOADS/default.php"))
+				),(
+					require("{$this->uri}/docs/DOWNLOADS/core.php")
+				),( !(file_exists( ($doc="{$this->uri}/docs/INSTALL/{$this->doc}.php") ))
+					?(require("{$this->uri}/docs/INSTALL/default.php"))
 					:(require($doc))
-				),( !(file_exists( ($doc="{$this->uri}/INSTALL/{$this->doc}.php") ))
-					?(require("{$this->uri}/INSTALL/default.php"))
+				),( !(file_exists( ($doc="{$this->uri}/docs/DEPENDENCIES/{$this->doc}.php") ))
+					?(require("{$this->uri}/docs/DEPENDENCIES/default.php"))
 					:(require($doc))
-				),( !(file_exists( ($doc="{$this->uri}/DEPENDENCIES/{$this->doc}.php") ))
-					?(require("{$this->uri}/DEPENDENCIES/default.php"))
+				),( !(file_exists( ($doc="{$this->uri}/docs/COPYING/{$this->doc}.php") ))
+					?(require("{$this->uri}/docs/COPYING/default.php"))
 					:(require($doc))
-				),( !(file_exists( ($doc="{$this->uri}/COPYING/{$this->doc}.php") ))
-					?(require("{$this->uri}/COPYING/default.php"))
+				),( !(file_exists( ($doc="{$this->uri}/docs/CONTACT/{$this->doc}.php") ))
+					?(require("{$this->uri}/docs/CONTACT/default.php"))
 					:(require($doc))
-				),( !(file_exists( ($doc="{$this->uri}/CONTACT/{$this->doc}.php") ))
-					?(require("{$this->uri}/CONTACT/default.php"))
-					:(require($doc))
-				),( !(file_exists( ($doc="{$this->uri}/AUTHORS/{$this->doc}.php") ))
-					?(require("{$this->uri}/AUTHORS/default.php"))
+				),( !(file_exists( ($doc="{$this->uri}/docs/AUTHORS/{$this->doc}.php") ))
+					?(require("{$this->uri}/docs/AUTHORS/default.php"))
 					:(require($doc))
 				)
 			);//printf

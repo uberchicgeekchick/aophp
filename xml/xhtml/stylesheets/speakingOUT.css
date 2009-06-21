@@ -70,9 +70,10 @@ div.bloc,div.rss,div.bloc_tweets{display:inline-table; clear:both; padding-botto
 	li.github_repo{font-variant:small-caps;}
 	li.github_release{font-style:italics; font-variant:small-caps;}
 	div.projects_container{ margin: 0 auto; width:98%;}
-		img.projects_download{border:0; width:64px; height:64px; padding:10px;}
 		div.projects_description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
 		div.projects_download { float: right; }
+		img.projects_download{border:0; width:64px; height:64px; padding:10px;}
+		img.projects_download_sm{border:0; width:48px; height:48px; padding:10px;}
 		div.projects_footer { text-align:center; padding-top:30px; font-style: italic; }
 /* ends my project management pages styles */
 
