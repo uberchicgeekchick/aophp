@@ -66,7 +66,7 @@ div.bloc,div.rss,div.bloc_tweets{display:inline-table; clear:both; padding-botto
 /* starts my project management pages styles */
 	ul.my_projects{list-style-image:url('../graphics/favicon.png');}
 	lh.my_projects,li.my_projects{font-style:italics; font-variant:small-caps; font-weight:bold;}
-	ul.github_releases{list-style-image:url('../graphics/icons/art/github.png'); margin-left:0.5em;}
+	ul.github_releases{list-style-image:url('../graphics/icons/oss/github.com.png'); margin-left:0.5em;}
 	li.github_repo{font-variant:small-caps;}
 	li.github_release{font-style:italics; font-variant:small-caps;}
 	div.projects_container{ margin: 0 auto; width:98%;}

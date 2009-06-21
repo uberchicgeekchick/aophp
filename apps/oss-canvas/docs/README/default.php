@@ -13,5 +13,8 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	return "{$this->uri} is an OSS project";
+	if(!file_exists("{$this->uri}/INFO/{$this->doc}.php"))
+		return "{$this->doc} is an OSS project";
+	
+	return sprintf("<pre wrap='true'>%s</pre>", include("{$this->uri}/INFO/{$this->doc}.php") );
 ?>
