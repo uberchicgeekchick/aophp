@@ -38,9 +38,12 @@
 						</ul>
 						<ul class='my_projects'>
 							<li class='my_projects'><a href='./?projects=get2gnow'>get2gnow</a></li>
+							<ul class='build_service_releases'>
+								<li class='build_service_repo'><a href='https://build.opensuse.org/package/show?package=get2gnow.tar.bz2&project=home%3AuberChicGeekChick%3Aget2now'>home:uberChicGeekChick:get2gnow</li>
+							</ul>
 							<ul class='github_releases'>
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/get2gnow/tree/master'>master repo</li>
-								<li class="github_release"><span style="color:#999999; background-color:#0000F6aEC;"><a href="http://github.com/uberchicgeekchick/get2gnow/tree/9c5aeb486e1ff134494213faf4c739cd5ba31774">release #0000F6aEC</a></span></li>
+								<li class="github_release"><span style="color:#999999; background-color:#0000FCaEC;"><a href="http://github.com/uberchicgeekchick/get2gnow/tree/8443dbbf7d3ed52d243cd0a77104e13730f99ce2">release #0000FCaEC</a></span></li>
 								<ul class='my_projects'>
 									<lh>ScreenShots</lh>
 									<li class='my_projects'><a href='./apps/oss-canvas/graphics/get2gnow/get2gnow.png'>ScreenShot #1</a></li>

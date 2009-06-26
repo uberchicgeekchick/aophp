@@ -65,10 +65,17 @@ div.bloc,div.rss,div.bloc_tweets{display:inline-table; clear:both; padding-botto
 
 /* starts my project management pages styles */
 	ul.my_projects{list-style-image:url('../graphics/favicon.png');}
-	lh.my_projects,li.my_projects{font-style:italics; font-variant:small-caps; font-weight:bold;}
+	lh.my_projects{font-style:italics; font-variant:small-caps; font-weight:bold;}
+	li.my_projects{font-style:italics; font-variant:small-caps; font-weight:bold;}
+	
+	ul.build_service_releases{list-style-image:url('../graphics/icons/oss/build.opensuse.org.png'); margin-left:0.5em;}
+	li.build_service_repo{font-size:smaller;}
+	li.build_service_release{font-style:italics;}
+	
 	ul.github_releases{list-style-image:url('../graphics/icons/oss/github.com.png'); margin-left:0.5em;}
-	li.github_repo{font-variant:small-caps;}
-	li.github_release{font-style:italics; font-variant:small-caps;}
+	li.github_repo{font-size:smaller;}
+	li.github_release{font-style:italics;}
+	
 	div.projects_container{ margin: 0 auto; width:98%;}
 		div.projects_description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
 		div.projects_download { float: right; }
