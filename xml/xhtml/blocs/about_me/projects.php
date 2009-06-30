@@ -13,6 +13,15 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
+	$projects=array(
+		'get2gnow'=>array(
+			'github'=>array(
+				'commit'=>'9bbb0d86eee1c690cf79d940b66b33f89424f013',
+				'version'=>'#0000ECaFC',
+			),
+			'cli.gs'=>'get2gnow.release',
+		),
+	);
 	print <<<BLOC
 			<!-- bloc starts -->
 			<div class='bloc'>
@@ -42,14 +51,27 @@
 								<li class='build_service_repo'><a href='https://build.opensuse.org/package/show?package=get2gnow.tar.bz2&project=home%3AuberChicGeekChick%3Aget2now'>home:uberChicGeekChick:get2gnow</li>
 							</ul>
 							<ul class='github_releases'>
+BLOC;
+	
+	
+	/*
+	$old_uri=$this->uri;
+	$this->uri='./apps/oss-canvas';
+	print( include("./apps/oss-canvas/docs/DOWNLOADS/core.php") );
+	$this->uri=$old_uri;
+	unset($old_uri);
+	 */
+	
+	
+	print <<<BLOC
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/get2gnow/tree/master'>master repo</li>
-								<li class="github_release"><span style="color:#999999; background-color:#0000FCaEC;"><a href="http://github.com/uberchicgeekchick/get2gnow/tree/8443dbbf7d3ed52d243cd0a77104e13730f99ce2">release #0000FCaEC</a></span></li>
+								<li class="github_release"><span style="color:#999999; background-color#{$projects['get2gnow']['github']['version']};"><a href="http://github.com/uberchicgeekchick/get2gnow/tree/{$projects['get2gnow']['github']['commit']}">{$projects['get2gnow']['github']['version']}</a></span></li>
 								<ul class='my_projects'>
 									<lh>ScreenShots</lh>
 									<li class='my_projects'><a href='./apps/oss-canvas/graphics/get2gnow/get2gnow.png'>ScreenShot #1</a></li>
 									<li class='my_projects'><a href='./apps/oss-canvas/graphics/get2gnow/get2gnow-0000F6aEC-with-tweet-0000F6aEC-with-tweet.png'>ScreenShot #2 - with a tweet selected</a></li>
 								</ul>
-								<li class='github_release'><a href='http://cli.gs/get2gnow.release'>[stable release: #0000DDaC4]</a></li>
+								<li class='github_release'><a href='http://cli.gs/{$projects['get2gnow']['cli.gs']}'>latest stable release[short link]</a></li>
 								<li class="github_release"><span style="color:#999999; background-color:#0000DDaC4;"><a href="http://github.com/uberchicgeekchick/get2gnow/tree/2153cc59673836859000652727bd78e99f5f5806">release #0000DDaC4</a></span></li>
 								<ul class='my_projects'>
 									<li class='my_projects'><a href='./?projects=get2gnow#DOWNLOAD'>All Versions</li>
