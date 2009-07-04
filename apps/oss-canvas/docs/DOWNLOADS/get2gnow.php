@@ -47,6 +47,7 @@
 	 *
 	 */
 	$git_versions=array(
+		array("#00EEECaC0", "92999c853d607dd79495d625e061deb3596265b0"),
 		array("#0000FCaEC", "8443dbbf7d3ed52d243cd0a77104e13730f99ce2"),
 		array("#0000DDaC4", "2153cc59673836859000652727bd78e99f5f5806"),
 		array('00.00.DB.a09', "9c8cf017e8fafc9ea8945ed9a9d582fa922425c4"),
