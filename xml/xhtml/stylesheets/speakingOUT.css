@@ -14,7 +14,7 @@
  */
 
 *{font-size:11pt; font-family:Helvetica; color:#ffddee;}
-body{margin:0.5%; background:#820000 url('../graphics/background.png') no-repeat; color:#ffddee;}
+body{margin:0.5%; background:#990033 url('../graphics/cornered-rose.png') no-repeat 0% 0%;}
 
 ul{margin:0px; padding:0px; margin-bottom:1.75ex;}
 
@@ -39,11 +39,14 @@ hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 img.logo{margin-left:10%; margin-top:2%; width:506; height:32;}
 img.slogan{display:block; margin-left:35%; width:373; height:26;}
 
-div.please_help{position:absolute; display:inline; top:5%;}
+div.please_help{position:absolute; display:block; top:5%;}
 
 img.favicon_link{width:16px; height:16px;}
 
-img.openSuSE_countdown{position:absolute; display:block; top:0px; right:2%;width:130px; height:130px; right:80px;}
+img.get_firefox{position:absolute; display:block; top:0px; width:113px; height:100px; right:245px;}
+img.openSuSE_countdown{position:absolute; display:block; top:0px; width:130px; height:130px; right:115px;}
+img.raydium3d_engine{position:absolute; display:block; top:0px; width:133px; height:133px; right:0px;}
+
 
 /* Exception for when a method fails to auto-magickally load */
 div.AOPHP_load_error, center.error, div.error, span.error{background-color:#ff0066;color:#bb0000; font-weight:bold; text-decoration:underline; font-size:2ex;}

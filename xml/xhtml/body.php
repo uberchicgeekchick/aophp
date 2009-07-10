@@ -14,28 +14,31 @@
 	 * language governing rights and limitations under the RPL.
 	 */
 	
-	require_once("./xml/{$this->xml->doctype}/page/logo.php");
+	require("./xml/{$this->xml->doctype}/page/logo.php");
 	
-	require_once("./xml/{$this->xml->doctype}/page/menu.php");
+	require("./xml/{$this->xml->doctype}/page/menu.php");
 	
-	require_once("./xml/{$this->xml->doctype}/page/content.php");
+	require("./xml/{$this->xml->doctype}/page/content.php");
 	
 	print("		<div class='left_sides_blocs'>\n" );
-	require_once("./xml/{$this->xml->doctype}/blocs/about_me/projects.php");
-	require_once("./xml/{$this->xml->doctype}/blocs/about_me/online_profiles.php");
-	require_once("./xml/{$this->xml->doctype}/blocs/links/CodingChicas.php");
-	require_once("./xml/{$this->xml->doctype}/blocs/widgets/Discovery.com.php");
-	require_once("./xml/{$this->xml->doctype}/blocs/links/podroll.php");
-	require_once("./xml/{$this->xml->doctype}/blocs/links/GeekChic.php");
+	require("./xml/{$this->xml->doctype}/blocs/about_me/projects.php");
+	require("./xml/{$this->xml->doctype}/blocs/about_me/online_profiles.php");
+	require("./xml/{$this->xml->doctype}/blocs/links/CodingChicas.php");
+	require("./xml/{$this->xml->doctype}/blocs/widgets/Discovery.com.php");
+	require("./xml/{$this->xml->doctype}/blocs/links/podroll.php");
+	require("./xml/{$this->xml->doctype}/blocs/links/GeekChic.php");
 	print("		</div>\n");
 	
 	print("		<div class='right_sides_blocs'>");
-	require_once("./xml/{$this->xml->doctype}/blocs/widgets/rss.convert.php");
-	require_once("./xml/{$this->xml->doctype}/page/lil_rpl.php");
-	require_once("./xml/{$this->xml->doctype}/blocs/widgets/MyTweets.php");
-	require_once("./xml/{$this->xml->doctype}/blocs/widgets/MyBlogLog.php");
+	require("./xml/{$this->xml->doctype}/blocs/widgets/rss.convert.php");
+	require("./xml/{$this->xml->doctype}/page/lil_rpl.php");
+	require("./xml/{$this->xml->doctype}/blocs/widgets/MyTweets.php");
+	require("./xml/{$this->xml->doctype}/blocs/widgets/MyBlogLog.php");
 	print("		</div>");
 	
-	require_once("./xml/{$this->xml->doctype}/blocs/support/openSuSE.php");
-	require_once("./xml/{$this->xml->doctype}/blocs/support/paypal.php");
+	require("./xml/{$this->xml->doctype}/blocs/support/paypal.php");
+	
+	require("./xml/{$this->xml->doctype}/blocs/support/openSuSE.php");
+	require("./xml/{$this->xml->doctype}/blocs/support/get_firefox.php");
+	require("./xml/{$this->xml->doctype}/blocs/support/raydium3d.php");
 ?>
