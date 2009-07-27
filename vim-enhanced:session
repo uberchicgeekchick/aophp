@@ -12,4 +12,5 @@ default:
 	breaksw
 endsw
 
-${my_editor} "./xml/xhtml/blocs/about_me/online_profiles.php" "./xml/xhtml/blocs/about_me/projects.php" "./xml/xhtml/blocs/support/openSuSE.php" "./xml/xhtml/blocs/support/raydium3d.php" "./xml/xhtml/body.php" "./xml/xhtml/stylesheets/speakingOUT.css"
+${my_editor} "./apps/oss-canvas/core.php" "./apps/oss-canvas/docs/DOWNLOADS/core.php" "./apps/oss-canvas/projects/get2gnow.php" "./xml/xhtml/blocs/about_me/projects.php" "./xml/xhtml/stylesheets/speakingOUT.css"
+

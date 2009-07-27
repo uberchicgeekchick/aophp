@@ -10,5 +10,6 @@
 					I'm an uberChick &amp; have my nerd woman brain wrinkles into a lot of everything.&nbsp; Coding/Hacking/Programming/Software Engineering/Etc.&nbsp; My favorite languages include C, PHP, Perl, XML + XLS Family of Languages, CSS, JavaScript, XHTML, Mono, &amp;many others.&nbsp; My broad range of interests &amp;talents include graphic, 3D, game, &amp;web design; animation, video, &amp; audio production; writing blogs, essays, &amp; white papers; databases like MySQL, SQLite3, XML/XQuery, &amp; many other art forms &amp; tools.
 				</p>
 BLOC;
+			return TRUE;
 ?>
 

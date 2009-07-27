@@ -43,9 +43,10 @@ div.please_help{position:absolute; display:block; top:5%;}
 
 img.favicon_link{width:16px; height:16px;}
 
-img.get_firefox{position:absolute; display:block; top:0px; width:113px; height:100px; right:245px;}
+/*Open Source Software projects I support, they're posiioned in the top right.*/
+img.get_firefox{position:absolute; display:block; top:0px; width:113px; height:100px; right:0px;}
 img.openSuSE_countdown{position:absolute; display:block; top:0px; width:130px; height:130px; right:115px;}
-img.raydium3d_engine{position:absolute; display:block; top:0px; width:133px; height:133px; right:0px;}
+img.raydium3d_engine{position:absolute; display:block; top:0px; width:133px; height:133px; right:245px;}
 
 
 /* Exception for when a method fails to auto-magickally load */

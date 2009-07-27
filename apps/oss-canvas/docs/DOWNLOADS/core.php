@@ -46,8 +46,11 @@
 	 * User must be fully accessible, exportable, and deletable to that User.
 	 *
 	 */
+	$output="";
+	if(isset($openSuSE_build_service) && $openSuSE_build_service && isset($openSuSE_build_service['package']) && $openSuSE_build_service['package'])
+		$output=sprintf("%s\n\t\t\t\t\t\t\t<ul class='build_service_releases'>\n\t\t\t\t\t\t\t\t<li class='build_service_repo'><a href='https://build.opensuse.org/package/show?package=%s.tar.bz2&project=home%%3AuberChicGeekChick%%3A%s>home:uberChicGeekChick:%s'>openSuSE&apos; build service repo</a></li>\n\t\t\t\t\t\t\t</ul>", $output, $openSuSE_build_service['package'], $openSuSE_build_service['package'], $openSuSE_build_service['package']);
 	
-	$output="<ul class=\"my_projects\">\n";
+	$output.="<ul class=\"my_projects\">\n";
 	
 	$download_dir=opendir("{$this->uri}/downloads/");
 	while($my_download=readdir($download_dir)){
@@ -66,19 +69,15 @@
 	}
 	closedir($download_dir);
 
-
-	$git_master_version=array(array("git master", "master"));
-	
-	if(file_exists("{$this->uri}/docs/DOWNLOADS/{$this->doc}.php"))
-		require("{$this->uri}/docs/DOWNLOADS/{$this->doc}.php");
-
-	if(!isset($git_versions))
-		$git_versions=$git_master_version;
+	$git_master_tree=array(array("git master", "master"));
+	if(!isset($git_commits))
+		$git_commits=$git_master_tree;
 	else
-		$git_versions=array_merge( $git_master_version, $git_versions);
+		$git_commits=array_merge( $git_master_tree, $git_commits);
+	unset($git_master_tree);
 	
-	for($i=0; isset($git_versions[$i]); $i++)
-		$output=sprintf("%s\n\t\t\t\t\t\t\t<li class=\"my_projects\"><a href=\"http://www.github.com/%s/%s/tree/%s\">%s</a><a href='http://www.github.com/%s/%s/tree/%s/tarball/master'><img class='projects_download_sm' src='{$this->uri}/graphics/tarball.png' alt='Download %s&#039;s version %s&#039; source code tarball.' title='Download %s&#039;s version %s&#039; source code tarball.'/></a> <a href='http://www.github.com/%s/%s/tree/%s/zipball/master'><img class='projects_download_sm' src='{$this->uri}/graphics/zip.png' alt='Download %s&#039;s version %s&#039; source code zip archive.' title='Download %s&#039;s %s source code zip arcive.'/></a></li>", $output, $github_profile, $github_project, $git_versions[$i][1], $git_versions[$i][0], $github_profile, $github_project, $git_versions[$i][1], $this->doc, $git_versions[$i][0], $this->doc, $git_versions[$i][0], $this->doc, $git_versions[$i][0], $github_profile, $github_project, $git_versions[$i][1], $this->doc, $git_versions[$i][0], $this->doc, $git_versions[$i][0]);
+	for($i=0; isset($git_commits[$i]); $i++)
+		$output=sprintf("%s\n\t\t\t\t\t\t\t<li class=\"my_projects\"><a href=\"http://www.github.com/%s/%s/tree/%s\">%s</a><a href='http://www.github.com/%s/%s/tree/%s/tarball/master'><img class='projects_download_sm' src='{$this->uri}/graphics/tgz.png' alt='Download %s&#039;s version %s&#039; source code tarball.' title='Download %s&#039;s version %s&#039; source code tarball.'/></a> <a href='http://www.github.com/%s/%s/tree/%s/zipball/master'><img class='projects_download_sm' src='{$this->uri}/graphics/zip.png' alt='Download %s&#039;s version %s&#039; source code zip archive.' title='Download %s&#039;s %s source code zip arcive.'/></a></li>", $output, $github_profile, $github_project, $git_commits[$i][1], $git_commits[$i][0], $github_profile, $github_project, $git_commits[$i][1], $this->doc, $git_commits[$i][0], $this->doc, $git_commits[$i][0], $this->doc, $git_commits[$i][0], $github_profile, $github_project, $git_commits[$i][1], $this->doc, $git_commits[$i][0], $this->doc, $git_commits[$i][0]);
 	
 	return sprintf("%s</ul>
 							<ul>

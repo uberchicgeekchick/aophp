@@ -19,23 +19,26 @@
 	
 	$github_profile='uberchicgeekchick';
 	$github_project=strtolower( $this->doc );
-	//http://github.com/uberchicgeekchick/greet-tweet-know/tarball/e1d73512840ea0ba6ccfc6a43a43bc1497e98285
 	/* old local uri:
 	 *	./xml/{$this->doctype}/{$this->category}/{$this->content}.php
 	 * new local uri:
 	 *	./oss-canvas/{$this->content}.php
 	 */
 	
-	if( (file_exists( ($this->uri="./apps/oss-canvas/{$this->doc}.php") )) )
+	if( (file_exists( ($this->uri="./apps/oss-canvas/{$this->doc}.php") )) ){
 		return require_once( $this->uri );
+	}
 	
 	$this->uri='./apps/oss-canvas';
+	
+	if(file_exists("{$this->uri}/projects/{$this->doc}.php"))
+		require("{$this->uri}/projects/{$this->doc}.php");
 	
 	printf("<!-- -->
 					<div class='projects_container'>
 						<div class='projects_download'>
 							<a href='{$this->uri}/downloads/{$this->doc}.x86_64.rpm'><img class='projects_download' src='{$this->uri}/graphics/rpm.png' alt='Download {$this->doc}&#039;s rpm.' title='Download {$this->doc}&#039;s rpm.'/></a>
-							<a href='http://www.github.com/{$github_profile}/{$github_project}/tarball/master'><img class='projects_download' alt='Download {$this->doc}&#039;s latest tarball.' title='Download {$this->doc}&#039;s latest tarball.' src='{$this->uri}/graphics/tarball.png'></a>
+							<a href='http://www.github.com/{$github_profile}/{$github_project}/tarball/master'><img class='projects_download' alt='Download {$this->doc}&#039;s latest tarball.' title='Download {$this->doc}&#039;s latest tarball.' src='{$this->uri}/graphics/tgz.png'></a>
 							<a href='http://www.github.com/{$github_profile}/{$github_project}/zipball/master'><img class='projects_download' alt='Download {$this->doc}&#039;s latest zip archive.' alt='Download {$this->doc}&#039;s latzip archive.' src='{$this->uri}/graphics/zip.png'></a>
 						</div>
 						

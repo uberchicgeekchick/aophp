@@ -46,23 +46,19 @@
 							</ul>
 						</ul>
 						<ul class='my_projects'>
-							<li class='my_projects'><a href='./?projects=get2gnow'>get2gnow</a></li>
-							<ul class='my_contacts'><a href='irc://irc.freenode.net/get2gnow'>#get2gnow&apos;s IRC Channel on Freenode.org</a></li>
-							<ul class='build_service_releases'>
-								<li class='build_service_repo'><a href='https://build.opensuse.org/package/show?package=get2gnow.tar.bz2&project=home%3AuberChicGeekChick%3Aget2now'>home:uberChicGeekChick:get2gnow</li>
-							</ul>
 							<ul class='github_releases'>
 BLOC;
-	
-	
-	/*
-	$old_uri=$this->uri;
+	$prev_doc=$this->doc;
+	$prev_uri=$this->uri;
 	$this->uri='./apps/oss-canvas';
-	print( include("./apps/oss-canvas/docs/DOWNLOADS/core.php") );
-	$this->uri=$old_uri;
-	unset($old_uri);
-	 */
+	$this->doc="get2gnow";
 	
+	if(file_exists("{$this->uri}/projects/{$this->doc}.php"))
+		require("{$this->uri}/projects/{$this->doc}.php");
+	
+	/*print( include("./apps/oss-canvas/docs/DOWNLOADS/core.php") );*/
+	$this->uri=$prev_uri;
+	$this->doc=$prev_doc;
 	
 	print <<<BLOC
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/get2gnow/tree/master'>master repo</li>
