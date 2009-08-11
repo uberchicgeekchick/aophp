@@ -16,8 +16,8 @@
 	$projects=array(
 		'get2gnow'=>array(
 			'github'=>array(
-				'version'=>"#00EEECaC0",
-				'commit'=>"92999c853d607dd79495d625e061deb3596265b0",
+				'version'=>"#00EEEDa06",
+				'commit'=>"02c5590c559506e90a73cc3eb6031f6c28d8781af",
 			),
 			'cli.gs'=>'get2gnow.release',
 		),

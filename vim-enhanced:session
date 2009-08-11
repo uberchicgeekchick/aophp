@@ -12,5 +12,5 @@ default:
 	breaksw
 endsw
 
-${my_editor} "./apps/oss-canvas/core.php" "./apps/oss-canvas/docs/DOWNLOADS/core.php" "./apps/oss-canvas/projects/get2gnow.php" "./xml/xhtml/blocs/about_me/projects.php" "./xml/xhtml/stylesheets/speakingOUT.css"
+${my_editor} "./apps/oss-canvas/projects/get2gnow.php" "./xml/xhtml/blocs/about_me/projects.php" "./xml/xhtml/stylesheets/speakingOUT.css"
 
