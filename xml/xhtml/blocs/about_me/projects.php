@@ -65,8 +65,10 @@ BLOC;
 								<li class="github_release"><span style="color:#999999; background-color#{$projects['get2gnow']['github']['version']};"><a href="http://github.com/uberchicgeekchick/get2gnow/tree/{$projects['get2gnow']['github']['commit']}">{$projects['get2gnow']['github']['version']}</a></span></li>
 								<ul class='my_projects'>
 									<lh>ScreenShots</lh>
-									<li class='my_projects'><a href='./apps/oss-canvas/graphics/get2gnow/get2gnow.png'>ScreenShot #1</a></li>
-									<li class='my_projects'><a href='./apps/oss-canvas/graphics/get2gnow/get2gnow-0000F6aEC-with-tweet-0000F6aEC-with-tweet.png'>ScreenShot #2 - with a tweet selected</a></li>
+BLOC;
+	print( include("./apps/oss-canvas/docs/SCREENSHOTS/get2gnow.php") );
+	
+	print <<<BLOC
 								</ul>
 								<li class='github_release'><a href='http://cli.gs/{$projects['get2gnow']['cli.gs']}'>latest stable release[short link]</a></li>
 								<li class="github_release"><span style="color:#999999; background-color:#0000DDaC4;"><a href="http://github.com/uberchicgeekchick/get2gnow/tree/2153cc59673836859000652727bd78e99f5f5806">release #0000DDaC4</a></span></li>

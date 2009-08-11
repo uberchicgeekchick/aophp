@@ -17,5 +17,5 @@
 						<ul class='my_projects'>
 							<li class='my_projects'><a href='/apps/oss-canvas/graphics/get2gnow/icon-248x248.png'>get2gnow's, enlarged, icon</a></li>
 							<li class='my_projects'><a href='/apps/oss-canvas/graphics/get2gnow/get2gnow-0000F6aEC.png'>Version #0000F6aEC - ScreenShot #1</a></li>
-							<li class='my_projects'><a href='/apps/oss-canvas/graphics/get2gnow/get2gnow-0000F6aEC-with-tweet-0000F6aEC-with-tweet.png'>Version #0000F6aEC - ScreenShot #2 - with a tweet selected</a></li>
+							<li class='my_projects'><a href='/apps/oss-canvas/graphics/get2gnow/get2gnow-0000F6aEC-with-tweet.png'>Version #0000F6aEC - ScreenShot #2 - with a tweet selected</a></li>
 						</ul>";
