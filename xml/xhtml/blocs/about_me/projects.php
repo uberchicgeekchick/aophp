@@ -77,27 +77,14 @@ BLOC;
 								</ul>
 							</ul>
 						</ul>
-						<ul class='my_projects'>
-							<li class='my_projects'><a href='./?projects=connectED'>connectED</a></li>
-							<ul class='github_releases'>
-								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/connectED/tree/master'>master repo</a></li>
-								<li class='github_release'><a href='http://cli.gs/connected.release'>version 1.0.1.2</a></li>
-								<ul class='my_projects'>
-									<li class='my_projects'><a href='./?projects=connectED#DOWNLOAD'>All Versions</li>
-								</ul>
-							</ul>
-						</ul>
 					</ul><br/>
 					<ul class='my_projects'>
 						<lh>~Empowering my Site~</lh>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/aophp/tree/master'>AOPHP</a></li>
-						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/speaking-out/tree/master'>speakingOUT</a></li>
 					</ul><br/>
 					<ul class='github_releases'>
 						<lh>~My Other Web Apps~</lh>
 						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/realfriends/tree/master'>realfriends</a></li>
-						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/uberchicks-oss-social-network/tree/master'>uberchicks-oss-social-network</a></li>
-						<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/women.opensuse.org/tree/master'>women.opensuse.org</a></li>
 					</ul>
 				</div>
 				<div class='bloc_extra'>&nbsp;</div>
