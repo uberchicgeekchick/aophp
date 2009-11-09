@@ -14,7 +14,7 @@
 		<meta name='description' value='uberChicGeekChick: Expressive Programming, the podcast &amp; more, about: programming, art, creativity, code, self expression, &amp; uber women (WE ROCK!)'/>
 		<meta name='keywords' content='uberChicGeekChick, Expressive Programming, podcast, social media, programming, art, creativity, code, self expression, women, game development, 3-D, PHP, C, uberChick, uberChicks'/>
 
-		<link rel='shortcut icon' href='./graphics/favicon.png'/>
+		<link rel='shortcut icon' href='./xml/xhtml/graphics/favicon.png'/>
 		
 		<link rel='alternate' type='application/atom+xml' title='Subscribe to Expressive Programming&#039;s FLAC episodes via our Atom feed.' href='./?xml=atom&enclosures=flac'/>
 		<link rel='alternate' type='application/rss+xml' title='Subscribe to Expressive Programming&#039;s FLAC episodes via our RSS feed.' href='./?xml=rss&Enclosures=flac'/>

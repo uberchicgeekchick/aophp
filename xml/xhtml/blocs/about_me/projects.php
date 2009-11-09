@@ -56,7 +56,7 @@ BLOC;
 	if(file_exists("{$this->uri}/projects/{$this->doc}.php"))
 		require("{$this->uri}/projects/{$this->doc}.php");
 	
-	/*print( include("./apps/oss-canvas/docs/DOWNLOADS/core.php") );*/
+	print( include("./apps/oss-canvas/docs/DOWNLOADS/local.php") );
 	$this->uri=$prev_uri;
 	$this->doc=$prev_doc;
 	

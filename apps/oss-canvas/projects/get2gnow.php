@@ -46,12 +46,16 @@
 	 * User must be fully accessible, exportable, and deletable to that User.
 	 *
 	 */
+	
+	$version="#010001";
+	$release="a66";
+	$deb="_0.1.9-0ubuntu1_i386";
 	$bugzilla=array(
 		'enabled'=>TRUE,
 		'URI'=>"http://bugzilla.gnome.org/enter_bug.cgi?product=get2gnow",
 	);
 	
-	$cligs=array(
+	$trim=array(
 		'stable release'=>'get2gnow.release',
 	);
 	
@@ -60,13 +64,9 @@
 	);
 	
 	$git_commits=array(
+		array("#010001a66", "c8b4a1dffd6922fc1a778e09716f4cfd962bc1a5"),
+		array("#010001a46", "db2b86e22b38a0aa7b90b733afb683bc77904e93"),
 		array("#00EEEDa17", "096e75775fa6dcea86810d8cb099285844f88fb0"),
-		array("#00EEEDa06", "2c5590c559506e90a73cc3eb6031f6c28d8781af"),
-		array("#00EEECaC0", "92999c853d607dd79495d625e061deb3596265b0"),
-		array("#0000FCaEC", "8443dbbf7d3ed52d243cd0a77104e13730f99ce2"),
-		array("#0000DDaC4", "2153cc59673836859000652727bd78e99f5f5806"),
-		array('00.00.DB.a09', "9c8cf017e8fafc9ea8945ed9a9d582fa922425c4"),
-		array('00.00.DB.aFF', "4b789ae4d47f77cc786d7f0e7ebdc7a1d6760cc8"),
 	);
 	
 	return FALSE;

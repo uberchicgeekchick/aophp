@@ -58,17 +58,18 @@
 			switch( ($download_extension=preg_replace("/.*\.([^\.]+)$/", "$1", $my_download)) ){
 				case "tar": case "bz2": case "gz": case "tgz": $download_detail="tarball"; break;
 				case "rpm": $download_detail="rpm"; break;
-				case "zip": $download_detail="zi"; break;
 				case "ogg": $download_detail="ogg"; break;
 				case "flac": $download_detail="flac"; break;
 				case "mp3": $download_detail="mp3"; break;
+				case "zip": $download_detail="zi"; break;
+				case "deb": $download_detail="deb"; break;
 				default: $download_detail="template"; break;
 			}
 			$output=sprintf("%s<li class=\"my_projects\"><a href='%s/downloads/%s'>%s</a><a href=\"%s/downloads/%s\"><img class='projects_download_sm' src='{$this->uri}/graphics/%s.png' alt='Download %s&#039;s %s.' title='Download %s&#039;s %s.'/></a></li>", $output, $this->uri, $my_download, $my_download, $this->uri, $my_download, $download_detail, $this->doc, $download_detail, $this->doc, $download_detail);
 		}
 	}
 	closedir($download_dir);
-
+	
 	$git_master_tree=array(array("git master", "master"));
 	if(!isset($git_commits))
 		$git_commits=$git_master_tree;

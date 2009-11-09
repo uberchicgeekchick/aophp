@@ -14,7 +14,7 @@
 	 * language governing rights and limitations under the RPL.
 	 */
 return <<<INFO
-get2gnow is my micro-blogging client. It supports multiple accounts on Twitter, Identi.ca, & any Laconica instance.  get2gnow supports accounts on servers using both https & http.  get2gnow supports accessing nearly all data available through Identi.ca&apos;s, Laconica&apos;s, & Twitter&apos;s REST resources.
+get2gnow is my micro-blogging client. It supports multiple accounts on Twitter, Identi.ca, & any StatusNet instance.  get2gnow supports accounts on servers using both https & http.  get2gnow supports accessing nearly all data available through Identi.ca&apos;s, StatusNet&apos;s, & Twitter&apos;s REST resources.
 
 With micro-blogging becoming an ever increasing way of communicating & connecting with others.  My primary goal, inspiration, & motivation behind  get2gnow is to help any one connect with others online & to be as powerful as your connections are.  And especially to aid users in making new connections.  Specifically I want get2gnow to be the best way to help all users improve their life&apos;s by being the choice way of connecting & communicating with those you&apos;re close to... whether you know them now - and especially to help you make new connections.  There&apos;s a world of people online: get2gnow them!
 
