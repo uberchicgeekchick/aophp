@@ -40,7 +40,7 @@
 						<div class='projects_description'>
 							<h1>{$this->doc}</h1><h2 class='resources'><a href='http://www.github.com/{$github_profile}/{$github_project}'>@github</a></h2>
 							<div class='copyright'>by <a href='./?projects=life'>Me :-), Kaity G. B. / uberChick / uberchicgeekchick</a></div>
-								%s
+							%s
 							<p>
 								%s
 							</p>
