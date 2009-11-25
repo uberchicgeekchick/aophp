@@ -65,7 +65,8 @@
 				case "deb": $download_detail="deb"; break;
 				default: $download_detail="template"; break;
 			}
-			$output=sprintf("%s<li class=\"my_projects\"><a href='%s/downloads/%s'>%s</a><a href=\"%s/downloads/%s\"><img class='projects_download_sm' src='{$this->uri}/graphics/%s.png' alt='Download %s&#039;s %s.' title='Download %s&#039;s %s.'/></a></li>", $output, $this->uri, $my_download, $my_download, $this->uri, $my_download, $download_detail, $this->doc, $download_detail, $this->doc, $download_detail);
+			$my_encoded_download=urlencode($my_download);
+			$output=sprintf("%s<li class=\"my_projects\"><a href='%s/downloads/%s'>%s</a><a href=\"%s/downloads/%s\"><img class='projects_download_sm' src='{$this->uri}/graphics/%s.png' alt='Download %s&#039;s %s.' title='Download %s&#039;s %s.'/></a></li>", $output, $this->uri, $my_encoded_download, $my_download, $this->uri, $my_encoded_download, $download_detail, $this->doc, $download_detail, $this->doc, $download_detail);
 		}
 	}
 	closedir($download_dir);
