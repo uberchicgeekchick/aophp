@@ -31,8 +31,8 @@
 		
 		public function load_app(){
 			$applications=array(
-				'episodes', 'specials', 'blogs', 'projects',
-				'total'=>4
+				'episodes', 'specials', 'blogs', 'projects', 'project',
+				'total'=>5
 			);
 			
 			$this->dir="./xml/xhtml";

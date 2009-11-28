@@ -49,7 +49,7 @@
 	
 	$version="#010001";
 	$release="a70";
-	$deb="_0.2.6-0ubuntu1_i386";
+	$deb="0.2.6.2-0ubuntu1";
 	$bugzilla=array(
 		'enabled'=>TRUE,
 		'URI'=>"http://bugzilla.gnome.org/enter_bug.cgi?product=get2gnow",

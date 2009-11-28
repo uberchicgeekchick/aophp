@@ -29,7 +29,7 @@
 			
 			if(
 				(
-					(($this->app == "projects") && (is_dir( ($this->dir="./apps/oss-canvas") )) )
+					( ( ($this->app == "projects" || $this->app == "project") ) && (is_dir( ($this->dir="./apps/oss-canvas") )) )
 					||
 					(($this->app == "episodes") && (is_dir( ($this->dir="./apps/speakingOUT") )) )
 				)
