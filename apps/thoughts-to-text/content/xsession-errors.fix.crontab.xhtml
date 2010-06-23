@@ -1,0 +1,22 @@
+<pre class="uberChicGeekChick_terminal_text">
+SHELL=/bin/tcsh
+*/3	*	*	*	*	if(! -e "/var/tmp/cronlog-${USER}" ) touch "/var/tmp/cronlog-${USER}"; if( -f "${HOME}/.xsession-errors" ) ex -E -n -X -V0"/var/tmp/cronlog-${USER}" --noplugin '+1,$d' '+wq!' "${HOME}/.xsession-errors" >>& "/var/tmp/cronlog-${USER}";
+*/3	*	*	*	*	if(! -e "/var/tmp/cronlog-${USER}" ) touch "/var/tmp/cronlog-${USER}"; if( -f "/uberChick/.xsession-errors.old" ) rm -f "${HOME}/.xsession-errors.old" >>& "/var/tmp/cronlog-${USER}";
+0	*	*	*	*	if( -e "/var/tmp/cronlog-${USER}" ) rm -f "/var/tmp/cronlog-${USER}";
+
+*/7	*	*	*	*	if(! -e "/var/tmp/cronlog-uberChick" ) touch "/var/tmp/cronlog-uberChick"; if( -f "/uberChick/.xsession-errors" ) ex -E -n -X --noplugin '+1,$d' '+wq!' -V0"/var/tmp/cronlog-uberChick" "/uberChick/.xsession-errors" >>& "/var/tmp/cronlog-uberChick";
+*/7	*	*	*	*	if(! -e "/var/tmp/cronlog-uberChick" ) touch "/var/tmp/cronlog-uberChick"; if( -f "/uberChick/.xsession-errors.old" ) rm -fv "/uberChick/.xsession-errors.old" >>& "/var/tmp/cronlog-uberChick";
+1	*	*	*	*	if( -e "/var/tmp/cronlog-uberChick" ) rm -f "/var/tmp/cronlog-uberChick";
+</pre>
+
+<pre class="uberChicGeekChick_terminal_text">
+SHELL=/bin/sh
+*/3	*	*	*	*	if ! test -e "/var/tmp/cronlog-${USER}"; then touch "/var/tmp/cronlog-${USER}"; fi; if test -f "${HOME}/.xsession-errors"; then ex -E -n -X -V0"/var/tmp/cronlog-${USER}" --noplugin '+1,$d' '+wq!' "${HOME}/.xsession-errors" >>2 "/var/tmp/cronlog-${USER}"; fi
+*/3	*	*	*	*	if ! test -e "/var/tmp/cronlog-${USER}"; then touch "/var/tmp/cronlog-${USER}"; fi; if test -f "${HOME}/.xsession-errors.old"; then rm -vf "${HOME}/.xsession-errors.old" >>2 "/var/tmp/cronlog-${USER}"; fi
+0	*	*	*	*	if test -e "/var/tmp/cronlog-${USER}"; rm -f "/var/tmp/cronlog-${USER}";
+
+*/7	*	*	*	*	if ! test -e "/var/tmp/cronlog-uberChick"; then touch "/var/tmp/cronlog-uberChick"; fi; if test -f "/uberChick/.xsession-errors"; then ex -E -n -X -V0"/var/tmp/cronlog-uberChick" --noplugin '+1,$d' '+wq!' "/uberChick/.xsession-errors" >>2 "/var/tmp/cronlog-uberChick"; fi
+*/7	*	*	*	*	if ! test -e "/var/tmp/cronlog-uberChick"; then touch "/var/tmp/cronlog-uberChick"; fi; if test -f "/uberChick/.xsession-errors.old"; then rm -vf "/uberChick/.xsession-errors.old" >>2 "/var/tmp/cronlog-uberChick"; fi
+1	*	*	*	*	if test -e "/var/tmp/cronlog-uberChick"; rm -f "/var/tmp/cronlog-uberChick";
+</pre>
+

@@ -1,1 +1,0 @@
-/projects/gtk/releases/specs/get2gnow.spec

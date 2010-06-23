@@ -13,9 +13,9 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	//namespace aophp; 
+	namespace aophp; 
 	
-	class aophp_views extends aophp__core {
+	class views extends aophp::core {
 		
-	}//aophp__views
+	}//aophp::views
 ?>

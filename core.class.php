@@ -13,16 +13,16 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	//namespace aophp;
+	namespace aophp;
 	
-	class aophp__core extends aophp{
+	class core extends aophp{
 		public $is_binary;
 		public $xml;
 		public $parse_user_data;
 		
 		public function __construct($config_file){
-			$this->parse_user_data=new aophp__security();
-			if(! ($this->xml=new aophp__xml()) ){
+			$this->parse_user_data=new \aophp\security();
+			if(! ($this->xml=new \aophp\xml()) ){
 				$this->is_binary=TRUE;
 				$this->load_binary();
 				return;
@@ -33,5 +33,5 @@
 		private function load_binary(){
 		}//load_binary
 		
-	}//AOPHP__Core
+	}//aophp::core
 ?>

@@ -13,9 +13,9 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	//namespace aophp::xml;
+	namespace aophp\xml;
 	
-	class aophp__xml__feeds extends aophp__xml{
+	class feeds extends \aophp\xml{
 		public $content_uri;
 		public $doctype;
 		public $categories;
@@ -37,10 +37,11 @@
 					$_GET['enclosures']='ogg';
 			
 			switch( $_GET['enclosures'] ){
-				case 'flac': case 'ogg':
+				case 'flac': case 'ogg': case 'mp3':
 					$this->enclosures=$_GET['enclosures'];
 				break;
-				case 'mp3': case 'hpr':
+				
+				case 'hpr':
 					$this->enclosures="error";
 				break;
 				

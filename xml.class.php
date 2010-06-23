@@ -13,9 +13,9 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	//namespace aophp;
+	namespace aophp;
 	
-	class aophp__xml{
+	class xml{
 		public $xml;
 		public $app;
 		public $doc;
@@ -31,8 +31,8 @@
 		
 		public function load_app(){
 			$applications=array(
-				'episodes', 'specials', 'blogs', 'projects', 'project',
-				'total'=>5
+				'episodes', 'specials', 'blogs', 'projects',
+				'total'=>4
 			);
 			
 			$this->dir="./xml/xhtml";
@@ -53,12 +53,12 @@
 		
 		private function load_xml(){
 			if( !(isset($_GET['xml'])) )
-				return $this->xml=new aophp__xml__xhtml();
+				$_GET['xml']="xhtml";
 			
 			switch($_GET['xml']){
-				case 'rss': return $this->xml=new aophp__xml__feeds__rss();
-				case 'atom': return $this->xml=new aophp__xml__feeds__atom();
-				case 'xhtml': default: return $this->xml=new aophp__xml__xhtml();
+				case 'rss': return $this->xml=new \aophp\xml\feeds\rss();
+				case 'atom': return $this->xml=new \aophp\xml\feeds\atom();
+				case 'xhtml': default: return $this->xml=new \aophp\xml\xhtml();
 			}
 		}//load_xml
 		

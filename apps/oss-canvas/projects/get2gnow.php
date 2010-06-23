@@ -47,9 +47,9 @@
 	 *
 	 */
 	
-	$version="#010001";
-	$release="a70";
-	$deb="0.2.6.2-0ubuntu1";
+	$version="030303";
+	$release="a22";
+	$deb="0.2.6.2-0+git20100402~kkstemp1";
 	$bugzilla=array(
 		'enabled'=>TRUE,
 		'URI'=>"http://bugzilla.gnome.org/enter_bug.cgi?product=get2gnow",

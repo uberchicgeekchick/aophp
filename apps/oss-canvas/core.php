@@ -17,6 +17,9 @@
 	if(!( (isset($this->doc)) && $this->doc ))
 		$this->doc="life";
 	
+	if($this->doc=="Greet-Tweet-Know")
+		$this->doc="get2gnow";
+	
 	$github_profile='uberchicgeekchick';
 	$github_project=strtolower( $this->doc );
 	/* old local uri:

@@ -15,15 +15,19 @@
 	 */
 	
 	function __autoload($class) {
+		$aophp_path=$class;
 		if(!(
-			($aophp_path=preg_replace( (sprintf( "/^(%s|aophp)[%s]{2}/", AOPHP_APP_NAME, AOPHP_CLASS_SEPARATOR )), "", $class))
+			($aophp_path=preg_replace( (sprintf( "/^(%s|aophp)\\\?/", AOPHP_APP_NAME)), "", $class))
 		))
 			return false;
 		
-		$object=sprintf("./%s.class.php", (preg_replace( (sprintf( "/[%s]{2}/", AOPHP_CLASS_SEPARATOR )), "/", $aophp_path)) );
+		$object=preg_replace("/\\\/", "/", $aophp_path);
+		$object=sprintf("./%s.class.php", (preg_replace("/[:_]{2}/", "/", $object)) );
 		
-		if(!( (file_exists($object)) && (is_readable($object)) ))
+		if(!( (file_exists($object)) && (is_readable($object)) )){
+			printf("Failed to find object: [%s] required class file: [%s]<br/>", $class, $object);
 			return false;
+		}
 		
 		return require_once($object);
 	}//end '__autoload' function

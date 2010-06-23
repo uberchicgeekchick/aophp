@@ -13,9 +13,9 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	//namespace aophp::xml;
+	namespace aophp\xml\feeds;
 	
-	class aophp__xml__feeds__rss extends aophp__xml__feeds{
+	class rss extends \aophp\xml\feeds{
 		public $doctype;
 		public $enclosures;
 		
@@ -24,6 +24,9 @@
 			parent::__construct();
 		}//__construct
 		
+		public function set_uri(){
+			$this->uri="./xml/{$this->doctype}/{$this->doc}.php";
+		}/*set_uri();*/
 		
 		private function save(){
 		}//save

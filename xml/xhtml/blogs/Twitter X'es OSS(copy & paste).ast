@@ -1,0 +1,43 @@
+
+
+    * Signed in as get2gnow
+    * •
+    * Sign Out
+    * •
+    * Check Existing Tickets
+
+Twitter_logo_header
+Language:
+Help Center
+View Existing Tickets
+
+    * Open Tickets
+    * Closed Tickets
+
+XAuth request.
+
+Ticket #1024038
+
+   1.
+      From: @Kaity G. B.
+      **Hello,** I'm writing request an xAuth exception for my micro-blogging client: get2gnow ( http://uberchicgeekchick.com/?projects=get2gnow ), which is registered under your previous "approved apps" as Greet-Tweet-Know. In regards to your upcoming authentication change. Yeah I know I'm cutting it kinda close to the wire but I'm the sole artist, creative, & coder behind get2gnow and not only is this going to require a huge amount of new code, including creating an entire network request stack entire based on your oAuth/xAuth requirement. I truly want to keep working on get2gnow and see it become the preferred & default micro-blogging client for GNOME & Linux. And I it to continue supporting access to Twitter.com via get2gnow. But given my available time, limited resources, and the primary fact: get2gnow is a desktop application. So my only real option is to, hopefully, continue supporting Twitter.com via your xAuth authorization method. It is my deepest & sincerest hope that you will help me to continue to work on get2gnow, and its support of the Twitter platform. As well as my own ability to connect with those friends whom I find it easiest to connect with via Twitter.com. Below are my application's keys, as required for an xAuth exemption, based on the instructions found on your wiki's page on Twitter's forced change to oAuth/xAuth based authentication. About get2gnow: http://uberChicGeekChick.Com/?projects=get2gnow Application name: get2gnow http://twitter.com/oauth_clients/details/2072 | Consumer Key: OiO5jfOQFIHzu48IKnWfg Application ID: 2072? I think; if not than get2gnow hasn't been assigned one yet. | / Thank you in advance - sincerely, Kaity G. B. * uberChicGeekChick.Com ~`Expressive Programming`: programming as art & self expression~ including my many open source projects & podcast. * Skeptics in the Pub – Fort Collins CO & Northern Colorado USA Combining thinking with drinking & making both more fun! / about 24 hours ago
+   2.
+      From: @sutorius
+      Hi Kaity, Thank you for your interest in xAuth. As your code is publicly available, how would your consumer key and secret be protected? If an application's keys are posted publicly, it allows for external parties to hijack the application's API access and interact with the API on behalf of users who have authorized the application. This presents an abuse risk, and you can understand our concern. Thanks, Brian ---------------------------------------------- Kaity G. B., Jun 08 06:07 pm (PDT): **Hello,** I'm writing request an xAuth exception for my micro-blogging client: get2gnow ( http://uberchicgeekchick.com/?projects=get2gnow ), which is registered under your previous "approved apps" as Greet-Tweet-Know. In regards to your upcoming authentication change. Yeah I know I'm cutting it kinda close to the wire but I'm the sole artist, creative, & coder behind get2gnow and not only is this going to require a huge amount of new code, including creating an entire network request stack entire based on your oAuth/xAuth requirement. I truly want to keep working on get2gnow and see it become the preferred & default micro-blogging client for GNOME & Linux. And I it to continue supporting access to Twitter.com via get2gnow. But given my available time, limited resources, and the primary fact: get2gnow is a desktop application. So my only real option is to, hopefully, continue supporting Twitter.com via your xAuth authorization method. It is my deepest & sincerest hope that you will help me to continue to work on get2gnow, and its support of the Twitter platform. As well as my own ability to connect with those friends whom I find it easiest to connect with via Twitter.com. Below are my application's keys, as required for an xAuth exemption, based on the instructions found on your wiki's page on Twitter's forced change to oAuth/xAuth based authentication. About get2gnow: http://uberChicGeekChick.Com/?projects=get2gnow Application name: get2gnow http://twitter.com/oauth_clients/details/2072 | Consumer Key: OiO5jfOQFIHzu48IKnWfg Application ID: 2072? I think; if not than get2gnow hasn't been assigned one yet. | / Thank you in advance - sincerely, Kaity G. B. * uberChicGeekChick.Com ~`Expressive Programming`: programming as art & self expression~ including my many open source projects & podcast. * Skeptics in the Pub – Fort Collins CO & Northern Colorado USA Combining thinking with drinking & making both more fun! / about 12 hours ago
+
+Footer
+
+    * © 2010 Twitter
+    * About Us
+    * Contact
+    * Blog
+    * Status
+    * Goodies
+    * API
+    * Business
+    * Help
+    * Jobs
+    * Terms
+    * Privacy
+
+

@@ -13,6 +13,7 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
+	namespace aophp;
 	
 	class aophp{
 		public $xml;

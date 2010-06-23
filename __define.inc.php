@@ -17,7 +17,7 @@
 	if( !(defined("AOPHP_APP_NAME")) )
 		define("AOPHP_APP_NAME", "oss-canvas");
 		
-	define("AOPHP_CLASS_SEPARATOR", "_");
+	define("AOPHP_CLASS_SEPARATOR", ":");
 	
 	if( !(defined("AOPHP_APP_CONFIG")) )
 		if( !(file_exists( (sprintf("./apps/%s/configure.inc.php", AOPHP_APP_NAME)) )) )

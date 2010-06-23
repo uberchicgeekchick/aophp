@@ -41,7 +41,7 @@
 							<ul class='github_releases'>
 								<li class='github_repo'><a href='https://www.github.com/uberchicgeekchick/alacast/tree/master'>master repo</a></li>
 								<ul class='my_projects'>
-									<li class='my_projects'><a href='./?projects=alacast#DOWNLOAD'>All Versions</li>
+									<li class='my_projects'><a href='./?projects=alacast#DOWNLOAD'>All Versions</a></li>
 								</ul>
 							</ul>
 						</ul>

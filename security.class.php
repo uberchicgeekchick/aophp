@@ -18,9 +18,9 @@
     		RPL for specific language governing rights and limitations under
     		the RPL.
 	*/
-	//namespace aophp;
+	namespace aophp;
 	
-	class aophp__security {
+	class security {
 		
 		public $data;
 		public $query_string;

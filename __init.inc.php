@@ -17,9 +17,11 @@
 	
 	require_once("./__autoload.function.php");
 	
-	require_once("./exception_handler:default.class.php");
+	//require_once("./exception_handler.class.php");
+	set_exception_handler('exception_handler::catcher');
+	//require_once("./aophp/exception_handler:default.class.php");
 	
-	$aophp=new aophp__core( AOPHP_APP_CONFIG );
+	$aophp=new aophp\core(AOPHP_APP_CONFIG);
 	
 	if( (preg_match("/(\/save\/)/i", $_SERVER['REQUEST_URI'])) ) {
 		$aophp->save();

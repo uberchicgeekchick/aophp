@@ -13,9 +13,9 @@
 	 * PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	 * language governing rights and limitations under the RPL.
 	 */
-	//namespace AOPHP::Formats;
+	namespace aophp\xml;
 	
-	class aophp__xml__xhtml extends aophp__xml{
+	class xhtml extends \aophp\xml{
 		public $doctype;
 		
 		public function __construct(){
